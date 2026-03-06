@@ -1,0 +1,282 @@
+
+---
+
+=== BEGIN PROMPT FR: FR6.2.2 ===
+
+Title
+- FR6.2.2 Wireframes — Stage 6 — Model Quality Validation — EI Regression Detection
+
+Context Summary
+- FR6.2.2 implements automated emotional intelligence regression detection that identifies scenarios where the trained model performs worse than baseline on empathy, clarity, or appropriateness dimensions. This critical quality safeguard prevents accidental degradation of emotional capabilities during fine-tuning, flagging problematic training data or over-optimization that may harm model personality. Engineers receive detailed regression reports showing affected scenarios, dimension-specific drops, and root cause analysis to guide corrective action before client delivery.
+
+Journey Integration
+- Stage 6 user goals: Ensure no quality degradation, validate consistent emotional improvements, prevent personality damage, protect brand voice integrity
+- Key emotions: Concern when regressions detected, relief when validated clean, urgency to fix issues, confidence in safety mechanisms
+- Progressive disclosure levels: Basic users see regression summary and affected scenario count; advanced users access dimension-specific analysis and scenario comparisons; expert users review root cause hypotheses and training data quality checks
+- Persona adaptations: Quality Analysts need detailed regression analysis and patterns; AI Engineers need debugging guidance and training data links; Business Owners need risk assessment and client impact evaluation
+
+### Journey-Informed Design Elements
+- User Goals: Detect quality regressions automatically, understand root causes, receive fix recommendations, prevent damaged models from reaching clients
+- Emotional Requirements: Urgency when regressions found, relief from automated detection, confidence in safety nets, clarity on corrective actions
+- Progressive Disclosure:
+  * Basic: Regression alert banner, count of affected scenarios, overall regression severity
+  * Advanced: Dimension-specific regression analysis, scenario-by-scenario comparison, pattern identification
+  * Expert: Root cause hypotheses, training data quality analysis, statistical significance testing
+- Success Indicators: Zero regressions detected (ideal), regressions identified before delivery, clear fix path provided, corrective training successful
+
+Wireframe Goals
+- Display prominent regression alerts when EI deterioration detected
+- Show dimension-specific regression analysis (which dimension regressed, by how much)
+- Present affected scenarios with before/after comparisons highlighting degradation
+- Provide root cause analysis and hypotheses (over-fitting, conflicting training data, etc.)
+- Generate actionable recommendations for addressing regressions
+- Block or require approval for delivery if critical regressions detected
+
+Explicit UI Requirements (from acceptance criteria)
+
+**Regression Alert Banner (Conditional):**
+- Prominent red/orange warning banner at top of EI Benchmarks section
+- Appears only if any dimension shows regression (trained score < baseline score)
+- Alert text: "⚠️ Emotional Intelligence Regression Detected: [X] scenarios show decreased performance"
+- Severity indicator: Critical (>10% regression), Moderate (5-10%), Minor (<5%)
+- Action buttons: [View Regression Details] [Export Regression Report] [Block Delivery]
+
+**Regression Summary Card:**
+- Card header: "EI Regression Analysis"
+- Overall regression metrics:
+  * Total regressed scenarios: 8 of 50 (16%)
+  * Average regression magnitude: -0.7 points (-14%)
+  * Dimensions affected: Appropriateness (5 scenarios), Clarity (3 scenarios)
+  * Most impacted category: Conflict Handling (4 of 10 scenarios)
+- Severity assessment: "Moderate concern - Review before client delivery"
+- Visual: Red downward arrow with regression percentage
+
+**Dimension-Specific Regression Breakdown:**
+- Three dimension cards (Empathy, Clarity, Appropriateness)
+- For each dimension showing regression:
+  * Baseline score → Trained score (with red downward indicator)
+  * Example: "Appropriateness: 3.4/5 → 3.1/5 (-0.3 points, -9%)"
+  * Affected scenario count: "5 of 50 scenarios regressed"
+  * Severity: Critical / Moderate / Minor
+  * Top regressed scenarios listed: "Scenario #12 (-1.2 points), Scenario #34 (-0.9 points), Scenario #41 (-0.7 points)"
+- Dimensions without regression: Green checkmark, "No regression detected"
+
+**Regressed Scenarios Table:**
+- Table with columns: Scenario ID | Category | Dimension | Baseline Score | Trained Score | Regression | Severity
+- Example rows:
+  * "#12 | Conflict Handling | Appropriateness | 4.0 | 2.8 | -1.2 | Critical"
+  * "#34 | Conflict Handling | Appropriateness | 3.5 | 2.6 | -0.9 | Moderate"
+  * "#41 | Supportive Responses | Clarity | 4.2 | 3.5 | -0.7 | Moderate"
+- Sort by: Regression magnitude (default), Scenario ID, Category, Dimension
+- Click row: Expands to show full scenario prompt, baseline response, trained response with score explanations
+
+**Before/After Comparison for Regressed Scenarios:**
+- Side-by-side response cards for each regressed scenario
+- Baseline response card:
+  * Response text
+  * Scores with dimension breakdown
+  * Highlighting: Strengths that were lost in training
+- Trained response card:
+  * Response text  
+  * Scores with dimension breakdown
+  * Highlighting: Specific regressions (e.g., "Lost empathetic language", "Became more robotic", "Inappropriate tone shift")
+- Regression notes: "Trained model became overly formal, losing the warm reassuring tone that was effective in baseline. Appears to over-correct based on professional training data."
+
+**Root Cause Analysis Section:**
+- Section header: "Potential Root Causes"
+- Automated analysis with hypotheses:
+  * Hypothesis 1: "Over-optimization on Clarity may have reduced Appropriateness (trade-off pattern)"
+  * Hypothesis 2: "Conflict Handling training data may contain overly formal examples that reduce warmth"
+  * Hypothesis 3: "High learning rate (0.0002) may cause over-fitting to specific phrasing at expense of flexibility"
+  * Hypothesis 4: "Training data conflicts: Some conversations model formal tone, others warm tone, causing confusion"
+- Confidence indicators: High / Medium / Low for each hypothesis
+- Supporting evidence: "4 of 5 regressed scenarios are Conflict Handling category, all show formality increase"
+
+**Pattern Identification:**
+- Pattern callout boxes:
+  * Category Pattern: "80% of Conflict Handling scenarios regressed in Appropriateness - suggests category-specific issue"
+  * Dimension Trade-off: "Clarity improved +32% while Appropriateness dropped -9% - potential over-correction"
+  * Training Data Quality: "Scenarios #12, #34, #41 all involve client frustration - review training examples for this emotion"
+- Visual: Venn diagram or correlation matrix showing pattern relationships
+
+**Actionable Recommendations:**
+- Section header: "Recommended Actions to Fix Regressions"
+- Prioritized recommendation list:
+  1. **Critical**: "Add 10+ high-quality Conflict Handling scenarios emphasizing warm professionalism (not cold formality)"
+  2. **High**: "Review training data for tone consistency - ensure professional tone doesn't sacrifice empathy"
+  3. **Medium**: "Reduce learning rate to 0.0001 (Conservative preset) to prevent over-fitting"
+  4. **Medium**: "Balance training data: 60% warm tone, 40% professional tone for optimal mix"
+  5. **Low**: "Run A/B test with adjusted hyperparameters to validate fix strategy"
+- Each recommendation includes: Action, Rationale, Expected impact, Estimated effort
+
+**Delivery Impact Assessment:**
+- Assessment card: "Client Delivery Recommendation"
+- Risk level: Critical (block) / High (review required) / Medium (caution) / Low (acceptable)
+- Example assessment:
+  * "Moderate Risk - Review Recommended"
+  * "16% of scenarios show regression, primarily in Conflict Handling situations"
+  * "Model remains production-ready for most use cases but may underperform with frustrated clients"
+  * "Recommend: Disclose regression to client, deploy with monitoring, or retrain with improved data"
+- Action buttons: [Block Delivery] [Require Manager Approval] [Accept with Disclosure] [Retrain with Recommendations]
+
+**Regression Tracking Across Runs:**
+- Historical regression chart (if multiple training runs exist)
+- Line graph: X-axis (training run date), Y-axis (regression count or average regression magnitude)
+- Comparison: "First run: 12 regressions, This run: 8 regressions (↓ 33% improvement)"
+- Trend analysis: "Regression count decreasing over time - training data quality improving"
+
+**Export Regression Report:**
+- "Export Regression Report" button
+- PDF report includes:
+  * Executive summary: Regression count, severity, affected dimensions
+  * Regressed scenarios table with full details
+  * Before/after comparisons for top 5 regressions
+  * Root cause analysis with hypotheses
+  * Recommendations for corrective action
+  * Delivery impact assessment
+- CSV export: All regressed scenarios with detailed scores and metadata
+
+Interactions and Flows
+- User views EI Benchmarks → Regression alert banner appears at top (if regressions exist) → Click "View Regression Details" → Scrolls to Regression Analysis section
+- Click dimension card showing regression → Filters regressed scenarios table to show only that dimension
+- Click row in regressed scenarios table → Expands to show full before/after comparison with highlighting
+- Hover over regression notes → Tooltip explains specific degradation (e.g., "Lost empathetic language: 'I understand your frustration' removed")
+- Click root cause hypothesis → Expands to show supporting evidence and affected scenarios
+- Click recommendation → Opens training data editor or job configuration with pre-filled adjustments
+- Click "Block Delivery" → Opens confirmation modal → Job marked as "blocked_regression" → Notification sent to team
+- Click "Export Regression Report" → Format selection → Download PDF/CSV
+
+Visual Feedback
+- Regression alert banner: Red/orange background, alert icon, high visual prominence
+- Regression indicators: Red downward arrows, negative percentages in red text
+- Severity badges: Red (critical), orange (moderate), yellow (minor) with icons
+- Before/after comparison highlighting: Red highlighting on regressed elements (e.g., lost empathetic phrases)
+- Root cause hypothesis confidence: Green (high confidence), yellow (medium), gray (low)
+- Pattern identification boxes: Orange border, warning icon, attention-grabbing styling
+- Action buttons: "Block Delivery" uses destructive red styling, "Retrain" uses primary blue
+- Historical trend chart: Red line for regression count, downward trend positive (green annotation)
+
+Accessibility Guidance
+- Regression alert banner: aria-live="assertive" to immediately announce to screen readers, aria-label="Warning: Emotional Intelligence regression detected in 8 scenarios"
+- Dimension regression indicators: aria-label="Appropriateness regressed from 3.4 to 3.1, decrease of 0.3 points or 9 percent, severity moderate"
+- Regressed scenarios table: Keyboard navigable (Tab/Arrow keys), row expansion with Enter key, screen reader announces "Table with 8 regressed scenarios"
+- Before/after comparison cards: aria-label="Baseline response for scenario 12", aria-label="Trained response for scenario 12 showing regression"
+- Highlighting in responses: aria-label="Lost empathetic language: phrase 'I understand your frustration' removed in trained model"
+- Root cause hypotheses: Semantic HTML (accordion or expandable details), keyboard accessible
+- Action buttons: Clear focus indicators, aria-label describes action and consequences
+- Color coding supplemented with text: "Critical" text in addition to red color, icons supplement colors
+
+Information Architecture
+- Regression section positioned prominently within EI Benchmarks card (after overall results but before category analysis)
+- Conditional visibility: Only shown if regressions detected (hidden otherwise to avoid cluttering clean results)
+- Hierarchy: Alert banner (most urgent) → Summary metrics → Dimension breakdown → Scenario details → Root cause analysis → Recommendations → Delivery assessment
+- Related to overall EI flow: Overall EI Results → Regression Detection (if applicable) → Category Analysis → Export
+
+Page Plan
+1. **EI Benchmarks with Regression Detection Screen** (extension of FR6.2.1 screen)
+   - Purpose: Display EI regression analysis alongside overall EI results when degradation detected
+   - Components: Regression alert banner, Regression summary card, Dimension-specific regression breakdown, Regressed scenarios table, Before/after comparisons, Root cause analysis, Pattern identification, Actionable recommendations, Delivery impact assessment, Export regression report
+   - States: No regression (section hidden), Minor regression (displayed with caution), Moderate regression (displayed with warnings), Critical regression (displayed with delivery block)
+   - Navigation: Links from alert banner to regression details, Links from regressed scenarios to training data, Action buttons for delivery decisions or retraining
+
+2. **Regressed Scenario Drill-Down Modal**
+   - Purpose: Show detailed before/after comparison for individual regressed scenario
+   - Components: Scenario prompt (full), Baseline response with scores and highlights, Trained response with scores and regression highlights, Regression explanation text, Root cause link, Action buttons to fix or dismiss
+   - States: Individual scenario focused, Comparing multiple regressed scenarios (carousel/tabs)
+   - Navigation: Close to return to regression table, Next/Previous to view other regressed scenarios
+
+3. **Delivery Decision Workflow Screen** (conditional, if critical regression)
+   - Purpose: Manager reviews regression analysis and decides whether to block delivery, require fixes, or accept with disclosure
+   - Components: Regression summary, Risk assessment, Client impact evaluation, Decision options (Block / Approve with Conditions / Retrain), Justification text area (if approving despite regression), Approval workflow
+   - States: Pending review, Approved with conditions, Blocked pending fixes
+   - Navigation: Return to job details after decision, Email notifications to team
+
+Annotations (Mandatory)
+- Attach notes on UI elements citing the specific acceptance criterion they fulfill
+- Include a "Mapping Table" frame in Figma with columns: Criterion → Screen → Component(s) → State(s)
+- Example annotation: "Regression Alert Banner → Appears when trained score < baseline score for any dimension → FR Acceptance Criterion: Automated Regression Detection"
+
+Acceptance Criteria → UI Component Mapping
+
+**US Acceptance Criterion 1: Identify scenarios where trained model scores lower than baseline**
+- Source: US6.2.2
+- Screen: EI Benchmarks with Regression Detection
+- Components: Regressed scenarios table showing scenarios with trained < baseline scores, Count of regressed scenarios in alert banner
+- States: Regression detected (table populated), No regression (section hidden)
+- Notes: Automated detection prevents quality degradation from going unnoticed
+
+**US Acceptance Criterion 2: Flag regressions by dimension (empathy, clarity, appropriateness)**
+- Source: US6.2.2
+- Screen: EI Benchmarks with Regression Detection
+- Components: Dimension-specific regression breakdown cards (3 cards for 3 dimensions), Each card shows regression magnitude and affected scenarios
+- States: Dimension regressed (red indicator), No regression (green checkmark)
+- Notes: Enables understanding of which emotional capability degraded
+
+**US Acceptance Criterion 3: Display before/after comparisons for regressed scenarios**
+- Source: US6.2.2
+- Screen: Regressed Scenario Drill-Down Modal
+- Components: Side-by-side response cards (Baseline vs Trained), Highlighting of specific regressions, Regression notes explaining degradation
+- States: Scenario expanded (comparison visible)
+- Notes: Provides qualitative understanding of what changed and why it's worse
+
+**FR Acceptance Criterion 1: Regression alert banner with severity and affected scenario count**
+- Source: FR6.2.2
+- Screen: EI Benchmarks with Regression Detection
+- Components: Red/orange alert banner, Severity indicator (Critical/Moderate/Minor), Affected scenario count, Action buttons
+- States: Critical regression (red banner, delivery blocked), Moderate (orange banner, review required), Minor (yellow banner, caution)
+- Notes: Immediately communicates presence and severity of quality issues
+
+**FR Acceptance Criterion 2: Root cause analysis with hypotheses**
+- Source: FR6.2.2
+- Screen: EI Benchmarks with Regression Detection
+- Components: Root cause analysis section with numbered hypotheses, Confidence indicators (High/Medium/Low), Supporting evidence for each hypothesis
+- States: Default (all hypotheses visible), Expanded hypothesis (evidence details shown)
+- Notes: Guides engineers toward understanding why regression occurred
+
+**FR Acceptance Criterion 3: Actionable recommendations for fixing regressions**
+- Source: FR6.2.2
+- Screen: EI Benchmarks with Regression Detection
+- Components: Prioritized recommendation list (Critical/High/Medium/Low), Each recommendation with action, rationale, expected impact, estimated effort
+- States: Default (all recommendations visible), Recommendation clicked (expands to show implementation guidance)
+- Notes: Transforms analysis into concrete corrective actions
+
+**FR Acceptance Criterion 4: Delivery impact assessment and approval workflow**
+- Source: FR6.2.2
+- Screen: EI Benchmarks with Regression Detection; Delivery Decision Workflow Screen
+- Components: Delivery impact assessment card with risk level, Client impact evaluation, Action buttons (Block/Approve/Retrain), Manager approval workflow (if required)
+- States: Blocked (delivery prevented), Review required (manager approval pending), Approved with conditions, Retrain initiated
+- Notes: Enforces quality gates and prevents damaged models from reaching clients
+
+**FR Acceptance Criterion 5: Export regression report (PDF and CSV)**
+- Source: FR6.2.2
+- Screen: EI Benchmarks with Regression Detection
+- Components: "Export Regression Report" button, Format selector, PDF preview with executive summary and details, CSV export with all scenario data
+- States: Export modal closed, Export modal open (format selection), Generating report, Download ready
+- Notes: Enables documentation and team communication about quality issues
+
+Non-UI Acceptance Criteria
+
+**FR Criterion: Automated regression detection during EI evaluation**
+- Impact: Ensures regressions identified without manual comparison
+- UI Hint: Alert banner appears automatically if any scenario shows trained < baseline score
+
+**FR Criterion: Calculate regression magnitude and statistical significance**
+- Impact: Distinguishes meaningful regressions from noise/variance
+- UI Hint: Severity indicators (Critical/Moderate/Minor) based on magnitude thresholds
+
+**FR Criterion: Pattern recognition across regressed scenarios**
+- Impact: Identifies systematic issues (category-specific, dimension trade-offs) vs random noise
+- UI Hint: Pattern identification boxes showing category concentrations and dimension correlations
+
+**FR Criterion: Store regression data in ei_regression_analysis table**
+- Impact: Enables historical tracking and trend analysis
+- UI Hint: Regression tracking chart shows improvement/worsening over multiple training runs
+
+Estimated Page Count
+- **3 primary screens:**
+  1. EI Benchmarks with Regression Detection Screen (extension of FR6.2.1, adds regression analysis section when applicable)
+  2. Regressed Scenario Drill-Down Modal (detailed before/after comparison for individual scenarios)
+  3. Delivery Decision Workflow Screen (manager approval for delivery despite regressions, conditional)
+- Rationale: Minimum 3 screens required to cover regression analysis display (1), scenario-level debugging (2), and delivery governance (3). Regression section conditionally shown within EI Benchmarks screen only when regressions detected.
+
+=== END PROMPT FR: FR6.2.2 ===

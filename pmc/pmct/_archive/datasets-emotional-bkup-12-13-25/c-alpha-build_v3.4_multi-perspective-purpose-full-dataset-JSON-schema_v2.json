@@ -1,0 +1,989 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://brightrun.ai/schemas/multi-lora-pipeline-lora-v2.0.json",
+  "title": "Multi-Perspective Purpose-Driven LoRA Training Schema v2.0",
+  "description": "Schema for Multi-Perspective Internal Deliberation with Purpose-Driven State Progression training datasets. This cutting-edge framework combines multi-agent reasoning, purpose-driven adaptation, and blind-spot identification for advanced LoRA fine-tuning.",
+  
+  "type": "object",
+  "required": ["dataset_metadata", "conversations"],
+  "additionalProperties": false,
+  
+  "properties": {
+    "dataset_metadata": {
+      "type": "object",
+      "description": "File-level metadata for the multi-perspective purpose-driven training dataset",
+      "required": [
+        "schema_version",
+        "created_date",
+        "last_updated",
+        "dataset_type",
+        "target_model",
+        "training_objective",
+        "use_case_domains",
+        "conversation_count",
+        "total_training_pairs",
+        "quality_summary",
+        "framework_configuration"
+      ],
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "const": "brightrun-multi-lora-pipeline-v2.0",
+          "description": "Schema version identifier"
+        },
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 datetime when dataset was created"
+        },
+        "last_updated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 datetime of last modification"
+        },
+        "dataset_type": {
+          "type": "string",
+          "const": "multi_perspective_deliberation_with_purpose_progression",
+          "description": "Training methodology identifier"
+        },
+        "target_model": {
+          "type": "string",
+          "description": "Intended target model for fine-tuning",
+          "examples": ["claude-sonnet-4-5", "llama-3.1-8b", "mistral-7b", "gemma-2-9b"]
+        },
+        "training_objective": {
+          "type": "string",
+          "description": "High-level training goal",
+          "minLength": 20,
+          "examples": ["Train model to conduct internal multi-perspective deliberation with purpose-driven state progression"]
+        },
+        "use_case_domains": {
+          "type": "array",
+          "description": "Business domains covered in this dataset for cross-domain generalization",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "entrepreneurship",
+              "business_planning",
+              "healthcare_decision_support",
+              "educational_curriculum_design",
+              "strategic_consulting",
+              "financial_planning",
+              "legal_advisory",
+              "product_development",
+              "organizational_change",
+              "personal_development"
+            ]
+          },
+          "examples": [["entrepreneurship", "business_planning"]]
+        },
+        "conversation_count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of complete conversations in this dataset"
+        },
+        "total_training_pairs": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total number of training pairs (turns) across all conversations"
+        },
+        "quality_summary": {
+          "type": "object",
+          "description": "Aggregated quality metrics for dataset validation",
+          "required": [
+            "avg_synthesis_quality_score",
+            "avg_purpose_progression_achieved",
+            "avg_blind_spots_identified_per_conversation",
+            "persona_identification_accuracy",
+            "human_reviewed_percentage"
+          ],
+          "properties": {
+            "avg_synthesis_quality_score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Average synthesis quality across all turns (0-1 scale)"
+            },
+            "avg_purpose_progression_achieved": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Average purpose state progression per turn (0-1 scale, target: >0.75)"
+            },
+            "avg_blind_spots_identified_per_conversation": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Average number of blind spots identified that user didn't ask about (target: 2-3)"
+            },
+            "persona_identification_accuracy": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Percentage of conversations where personas were correctly identified for domain (target: >0.90)"
+            },
+            "human_reviewed_percentage": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "Percentage of conversations reviewed by human experts"
+            },
+            "catastrophic_risks_prevented_count": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of critical failures prevented by multi-perspective deliberation"
+            }
+          }
+        },
+        "framework_configuration": {
+          "type": "object",
+          "description": "Configuration settings for the multi-perspective purpose-driven framework",
+          "required": [
+            "persona_weighting_approach",
+            "purpose_progression_methodology",
+            "deliberation_depth_requirement",
+            "blind_spot_detection_enabled"
+          ],
+          "properties": {
+            "persona_weighting_approach": {
+              "type": "string",
+              "enum": ["static_predefined", "static_with_keyword_boosting", "dynamic_learned_meta_policy"],
+              "description": "Method for determining persona weights at each purpose state",
+              "default": "static_predefined"
+            },
+            "purpose_progression_methodology": {
+              "type": "string",
+              "enum": ["linear_staged", "adaptive_threshold_based", "user_goal_directed"],
+              "description": "How purpose states transition during conversation",
+              "default": "linear_staged"
+            },
+            "deliberation_depth_requirement": {
+              "type": "string",
+              "enum": ["single_round", "multi_round_with_challenges", "consensus_building_required"],
+              "description": "Minimum depth of internal deliberation per turn",
+              "default": "multi_round_with_challenges"
+            },
+            "blind_spot_detection_enabled": {
+              "type": "boolean",
+              "description": "Whether personas should identify issues user didn't explicitly ask about",
+              "default": true
+            },
+            "ultimate_goal_visibility": {
+              "type": "string",
+              "enum": ["always_visible", "conditionally_visible", "hidden"],
+              "description": "Whether personas know the final target state during deliberation",
+              "default": "conditionally_visible"
+            }
+          }
+        },
+        "dataset_creation_metadata": {
+          "type": "object",
+          "description": "Information about how this dataset was created",
+          "properties": {
+            "generation_method": {
+              "type": "string",
+              "enum": ["fully_synthetic_ai_generated", "human_authored", "hybrid_ai_with_human_review"],
+              "description": "How training examples were created"
+            },
+            "generation_model": {
+              "type": "string",
+              "description": "Model used for synthetic generation (if applicable)",
+              "examples": ["gpt-4-turbo", "claude-3.5-sonnet"]
+            },
+            "human_review_process": {
+              "type": "string",
+              "description": "Description of human quality validation process"
+            },
+            "estimated_cost_usd": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Estimated cost to generate this dataset"
+            },
+            "generation_duration_days": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Days taken to generate and validate dataset"
+            }
+          }
+        }
+      }
+    },
+    
+    "conversations": {
+      "type": "array",
+      "description": "Array of complete multi-perspective purpose-driven conversations",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/conversation_object"
+      }
+    }
+  },
+  
+  "$defs": {
+    "conversation_object": {
+      "type": "object",
+      "description": "A complete conversation with purpose progression and multi-perspective deliberation",
+      "required": [
+        "conversation_id",
+        "conversation_metadata",
+        "purpose_framework",
+        "persona_library",
+        "training_pairs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "conversation_id": {
+          "type": "string",
+          "description": "Unique identifier for this conversation",
+          "examples": ["conv_business_plan_apparel_001", "conv_healthcare_treatment_decision_002"]
+        },
+        "conversation_metadata": {
+          "$ref": "#/$defs/conversation_metadata"
+        },
+        "purpose_framework": {
+          "$ref": "#/$defs/purpose_framework"
+        },
+        "persona_library": {
+          "$ref": "#/$defs/persona_library"
+        },
+        "training_pairs": {
+          "type": "array",
+          "description": "Ordered array of training turns with deliberation and progression",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/training_pair"
+          }
+        }
+      }
+    },
+    
+    "conversation_metadata": {
+      "type": "object",
+      "description": "Metadata describing the conversation's domain and complexity",
+      "required": [
+        "domain",
+        "subdomain",
+        "complexity",
+        "purpose_progression_stages",
+        "total_turns",
+        "personas_involved"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "description": "Primary business domain",
+          "examples": ["entrepreneurship", "healthcare", "education", "strategic_consulting"]
+        },
+        "subdomain": {
+          "type": "string",
+          "description": "Specific area within domain",
+          "examples": ["apparel_startup_niche_market", "cancer_treatment_decision", "curriculum_redesign"]
+        },
+        "complexity": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "expert"],
+          "description": "Complexity level of the use case"
+        },
+        "purpose_progression_stages": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 10,
+          "description": "Number of distinct purpose states in the progression path"
+        },
+        "total_turns": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of training pairs (turns) in this conversation"
+        },
+        "personas_involved": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 20,
+          "description": "Total number of expert personas in the persona library for this conversation"
+        },
+        "estimated_real_world_duration": {
+          "type": "string",
+          "description": "How long this conversation might take in real-world scenario",
+          "examples": ["single_session", "2-3_weeks", "3-6_months"]
+        },
+        "tags": {
+          "type": "array",
+          "description": "Searchable tags for filtering and organization",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["startup", "licensing", "risk_mitigation", "financial_modeling"]]
+        }
+      }
+    },
+    
+    "purpose_framework": {
+      "type": "object",
+      "description": "Defines the purpose-driven state progression for this conversation",
+      "required": [
+        "purpose_type",
+        "overall_starting_state",
+        "overall_target_state",
+        "progression_stages"
+      ],
+      "properties": {
+        "purpose_type": {
+          "type": "string",
+          "description": "Category of purpose progression",
+          "examples": [
+            "business_launch_planning",
+            "medical_treatment_decision",
+            "curriculum_development",
+            "strategic_transformation",
+            "personal_growth_journey"
+          ]
+        },
+        "overall_starting_state": {
+          "$ref": "#/$defs/purpose_state_definition"
+        },
+        "overall_target_state": {
+          "$ref": "#/$defs/purpose_state_definition"
+        },
+        "progression_stages": {
+          "type": "array",
+          "description": "Ordered list of state transitions (e.g., 'idea → validated → launched')",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "examples": [
+            ["idea → market_validated → product_defined → financially_modeled → legally_structured → launch_ready"]
+          ]
+        },
+        "progression_methodology_notes": {
+          "type": "string",
+          "description": "Optional explanation of how progression works for this conversation"
+        }
+      }
+    },
+    
+    "purpose_state_definition": {
+      "type": "object",
+      "description": "Defines a purpose state with its name, score, and characteristics",
+      "required": ["state_name", "state_score", "characteristics"],
+      "properties": {
+        "state_name": {
+          "type": "string",
+          "description": "Human-readable name for this purpose state",
+          "examples": ["idea_stage", "market_validated", "investor_pitch_ready"]
+        },
+        "state_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Numerical score representing progress (0.0 = start, 1.0 = complete)"
+        },
+        "characteristics": {
+          "type": "object",
+          "description": "Dimensional breakdown of state completion across different aspects",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "examples": [
+            {
+              "market_validation": 0.9,
+              "product_definition": 0.85,
+              "financial_model": 0.8,
+              "legal_structure": 0.75,
+              "go_to_market_strategy": 0.9,
+              "risk_assessment": 0.7
+            }
+          ]
+        }
+      }
+    },
+    
+    "persona_library": {
+      "type": "object",
+      "description": "Library of expert personas available for deliberation in this conversation",
+      "required": ["personas"],
+      "properties": {
+        "personas": {
+          "type": "array",
+          "description": "Array of expert persona definitions with their expertise and weighting",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/expert_persona"
+          }
+        },
+        "persona_selection_rationale": {
+          "type": "string",
+          "description": "Explanation of why these specific personas were identified for this conversation",
+          "examples": ["Domain (apparel) + niche (sorority) + business stage (startup) + user context (insider perspective) requires diverse expertise from fashion to legal to community marketing"]
+        }
+      }
+    },
+    
+    "expert_persona": {
+      "type": "object",
+      "description": "Definition of a single expert persona with their expertise and state-based weighting",
+      "required": [
+        "persona_id",
+        "role",
+        "expertise",
+        "perspective_focus",
+        "communication_style",
+        "weight_by_state"
+      ],
+      "properties": {
+        "persona_id": {
+          "type": "string",
+          "description": "Unique identifier for this persona",
+          "pattern": "^[a-z_]+_[0-9]{3}$",
+          "examples": ["market_researcher_001", "licensing_attorney_greek_001"]
+        },
+        "role": {
+          "type": "string",
+          "description": "Professional role or title",
+          "examples": ["Market Research Analyst", "Sorority Licensing Attorney", "Startup Financial Analyst"]
+        },
+        "expertise": {
+          "type": "array",
+          "description": "Specific areas of expertise for this persona",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "examples": [
+            ["market_sizing", "competitive_analysis", "TAM_SAM_SOM"],
+            ["greek_organization_licensing", "trademark_compliance", "vendor_agreements"]
+          ]
+        },
+        "perspective_focus": {
+          "type": "string",
+          "description": "Primary lens through which this persona evaluates situations",
+          "examples": ["data_driven_market_validation", "legal_risk_compliance", "operational_feasibility_cost_reality"]
+        },
+        "communication_style": {
+          "type": "string",
+          "description": "How this persona typically communicates",
+          "examples": ["analytical_quantitative", "cautious_detail_oriented", "pragmatic_cost_focused"]
+        },
+        "weight_by_state": {
+          "type": "object",
+          "description": "Persona's influence weight (0-1) at each purpose state. Higher weight = more influence in deliberation.",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "examples": [
+            {
+              "idea": 0.9,
+              "market_validated": 0.7,
+              "product_defined": 0.3,
+              "financially_modeled": 0.2,
+              "legally_structured": 0.15,
+              "launch_ready": 0.1
+            }
+          ]
+        },
+        "unique_value": {
+          "type": "string",
+          "description": "What makes this persona's perspective uniquely valuable",
+          "examples": ["Identifies fit as competitive moat, not just sizing"]
+        },
+        "critical_blocker_likelihood": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Probability this persona will identify blocking issues (0-1)"
+        },
+        "identifies_blind_spots": {
+          "type": "boolean",
+          "description": "Whether this persona specializes in finding what user didn't think to ask",
+          "default": false
+        },
+        "insider_advantage": {
+          "type": "boolean",
+          "description": "Whether this persona has insider/cultural knowledge not generally available",
+          "default": false
+        }
+      }
+    },
+    
+    "training_pair": {
+      "type": "object",
+      "description": "A single training turn with purpose progression, deliberation, and synthesis",
+      "required": [
+        "turn_number",
+        "turn_id",
+        "purpose_state_at_turn_start",
+        "active_personas_this_turn",
+        "user_input",
+        "internal_deliberation",
+        "synthesized_output",
+        "purpose_state_at_turn_end",
+        "training_metadata"
+      ],
+      "properties": {
+        "turn_number": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Sequential turn number in the conversation"
+        },
+        "turn_id": {
+          "type": "string",
+          "description": "Unique identifier for this turn",
+          "examples": ["turn_001_market_validation", "turn_003_legal_risk"]
+        },
+        "purpose_state_at_turn_start": {
+          "$ref": "#/$defs/turn_purpose_state"
+        },
+        "active_personas_this_turn": {
+          "$ref": "#/$defs/active_personas"
+        },
+        "user_input": {
+          "type": "string",
+          "minLength": 10,
+          "description": "The user's input for this turn"
+        },
+        "internal_deliberation": {
+          "$ref": "#/$defs/internal_deliberation"
+        },
+        "synthesized_output": {
+          "$ref": "#/$defs/synthesized_output"
+        },
+        "purpose_state_at_turn_end": {
+          "$ref": "#/$defs/turn_end_purpose_state"
+        },
+        "training_metadata": {
+          "$ref": "#/$defs/turn_training_metadata"
+        }
+      }
+    },
+    
+    "turn_purpose_state": {
+      "type": "object",
+      "description": "Purpose state context at the beginning of this turn",
+      "required": [
+        "current_state",
+        "current_score",
+        "target_state_this_turn",
+        "target_score_this_turn",
+        "gap_to_close_this_turn"
+      ],
+      "properties": {
+        "current_state": {
+          "type": "string",
+          "description": "Name of current purpose state"
+        },
+        "current_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Current progress score"
+        },
+        "target_state_this_turn": {
+          "type": "string",
+          "description": "State we aim to reach by end of this turn"
+        },
+        "target_score_this_turn": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Target score for this turn"
+        },
+        "ultimate_goal_awareness": {
+          "type": "string",
+          "description": "Final destination state (if personas should know it)"
+        },
+        "gap_to_close_this_turn": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Amount of progress expected this turn (target_score - current_score)"
+        },
+        "context_from_previous_turns": {
+          "type": "array",
+          "description": "Key accomplishments/decisions from earlier turns that personas know about",
+          "items": {
+            "type": "string"
+          },
+          "examples": [
+            ["Market validated: 144k TAM long-term, 200-500 Year 1", "Differentiation via fit engineering established"]
+          ]
+        }
+      }
+    },
+    
+    "active_personas": {
+      "type": "object",
+      "description": "Which personas are active this turn and their weights",
+      "required": ["personas_weighted_for_this_state"],
+      "properties": {
+        "personas_weighted_for_this_state": {
+          "type": "array",
+          "description": "Personas with significant influence this turn (weight > 0.3 typically)",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["persona_id", "weight", "rationale"],
+            "properties": {
+              "persona_id": {
+                "type": "string",
+                "description": "Reference to persona in persona_library"
+              },
+              "weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Influence weight for this turn (0-1)"
+              },
+              "rationale": {
+                "type": "string",
+                "description": "Why this persona has this weight at this state",
+                "examples": ["Market validation is primary objective this turn", "Too early for legal detail, but aware for later"]
+              }
+            }
+          }
+        },
+        "personas_suppressed_this_turn": {
+          "type": "array",
+          "description": "Personas with low weights this turn (for documentation purposes)",
+          "items": {
+            "type": "object",
+            "required": ["persona_id", "weight", "rationale"],
+            "properties": {
+              "persona_id": { "type": "string" },
+              "weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 0.3
+              },
+              "rationale": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    
+    "internal_deliberation": {
+      "type": "object",
+      "description": "The internal multi-perspective deliberation process (NOT shown to user)",
+      "required": [
+        "deliberation_context",
+        "deliberation_transcript",
+        "consensus_building"
+      ],
+      "properties": {
+        "deliberation_context": {
+          "type": "object",
+          "description": "What all personas know as they enter deliberation",
+          "required": ["personas_know"],
+          "properties": {
+            "personas_know": {
+              "type": "object",
+              "description": "Shared context available to all personas",
+              "properties": {
+                "current_purpose_state": { "type": "string" },
+                "next_target_state": { "type": "string" },
+                "ultimate_goal": { "type": "string" },
+                "user_context": { "type": "string" },
+                "progress_so_far": { "type": "string" }
+              }
+            }
+          }
+        },
+        "deliberation_transcript": {
+          "type": "array",
+          "description": "Ordered sequence of persona statements during internal debate",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/deliberation_statement"
+          }
+        },
+        "consensus_building": {
+          "type": "object",
+          "description": "Summary of how personas reached agreement or identified tradeoffs",
+          "required": ["areas_of_agreement"],
+          "properties": {
+            "areas_of_agreement": {
+              "type": "array",
+              "description": "Points where all personas aligned",
+              "items": { "type": "string" }
+            },
+            "areas_requiring_tradeoffs": {
+              "type": "array",
+              "description": "Where competing perspectives required compromise",
+              "items": { "type": "string" }
+            },
+            "risks_identified": {
+              "type": "array",
+              "description": "Risks flagged by any persona",
+              "items": { "type": "string" }
+            },
+            "blind_spots_identified_by_deliberation": {
+              "type": "array",
+              "description": "Issues identified that user didn't ask about (KEY METRIC)",
+              "items": { "type": "string" }
+            },
+            "strategic_pivots_recommended": {
+              "type": "array",
+              "description": "Major changes to user's plan recommended by deliberation",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    
+    "deliberation_statement": {
+      "type": "object",
+      "description": "A single statement from a persona during internal deliberation",
+      "required": ["speaker", "statement"],
+      "properties": {
+        "speaker": {
+          "type": "string",
+          "description": "persona_id of the speaking persona"
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 20,
+          "description": "The persona's contribution to the deliberation"
+        },
+        "reasoning": {
+          "type": "string",
+          "description": "Internal logic for this statement"
+        },
+        "data_sources": {
+          "type": "array",
+          "description": "Data or evidence cited",
+          "items": { "type": "string" }
+        },
+        "challenges_to_others": {
+          "type": "array",
+          "description": "persona_ids of other personas this statement challenges",
+          "items": { "type": "string" }
+        },
+        "challenge_detail": {
+          "type": "string",
+          "description": "Explanation of what is being challenged and why"
+        },
+        "responds_to_challenge": {
+          "type": "string",
+          "description": "If this is a response to another persona's challenge, explain how"
+        },
+        "supports": {
+          "type": "string",
+          "description": "What aspect of the solution this statement supports"
+        },
+        "identifies_blind_spot": {
+          "type": "string",
+          "description": "If this statement identifies something user didn't think of, what is it"
+        },
+        "user_didnt_ask_about_this": {
+          "type": "boolean",
+          "description": "Flag if this proactively addresses something user didn't mention",
+          "default": false
+        },
+        "critical_blocker": {
+          "type": "boolean",
+          "description": "Flag if this identifies a blocking issue",
+          "default": false
+        },
+        "critical_blocker_detail": {
+          "type": "string",
+          "description": "If blocker=true, explanation of the blocking issue"
+        },
+        "contingency_needed": {
+          "type": "string",
+          "description": "If risk is identified, what contingency plan is needed"
+        },
+        "progression_impact": {
+          "type": "string",
+          "description": "How this statement affects purpose progression",
+          "examples": ["market_validation 0.0 → 0.7", "Shifts from commodity to premium positioning"]
+        }
+      }
+    },
+    
+    "synthesized_output": {
+      "type": "object",
+      "description": "The unified response to the user, incorporating all perspectives",
+      "required": [
+        "response_to_user",
+        "incorporates_perspectives",
+        "quality_score"
+      ],
+      "properties": {
+        "response_to_user": {
+          "type": "string",
+          "minLength": 100,
+          "description": "The complete response shown to the user (synthesis of all perspectives)"
+        },
+        "incorporates_perspectives": {
+          "type": "array",
+          "description": "List of which persona perspectives are reflected in the response",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "examples": [
+            ["Market researcher: TAM sizing and segmentation", "Fashion expert: Fit differentiation as competitive moat"]
+          ]
+        },
+        "omits_from_output": {
+          "type": "array",
+          "description": "Deliberation details intentionally hidden from user (e.g., internal disagreements)",
+          "items": { "type": "string" },
+          "examples": [
+            ["Initial disagreement on TAM timeline (resolved internally)", "Specific persona names (presents as unified voice)"]
+          ]
+        },
+        "blind_spots_identified_that_user_didnt_ask": {
+          "type": "array",
+          "description": "Issues proactively addressed that weren't in user's question (KEY METRIC)",
+          "items": { "type": "string" }
+        },
+        "major_strategic_change": {
+          "type": "string",
+          "description": "If deliberation led to major pivot from user's initial plan, describe it",
+          "examples": ["From 8-style launch to 1-hero-product focus"]
+        },
+        "prevents_failure_mode": {
+          "type": "string",
+          "description": "What expensive mistake or critical failure this response prevents"
+        },
+        "prevents_catastrophic_failure": {
+          "type": "boolean",
+          "description": "Flag if this prevented business/project-ending mistake",
+          "default": false
+        },
+        "quality_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Quality of synthesis (0-1, target: >0.85)"
+        }
+      }
+    },
+    
+    "turn_end_purpose_state": {
+      "type": "object",
+      "description": "Purpose state achieved at the end of this turn",
+      "required": [
+        "achieved_state",
+        "achieved_score",
+        "progression_this_turn",
+        "ready_for_next_state"
+      ],
+      "properties": {
+        "achieved_state": {
+          "type": "string",
+          "description": "Purpose state reached"
+        },
+        "achieved_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Actual score achieved (may differ from target)"
+        },
+        "progression_this_turn": {
+          "type": "number",
+          "description": "Amount of progress made (achieved_score - starting_score)"
+        },
+        "characteristics_updated": {
+          "type": "object",
+          "description": "Updated scores for dimensional characteristics",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "ready_for_next_state": {
+          "type": "boolean",
+          "description": "Whether sufficient progress was made to proceed to next state"
+        },
+        "next_state": {
+          "type": "string",
+          "description": "What the next purpose state will be"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional notes about progression (e.g., exceeded target)"
+        }
+      }
+    },
+    
+    "turn_training_metadata": {
+      "type": "object",
+      "description": "Training metadata for this specific turn",
+      "required": [
+        "turn_type",
+        "personas_active_count",
+        "deliberation_depth",
+        "purpose_progression_target_met"
+      ],
+      "properties": {
+        "turn_type": {
+          "type": "string",
+          "description": "Category of turn for training organization",
+          "examples": ["market_validation", "product_definition_with_strategic_pivot", "legal_risk_with_blind_spot_identification"]
+        },
+        "personas_active_count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of personas actively contributing this turn"
+        },
+        "deliberation_depth": {
+          "type": "string",
+          "enum": [
+            "single_round",
+            "multi_round_with_challenges",
+            "consensus_building_required",
+            "critical_blocker_identified_with_strategic_reframe"
+          ],
+          "description": "Depth of deliberation for this turn"
+        },
+        "blind_spots_identified": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of blind spots identified this turn"
+        },
+        "strategic_pivots": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of major strategic changes recommended"
+        },
+        "capital_saved_by_deliberation": {
+          "type": "string",
+          "description": "If deliberation prevented waste, quantify it",
+          "examples": ["$200k", "$50k-75k"]
+        },
+        "catastrophic_risk_prevented": {
+          "type": "string",
+          "description": "Description of critical failure avoided",
+          "examples": ["Business model dependency on single licensing approval"]
+        },
+        "synthesis_quality_target": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Target quality score for this turn"
+        },
+        "purpose_progression_target_met": {
+          "type": "boolean",
+          "description": "Whether this turn achieved its purpose progression goal"
+        },
+        "demonstrates_value": {
+          "type": "string",
+          "description": "What value this turn exemplifies",
+          "examples": ["Cross-functional deliberation prevents expensive mistake", "Multi-perspective deliberation identifies existential risk user didn't see"]
+        },
+        "demonstrates_peak_value": {
+          "type": "boolean",
+          "description": "Flag if this is an exemplary demonstration of framework value",
+          "default": false
+        }
+      }
+    }
+  }
+}
+

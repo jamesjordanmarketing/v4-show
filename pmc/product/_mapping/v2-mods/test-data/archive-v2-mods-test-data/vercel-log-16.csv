@@ -1,0 +1,1346 @@
+TimeUTC,timestampInMs,requestPath,requestMethod,requestQueryString,responseStatusCode,requestId,requestUserAgent,level,environment,branch,vercelCache,type,function,host,deploymentDomain,deploymentId,durationMs,region,maxMemoryUsed,memorySize,message,projectId,traceId,sessionId,invocationId,instanceId,concurrency
+2026-02-14 23:40:16,1771112416712,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8,GET,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,200,zpg2c-1771112416706-29228c9897f1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/pipeline/conversations/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[pipeline] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:40:16,1771112416706,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8,GET,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,200,zpg2c-1771112416706-29228c9897f1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,54,sfo1,285,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8DHE8414M09NP7HT13TND,TISx6jAA5p1F,1
+2026-02-14 23:40:16,1771112416706,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8,GET,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,200,zpg2c-1771112416706-29228c9897f1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/pipeline/conversations/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,385,iad1,269,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8DHHB480CS6A8J6VAP6BT,Svzb5176A7Lo,1
+2026-02-14 23:40:07,1771112407626,v2-modules.vercel.app/api/rag/models,GET,,,9smbq-1771112407626-93a04f2f7d38,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,65,sfo1,284,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8D8JKFAAK0Q4W758A5GQZ,TISx6jAA5p1F,1
+2026-02-14 23:40:07,1771112407626,v2-modules.vercel.app/api/rag/models,GET,,,9smbq-1771112407626-93a04f2f7d38,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/api/rag/models,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,251,iad1,267,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8A0CM386ECGYEVCR0N674,Svzb5176A7Lo,2
+2026-02-14 23:40:07,1771112407622,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,,fg2qp-1771112407622-2d035854ca4e,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,64,sfo1,273,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8D8JDHHGPAKNJ0E3ZZCPC,Ou5YARqmIGtA,1
+2026-02-14 23:40:07,1771112407622,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,,fg2qp-1771112407622-2d035854ca4e,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/api/rag/query,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,415,iad1,267,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8D8NZEDCPNVCB04GHWDY7,yqRegzVwAK51,1
+2026-02-14 23:40:04,1771112404398,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,hdw9b-1771112404391-eea278253500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[rag] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:40:04,1771112404391,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,hdw9b-1771112404391-eea278253500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,43,sfo1,272,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8D5DF5S8ZN8H6068E11XG,Ou5YARqmIGtA,1
+2026-02-14 23:40:04,1771112404391,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,hdw9b-1771112404391-eea278253500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,682,iad1,267,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8A0CM386ECGYEVCR0N674,Svzb5176A7Lo,2
+2026-02-14 23:40:03,1771112403747,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,9sw8h-1771112403747-b608587737b3,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,86,sfo1,277,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8D4SDY1TPKSC9YFKFQNQT,Ou5YARqmIGtA,1
+2026-02-14 23:40:03,1771112403747,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,9sw8h-1771112403747-b608587737b3,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/rag/[id],v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,422,iad1,288,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8D4XDF5WHZN8E8E29F2NQ,nklv9yD9XvG0,1
+2026-02-14 23:38:20,1771112300732,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,middleware,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[pipeline] /turn status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301713,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVICE] Routing to serverless implementation {
+  endpointId: 'virtual-inference-6fd5ac79-control',
+  useAdapter: false,
+  hasJobId: false,
+  promptLength: 136
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301714,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] === STARTING INFERENCE REQUEST (SERVERLESS) === {
+  ""timestamp"": ""2026-02-14T23:38:21.713Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301713-a9wq9g"",
+  ""message"": ""=== STARTING INFERENCE REQUEST (SERVERLESS) ==="",
+  ""promptLength"": 136,
+  ""hasSystemPrompt"": false,
+  ""maxRetries"": 3
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301714,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ⏳ Waiting for worker to be READY... {
+  ""timestamp"": ""2026-02-14T23:38:21.713Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301713-a9wq9g"",
+  ""message"": ""⏳ Waiting for worker to be READY...""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301715,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ⏳ Waiting for a READY worker (not just running)... {
+  ""timestamp"": ""2026-02-14T23:38:21.714Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""⏳ Waiting for a READY worker (not just running)..."",
+  ""maxWaitMs"": 60000,
+  ""pollIntervalMs"": 3000,
+  ""reason"": ""vLLM V1 engine crashes if requests hit during Ray DAG initialization""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301718,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVICE] Routing to serverless implementation {
+  endpointId: 'virtual-inference-6fd5ac79-adapted',
+  useAdapter: true,
+  hasJobId: true,
+  promptLength: 136
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301718,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] === STARTING INFERENCE REQUEST (SERVERLESS) === {
+  ""timestamp"": ""2026-02-14T23:38:21.717Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301717-6gv86"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""=== STARTING INFERENCE REQUEST (SERVERLESS) ==="",
+  ""promptLength"": 136,
+  ""hasSystemPrompt"": false,
+  ""maxRetries"": 3
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301718,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ⏳ Waiting for worker to be READY... {
+  ""timestamp"": ""2026-02-14T23:38:21.717Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301717-6gv86"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""⏳ Waiting for worker to be READY...""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301719,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ⏳ Waiting for a READY worker (not just running)... {
+  ""timestamp"": ""2026-02-14T23:38:21.718Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""⏳ Waiting for a READY worker (not just running)..."",
+  ""maxWaitMs"": 60000,
+  ""pollIntervalMs"": 3000,
+  ""reason"": ""vLLM V1 engine crashes if requests hit during Ray DAG initialization""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301885,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 1: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:38:21.714Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 1: checking worker states..."",
+  ""workers"": {
+    ""ready"": 1,
+    ""idle"": 1,
+    ""running"": 1,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 1
+  },
+  ""waitedMs"": 170
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301885,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ✅ Found 1 ready and 1 idle workers after 170ms {
+  ""timestamp"": ""2026-02-14T23:38:21.714Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""✅ Found 1 ready and 1 idle workers after 170ms"",
+  ""pollCount"": 1,
+  ""waitedMs"": 170
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301885,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Worker ready check complete {
+  ""timestamp"": ""2026-02-14T23:38:21.713Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301713-a9wq9g"",
+  ""message"": ""Worker ready check complete"",
+  ""workerReady"": true,
+  ""readyCount"": 1,
+  ""idleCount"": 1,
+  ""waitedMs"": 170
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301886,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Starting attempt 1/3 {
+  ""timestamp"": ""2026-02-14T23:38:21.713Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301713-a9wq9g"",
+  ""message"": ""Starting attempt 1/3""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301886,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ✅ Message roles validated: { messageCount: 1, roles: [ 'user' ], hasSystem: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301887,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ⚪ Using base model: {
+  model: 'mistralai/Mistral-7B-Instruct-v0.2',
+  requestFormat: 'OpenAI route wrapper'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301887,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] 📤 SENDING REQUEST TO RUNPOD: {
+  timestamp: '2026-02-14T23:38:21.886Z',
+  url: 'https://api.runpod.ai/v2/780tauhj7c126b/runsync',
+  endpoint: 'https://api.runpod.ai/v2/780tauhj7c126b',
+  requestFormat: 'OpenAI route wrapper (Feb 2026 fix for truncation)',
+  requestSummary: {
+    openai_route: '/v1/chat/completions',
+    model: 'mistralai/Mistral-7B-Instruct-v0.2',
+    messageCount: 1,
+    messageRoles: [ 'user' ],
+    max_tokens: 2048,
+    temperature: 0.7
+  },
+  messagesDetail: [
+    {
+      index: 0,
+      role: 'user',
+      contentLength: 136,
+      contentPreview: 'user: In the event of a balance recovery within the 30-day Cure Window, does the...'
+    }
+  ]
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301887,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] 📋 FULL REQUEST PAYLOAD: {
+  ""input"": {
+    ""openai_route"": ""/v1/chat/completions"",
+    ""openai_input"": {
+      ""model"": ""mistralai/Mistral-7B-Instruct-v0.2"",
+      ""messages"": [
+        {
+          ""role"": ""user"",
+          ""content"": ""user: In the event of a balance recovery within the 30-day Cure Window, does the system provide an automated restoration to normal mode?""
+        }
+      ],
+      ""max_tokens"": 2048,
+      ""temperature"": 0.7
+    }
+  }
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301889,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 1: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:38:21.718Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 1: checking worker states..."",
+  ""workers"": {
+    ""ready"": 1,
+    ""idle"": 1,
+    ""running"": 1,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 1
+  },
+  ""waitedMs"": 170
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301889,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ✅ Found 1 ready and 1 idle workers after 170ms {
+  ""timestamp"": ""2026-02-14T23:38:21.718Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""✅ Found 1 ready and 1 idle workers after 170ms"",
+  ""pollCount"": 1,
+  ""waitedMs"": 170
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301889,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Worker ready check complete {
+  ""timestamp"": ""2026-02-14T23:38:21.717Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301717-6gv86"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""Worker ready check complete"",
+  ""workerReady"": true,
+  ""readyCount"": 1,
+  ""idleCount"": 1,
+  ""waitedMs"": 170
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301889,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Starting attempt 1/3 {
+  ""timestamp"": ""2026-02-14T23:38:21.717Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301717-6gv86"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""Starting attempt 1/3""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301889,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ✅ Message roles validated: { messageCount: 1, roles: [ 'user' ], hasSystem: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301889,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ✅ Using pre-loaded adapter: {
+  adapterName: 'adapter-6fd5ac79',
+  jobId: '6fd5ac79-c54b-4927-8138-ca159108bcae',
+  requestFormat: 'OpenAI route wrapper'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301890,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] 📤 SENDING REQUEST TO RUNPOD: {
+  timestamp: '2026-02-14T23:38:21.889Z',
+  url: 'https://api.runpod.ai/v2/780tauhj7c126b/runsync',
+  endpoint: 'https://api.runpod.ai/v2/780tauhj7c126b',
+  requestFormat: 'OpenAI route wrapper (Feb 2026 fix for truncation)',
+  requestSummary: {
+    openai_route: '/v1/chat/completions',
+    model: 'adapter-6fd5ac79',
+    messageCount: 1,
+    messageRoles: [ 'user' ],
+    max_tokens: 2048,
+    temperature: 0.7
+  },
+  messagesDetail: [
+    {
+      index: 0,
+      role: 'user',
+      contentLength: 136,
+      contentPreview: 'user: In the event of a balance recovery within the 30-day Cure Window, does the...'
+    }
+  ]
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:21,1771112301890,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] 📋 FULL REQUEST PAYLOAD: {
+  ""input"": {
+    ""openai_route"": ""/v1/chat/completions"",
+    ""openai_input"": {
+      ""model"": ""adapter-6fd5ac79"",
+      ""messages"": [
+        {
+          ""role"": ""user"",
+          ""content"": ""user: In the event of a balance recovery within the 30-day Cure Window, does the system provide an automated restoration to normal mode?""
+        }
+      ],
+      ""max_tokens"": 2048,
+      ""temperature"": 0.7
+    }
+  }
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:27,1771112367867,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Initial RunPod response: {
+  status: 'COMPLETED',
+  id: 'sync-ec6ef250-9ba5-4107-889a-2d9c75d8e23f-u2',
+  workerId: 'gl0btlm68nxf85',
+  hasOutput: true,
+  outputType: 'object'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:27,1771112367867,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Extracted response: {
+  responseLength: 513,
+  tokensUsed: 89,
+  generationTimeMs: 65981,
+  finishReason: 'stop',
+  wasPotentiallyTruncated: false,
+  responseEnding: 'ing the specific balance recovery solution in use.'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:27,1771112367867,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ✅ Attempt 1 SUCCEEDED {
+  ""timestamp"": ""2026-02-14T23:38:21.713Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301713-a9wq9g"",
+  ""message"": ""✅ Attempt 1 SUCCEEDED"",
+  ""responseLength"": 513,
+  ""tokensUsed"": 89
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:28,1771112368151,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Initial RunPod response: {
+  status: 'COMPLETED',
+  id: 'sync-cf48024c-de96-459d-a577-dbe9e55cb33e-u1',
+  workerId: 'gl0btlm68nxf85',
+  hasOutput: true,
+  outputType: 'object'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:28,1771112368151,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Extracted response: {
+  responseLength: 733,
+  tokensUsed: 123,
+  generationTimeMs: 66262,
+  finishReason: 'stop',
+  wasPotentiallyTruncated: false,
+  responseEnding: 'ustomer support for the most accurate information.'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:28,1771112368151,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,function,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ✅ Attempt 1 SUCCEEDED {
+  ""timestamp"": ""2026-02-14T23:38:21.717Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112301717-6gv86"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""✅ Attempt 1 SUCCEEDED"",
+  ""responseLength"": 733,
+  ""tokensUsed"": 123
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:20,1771112300719,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,71,sfo1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8A05W4Z1FVMCD8AAVKV80,Ou5YARqmIGtA,1
+2026-02-14 23:38:20,1771112300719,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8/turn,POST,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,,nf8n2-1771112300719-7254877830ef,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,function,/api/pipeline/conversations/[id]/turn,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,115683,iad1,268,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF8A0CM386ECGYEVCR0N674,Svzb5176A7Lo,2
+2026-02-14 23:38:01,1771112281010,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8,GET,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,200,dd5cp-1771112281004-e83eebf35eea,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/pipeline/conversations/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[pipeline] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:01,1771112281004,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8,GET,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,200,dd5cp-1771112281004-e83eebf35eea,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/pipeline/conversations/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,491,iad1,265,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF89CZXC5Z2YNFENJ7PDS95,Svzb5176A7Lo,2
+2026-02-14 23:38:01,1771112281004,v2-modules.vercel.app/api/pipeline/conversations/38181df0-8110-4a47-8fc8-94525010b3e8,GET,nxtPid=38181df0-8110-4a47-8fc8-94525010b3e8,200,dd5cp-1771112281004-e83eebf35eea,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,56,sfo1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF89CXJX89WZ8CDZH1A7FXP,Ou5YARqmIGtA,1
+2026-02-14 23:38:00,1771112280997,v2-modules.vercel.app/api/pipeline/conversations,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,x57hb-1771112280997-4b8fc43545e0,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/pipeline/conversations,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,228,iad1,265,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF89CZXC5Z2YNFENJ7PDS95,Svzb5176A7Lo,2
+2026-02-14 23:38:00,1771112280997,v2-modules.vercel.app/api/pipeline/conversations,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,x57hb-1771112280997-4b8fc43545e0,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,39,sfo1,284,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF89CX9Q8H3FAQ6H2Q4FNBZ,TISx6jAA5p1F,1
+2026-02-14 23:38:00,1771112280346,v2-modules.vercel.app/api/pipeline/conversations,POST,,201,vr8xr-1771112280346-0ed03af34f55,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,63,sfo1,284,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF89C955CNHBNYAPPR83QP0,TISx6jAA5p1F,1
+2026-02-14 23:38:00,1771112280346,v2-modules.vercel.app/api/pipeline/conversations,POST,,201,vr8xr-1771112280346-0ed03af34f55,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/pipeline/conversations,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,468,iad1,271,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF89CCEC5A9FSAP4MD7GXPJ,Svzb5176A7Lo,1
+2026-02-14 23:37:52,1771112272513,v2-modules.vercel.app/api/pipeline/conversations/c19f473b-ad62-41d0-93c9-f52c24ad2442,GET,nxtPid=c19f473b-ad62-41d0-93c9-f52c24ad2442,200,xffbj-1771112272506-0a4a158a4c3d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/pipeline/conversations/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[pipeline] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:52,1771112272506,v2-modules.vercel.app/api/pipeline/conversations/c19f473b-ad62-41d0-93c9-f52c24ad2442,GET,nxtPid=c19f473b-ad62-41d0-93c9-f52c24ad2442,200,xffbj-1771112272506-0a4a158a4c3d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,53,sfo1,284,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF894M1Y6KJKRJSQPQJCZ89,TISx6jAA5p1F,1
+2026-02-14 23:37:52,1771112272506,v2-modules.vercel.app/api/pipeline/conversations/c19f473b-ad62-41d0-93c9-f52c24ad2442,GET,nxtPid=c19f473b-ad62-41d0-93c9-f52c24ad2442,200,xffbj-1771112272506-0a4a158a4c3d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/pipeline/conversations/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,763,iad1,285,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF894W9V3M6AVZ2MH1EHBT6,Svzb5176A7Lo,1
+2026-02-14 23:37:47,1771112267253,v2-modules.vercel.app/api/pipeline/conversations,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,cnc28-1771112266991-5cc2913c1592,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/pipeline/conversations,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"✅ Rate limiter initialized with config: { requestLimit: 50, windowSeconds: 60, threshold: '90%' }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:46,1771112266991,v2-modules.vercel.app/api/pipeline/conversations,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,cnc28-1771112266991-5cc2913c1592,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/pipeline/conversations,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,346,iad1,272,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88ZEBHCKM9G1QWHCSS2FS,DPbXEwosbPGU,1
+2026-02-14 23:37:46,1771112266991,v2-modules.vercel.app/api/pipeline/conversations,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,cnc28-1771112266991-5cc2913c1592,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,46,sfo1,284,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88Z7R012WNYVVJ6Y0HJDX,TISx6jAA5p1F,1
+2026-02-14 23:37:47,1771112267869,v2-modules.vercel.app/api/pipeline/evaluators,GET,,200,bjz95-1771112266991-91981241b391,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/pipeline/evaluators,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"✅ Rate limiter initialized with config: { requestLimit: 50, windowSeconds: 60, threshold: '90%' }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:47,1771112267940,v2-modules.vercel.app/api/pipeline/evaluators,GET,,200,bjz95-1771112266991-91981241b391,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/pipeline/evaluators,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[INFERENCE-SERVICE] Mode selected: serverless,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:46,1771112266991,v2-modules.vercel.app/api/pipeline/evaluators,GET,,200,bjz95-1771112266991-91981241b391,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,42,sfo1,275,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88Z7NF6RKTG163XFJBTM5,Ou5YARqmIGtA,1
+2026-02-14 23:37:46,1771112266991,v2-modules.vercel.app/api/pipeline/evaluators,GET,,200,bjz95-1771112266991-91981241b391,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/pipeline/evaluators,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,885,iad1,285,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88ZESYY67VMZQ3FVC4Z7Y,Svzb5176A7Lo,1
+2026-02-14 23:37:46,1771112266298,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/chat,GET,_rsc=1vcc9,,mjv2c-1771112266292-97064981a634,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,middleware,,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[jobs] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:46,1771112266292,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/chat,GET,_rsc=1vcc9,,mjv2c-1771112266292-97064981a634,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,function,/pipeline/jobs/[jobId]/chat.rsc,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,233,iad1,258,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88YMPB4W8A6E1XW4CQQCN,nklv9yD9XvG0,1
+2026-02-14 23:37:46,1771112266292,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/chat,GET,_rsc=1vcc9,,mjv2c-1771112266292-97064981a634,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,48,sfo1,275,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88YHTJRTJZXM3JNQHZN6W,Ou5YARqmIGtA,1
+2026-02-14 23:37:44,1771112264738,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=km535,200,bbtsh-1771112264733-d9bb814590dd,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/pipeline/jobs/[jobId]/results,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[jobs] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:44,1771112264733,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=km535,200,bbtsh-1771112264733-d9bb814590dd,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,46,sfo1,275,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88X125JPFTMV8ZRHC31AF,Ou5YARqmIGtA,1
+2026-02-14 23:37:44,1771112264733,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=km535,200,bbtsh-1771112264733-d9bb814590dd,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId]/results.rsc,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,24,iad1,245,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88X7GRYJ3078J2NPSBS19,aW5KUId7sfvZ,1
+2026-02-14 23:37:44,1771112264738,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/chat,GET,_rsc=km535,200,8cdtd-1771112264733-c729934ada94,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/pipeline/jobs/[jobId]/chat,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[jobs] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:44,1771112264733,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/chat,GET,_rsc=km535,200,8cdtd-1771112264733-c729934ada94,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,40,sfo1,284,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88X125JPFTMV8ZWS2TF2P,TISx6jAA5p1F,1
+2026-02-14 23:37:44,1771112264733,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/chat,GET,_rsc=km535,200,8cdtd-1771112264733-c729934ada94,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId]/chat.rsc,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,96,iad1,252,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88X823V0CVVRRE43T6F5X,nklv9yD9XvG0,1
+2026-02-14 23:37:44,1771112264224,v2-modules.vercel.app/api/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,dkgxg-1771112264216-c6f843ebf5a6,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/pipeline/jobs/[jobId],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[pipeline] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:44,1771112264216,v2-modules.vercel.app/api/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,dkgxg-1771112264216-c6f843ebf5a6,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,37,sfo1,282,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88WH0MVXCPFEKAX2AYWPC,TISx6jAA5p1F,1
+2026-02-14 23:37:44,1771112264216,v2-modules.vercel.app/api/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,dkgxg-1771112264216-c6f843ebf5a6,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/pipeline/jobs/[jobId],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,237,iad1,268,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88WQAY9Z0D6776QA5ZTSV,DPbXEwosbPGU,1
+2026-02-14 23:37:43,1771112263596,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,_rsc=n0x64&nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,,9q44s-1771112263596-5e539535b6c4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,17,iad1,244,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88W00Y5T9FSJVFJTWKBWH,aW5KUId7sfvZ,1
+2026-02-14 23:37:43,1771112263596,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,_rsc=n0x64&nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,,9q44s-1771112263596-5e539535b6c4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,39,sfo1,282,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88VXG1SD2SDFN8ZHE1F22,TISx6jAA5p1F,1
+2026-02-14 23:37:42,1771112262739,v2-modules.vercel.app/pipeline/jobs/e7b7327d-36b4-41ed-8d9b-7d05091f9daa,GET,_rsc=1take&nxtPjobId=e7b7327d-36b4-41ed-8d9b-7d05091f9daa,200,2j6qg-1771112262739-a3e0b4c6abfc,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,13,iad1,269,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V5004PK9BS2RMH0QQT1,xrgrCdlZy6CJ,1
+2026-02-14 23:37:42,1771112262739,v2-modules.vercel.app/pipeline/jobs/e7b7327d-36b4-41ed-8d9b-7d05091f9daa,GET,_rsc=1take&nxtPjobId=e7b7327d-36b4-41ed-8d9b-7d05091f9daa,200,2j6qg-1771112262739-a3e0b4c6abfc,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,37,sfo1,280,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V025Q255TR6A83NGB9Y,TISx6jAA5p1F,3
+2026-02-14 23:37:42,1771112262722,v2-modules.vercel.app/pipeline/jobs/258b20b7-457d-4d3e-8f48-510b128b9ec8,GET,_rsc=1take,200,7lzpx-1771112262722-17768b3475ac,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,60,sfo1,280,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V025Q255TR6A83NGB9Y,TISx6jAA5p1F,3
+2026-02-14 23:37:42,1771112262722,v2-modules.vercel.app/pipeline/jobs/258b20b7-457d-4d3e-8f48-510b128b9ec8,GET,_rsc=1take,200,7lzpx-1771112262722-17768b3475ac,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,407,iad1,244,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V57KPHRBN4BKZXFG49P,nklv9yD9XvG0,1
+2026-02-14 23:37:42,1771112262702,v2-modules.vercel.app/pipeline/jobs/4afc9fc4-d406-4847-8f4f-3dd644d7302f,GET,_rsc=1take,200,9sw8h-1771112262702-54b4b4cef68d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,40,sfo1,280,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V025Q255TR6A83NGB9Y,TISx6jAA5p1F,3
+2026-02-14 23:37:42,1771112262702,v2-modules.vercel.app/pipeline/jobs/4afc9fc4-d406-4847-8f4f-3dd644d7302f,GET,_rsc=1take,200,9sw8h-1771112262702-54b4b4cef68d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,430,iad1,242,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V45DX69NWXF8KYGPMYW,aW5KUId7sfvZ,1
+2026-02-14 23:37:42,1771112262681,v2-modules.vercel.app/pipeline/jobs/484beeee-a038-46ae-a266-6ce2c498bcba,GET,_rsc=1take&nxtPjobId=484beeee-a038-46ae-a266-6ce2c498bcba,,wx5dm-1771112262681-e05125be7870,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,12,iad1,269,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V3TMZDVTQ98NTJRN0FJ,xrgrCdlZy6CJ,1
+2026-02-14 23:37:42,1771112262681,v2-modules.vercel.app/pipeline/jobs/484beeee-a038-46ae-a266-6ce2c498bcba,GET,_rsc=1take&nxtPjobId=484beeee-a038-46ae-a266-6ce2c498bcba,,wx5dm-1771112262681-e05125be7870,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,57,sfo1,280,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V025Q255TR6A83NGB9Y,TISx6jAA5p1F,3
+2026-02-14 23:37:42,1771112262650,v2-modules.vercel.app/pipeline/jobs/33695008-80e9-43f5-974f-70d3cb3dac14,GET,_rsc=1take&nxtPjobId=33695008-80e9-43f5-974f-70d3cb3dac14,200,t7njl-1771112262650-d0c76e538be3,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,14,iad1,269,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V2YKZ52KQ43B2MKGDWX,xrgrCdlZy6CJ,1
+2026-02-14 23:37:42,1771112262650,v2-modules.vercel.app/pipeline/jobs/33695008-80e9-43f5-974f-70d3cb3dac14,GET,_rsc=1take&nxtPjobId=33695008-80e9-43f5-974f-70d3cb3dac14,200,t7njl-1771112262650-d0c76e538be3,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,43,sfo1,280,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88V025Q255TR6A83NGB9Y,TISx6jAA5p1F,2
+2026-02-14 23:37:42,1771112262332,v2-modules.vercel.app/pipeline/jobs/1676747f-be13-42dd-9c92-0decd38bba7b,GET,_rsc=1take&nxtPjobId=1676747f-be13-42dd-9c92-0decd38bba7b,200,9sw8h-1771112262332-a43b2f5b3d3c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,12,iad1,268,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TWPVD91FT5P6VBGD4TX,xrgrCdlZy6CJ,1
+2026-02-14 23:37:42,1771112262332,v2-modules.vercel.app/pipeline/jobs/1676747f-be13-42dd-9c92-0decd38bba7b,GET,_rsc=1take&nxtPjobId=1676747f-be13-42dd-9c92-0decd38bba7b,200,9sw8h-1771112262332-a43b2f5b3d3c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,49,sfo1,275,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TP2B9JESK022G06ABX9,Ou5YARqmIGtA,1
+2026-02-14 23:37:42,1771112262331,v2-modules.vercel.app/pipeline/jobs/8905f705-034d-4873-ab7d-5d81e63f4acb,GET,_rsc=1take&nxtPjobId=8905f705-034d-4873-ab7d-5d81e63f4acb,,wx5dm-1771112262331-b5377402a050,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,12,iad1,268,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TWKR4V876HYQH5X5XPW,xrgrCdlZy6CJ,1
+2026-02-14 23:37:42,1771112262331,v2-modules.vercel.app/pipeline/jobs/8905f705-034d-4873-ab7d-5d81e63f4acb,GET,_rsc=1take&nxtPjobId=8905f705-034d-4873-ab7d-5d81e63f4acb,,wx5dm-1771112262331-b5377402a050,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,40,sfo1,279,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TPH69WX64HKGFSTE912,TISx6jAA5p1F,1
+2026-02-14 23:37:42,1771112262328,v2-modules.vercel.app/pipeline/jobs/3bcdb59d-b841-4d67-8d89-5261f9706973,GET,_rsc=1take&nxtPjobId=3bcdb59d-b841-4d67-8d89-5261f9706973,,tfc68-1771112262328-23aa55eec489,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,13,iad1,268,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TWKR4V876HYQCT94MJW,xrgrCdlZy6CJ,1
+2026-02-14 23:37:42,1771112262328,v2-modules.vercel.app/pipeline/jobs/3bcdb59d-b841-4d67-8d89-5261f9706973,GET,_rsc=1take&nxtPjobId=3bcdb59d-b841-4d67-8d89-5261f9706973,,tfc68-1771112262328-23aa55eec489,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,82,sfo1,275,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TNVAFTEY0P55H1GRMHG,Ou5YARqmIGtA,1
+2026-02-14 23:37:42,1771112262328,v2-modules.vercel.app/pipeline/jobs/01d31071-0089-4b11-84f9-a88549f533d2,GET,_rsc=1take&nxtPjobId=01d31071-0089-4b11-84f9-a88549f533d2,200,2j6qg-1771112262328-e031ef130627,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,14,iad1,268,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TWKR4V876HYQGHKY63N,xrgrCdlZy6CJ,1
+2026-02-14 23:37:42,1771112262328,v2-modules.vercel.app/pipeline/jobs/01d31071-0089-4b11-84f9-a88549f533d2,GET,_rsc=1take&nxtPjobId=01d31071-0089-4b11-84f9-a88549f533d2,200,2j6qg-1771112262328-e031ef130627,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,60,sfo1,279,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TNX07B5EE8HWA0V91VV,TISx6jAA5p1F,1
+2026-02-14 23:37:42,1771112262327,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,_rsc=1take&nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,2kvdg-1771112262327-050afd96a85e,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/pipeline/jobs/[jobId].rsc,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,50,iad1,269,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TWKR4V876HYQA1F2J51,xrgrCdlZy6CJ,1
+2026-02-14 23:37:42,1771112262327,v2-modules.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,_rsc=1take&nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,2kvdg-1771112262327-050afd96a85e,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,40,sfo1,278,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88TNT5TGXWAC3NSH6M915,TISx6jAA5p1F,1
+2026-02-14 23:37:41,1771112261475,v2-modules.vercel.app/pipeline/configure,GET,_rsc=1take,200,trr74-1771112261475-95f4bfd07e26,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,651,sfo1,268,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88SV83BJ7BAPERX74ZK29,Ou5YARqmIGtA,1
+2026-02-14 23:37:41,1771112261475,v2-modules.vercel.app/pipeline/configure,GET,_rsc=1take,200,trr74-1771112261475-95f4bfd07e26,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,static,/pipeline/configure,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,386,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:41,1771112261470,v2-modules.vercel.app/api/pipeline/jobs,GET,limit=20,,wjgt4-1771112261470-282c1bc29ffd,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/api/pipeline/jobs,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,564,iad1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88T246XK48X0Y8WYSTAAM,DPbXEwosbPGU,1
+2026-02-14 23:37:41,1771112261470,v2-modules.vercel.app/api/pipeline/jobs,GET,limit=20,,wjgt4-1771112261470-282c1bc29ffd,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,45,sfo1,278,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88SV32X1V6DGECEXNQ2CG,TISx6jAA5p1F,1
+2026-02-14 23:37:41,1771112261010,v2-modules.vercel.app/pipeline/jobs,GET,_rsc=1hc9m,200,7lzpx-1771112261010-daa25b189a31,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,56,sfo1,278,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88SCRFGRKN2PQ9F15XP2K,TISx6jAA5p1F,1
+2026-02-14 23:37:41,1771112261010,v2-modules.vercel.app/pipeline/jobs,GET,_rsc=1hc9m,200,7lzpx-1771112261010-daa25b189a31,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,static,/pipeline/jobs,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,297,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:36,1771112256060,v2-modules.vercel.app/dashboard,GET,,304,2kvdg-1771112256060-b234127ddb64,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,HIT,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,53,sfo1,278,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF88MJ51RESRZ2EZV76JS2X,TISx6jAA5p1F,1
+2026-02-14 23:37:36,1771112256060,v2-modules.vercel.app/dashboard,GET,,304,2kvdg-1771112256060-b234127ddb64,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,HIT,static,/dashboard,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,78,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:37:36,1771112256029,v2-modules.vercel.app/,GET,,307,52sdp-1771112256029-2fbee4bb1263,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,redirect,/,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,8,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:22,1771112302656,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Initial RunPod response: {
+  status: 'IN_QUEUE',
+  id: 'sync-25007d67-e015-4997-97da-d65715aaada7-u2',
+  workerId: undefined,
+  hasOutput: false,
+  outputType: 'undefined'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:22,1771112302656,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ⏳ Request queued, polling for completion...",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:27,1771112307694,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 1, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:32,1771112312721,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 2, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:37,1771112317779,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 3, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:42,1771112322805,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 4, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:47,1771112327843,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 5, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:52,1771112332877,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 6, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:38:57,1771112337919,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 7, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:13,1771112353017,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 10, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:18,1771112358069,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 11, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:23,1771112363099,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 12, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:28,1771112368134,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 13, status: 'COMPLETED', hasOutput: true }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:28,1771112368134,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[INFERENCE-SERVERLESS] ✅ Request completed after polling,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:28,1771112368134,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Extracted response: {
+  responseLength: 257,
+  tokensUsed: 48,
+  generationTimeMs: 155544,
+  finishReason: 'stop',
+  wasPotentiallyTruncated: false,
+  responseEnding: ""before the account can regain full 'Ready' status.""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:28,1771112368134,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ✅ Attempt 1 SUCCEEDED {
+  ""timestamp"": ""2026-02-14T23:36:52.529Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112212529-lv8lx"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""✅ Attempt 1 SUCCEEDED"",
+  ""responseLength"": 257,
+  ""tokensUsed"": 48
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:31,1771112371558,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[parseJsonResponse] Direct parse failed (selfEvaluate): Unexpected token '`', ""```json
+{
+""... is not valid JSON",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:31,1771112371852,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[RAG Retrieval] Query complete in 168157ms, mode=rag_and_lora, self-eval: 0.35 (FAIL)",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:43,1771112203404,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[RAG Retrieval] Query: ""In the event of a balance recovery within the 30-day Cure Window, does the system provide an automat..."" mode=rag_and_lora modelJobId=6fd5ac79-c54b-4927-8138-ca159108bcae",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212529,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[RAG+LoRA] Calling inference endpoint for job 6fd5ac79, mode=rag_and_lora",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212529,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVICE] Routing to serverless implementation {
+  endpointId: 'virtual-inference-6fd5ac79-adapted',
+  useAdapter: true,
+  hasJobId: true,
+  promptLength: 5027
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212529,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] === STARTING INFERENCE REQUEST (SERVERLESS) === {
+  ""timestamp"": ""2026-02-14T23:36:52.529Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112212529-lv8lx"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""=== STARTING INFERENCE REQUEST (SERVERLESS) ==="",
+  ""promptLength"": 5027,
+  ""hasSystemPrompt"": true,
+  ""maxRetries"": 3
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212529,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ⏳ Waiting for worker to be READY... {
+  ""timestamp"": ""2026-02-14T23:36:52.529Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112212529-lv8lx"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""⏳ Waiting for worker to be READY...""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212530,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ⏳ Waiting for a READY worker (not just running)... {
+  ""timestamp"": ""2026-02-14T23:36:52.529Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""⏳ Waiting for a READY worker (not just running)..."",
+  ""maxWaitMs"": 60000,
+  ""pollIntervalMs"": 3000,
+  ""reason"": ""vLLM V1 engine crashes if requests hit during Ray DAG initialization""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212592,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 1: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:36:52.529Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 1: checking worker states..."",
+  ""workers"": {
+    ""ready"": 1,
+    ""idle"": 1,
+    ""running"": 1,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 63
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212592,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ✅ Found 1 ready and 1 idle workers after 63ms {
+  ""timestamp"": ""2026-02-14T23:36:52.529Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""✅ Found 1 ready and 1 idle workers after 63ms"",
+  ""pollCount"": 1,
+  ""waitedMs"": 63
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212593,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Worker ready check complete {
+  ""timestamp"": ""2026-02-14T23:36:52.529Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112212529-lv8lx"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""Worker ready check complete"",
+  ""workerReady"": true,
+  ""readyCount"": 1,
+  ""idleCount"": 1,
+  ""waitedMs"": 63
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212593,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Starting attempt 1/3 {
+  ""timestamp"": ""2026-02-14T23:36:52.529Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771112212529-lv8lx"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""Starting attempt 1/3""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212593,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ✅ Message roles validated: { messageCount: 2, roles: [ 'system', 'user' ], hasSystem: true }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212593,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ✅ Using pre-loaded adapter: {
+  adapterName: 'adapter-6fd5ac79',
+  jobId: '6fd5ac79-c54b-4927-8138-ca159108bcae',
+  requestFormat: 'OpenAI route wrapper'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212594,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] 📤 SENDING REQUEST TO RUNPOD: {
+  timestamp: '2026-02-14T23:36:52.593Z',
+  url: 'https://api.runpod.ai/v2/780tauhj7c126b/runsync',
+  endpoint: 'https://api.runpod.ai/v2/780tauhj7c126b',
+  requestFormat: 'OpenAI route wrapper (Feb 2026 fix for truncation)',
+  requestSummary: {
+    openai_route: '/v1/chat/completions',
+    model: 'adapter-6fd5ac79',
+    messageCount: 2,
+    messageRoles: [ 'system', 'user' ],
+    max_tokens: 2048,
+    temperature: 0.7
+  },
+  messagesDetail: [
+    {
+      index: 0,
+      role: 'system',
+      contentLength: 189,
+      contentPreview: ""You are a helpful knowledge assistant. Answer the user's question using ONLY the...""
+    },
+    {
+      index: 1,
+      role: 'user',
+      contentLength: 5027,
+      contentPreview: 'Context from knowledge base:\n' +
+        '\n' +
+        '## Document Overview\n' +
+        'Sun Chip Private Bank is a U....'
+    }
+  ]
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:52,1771112212594,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] 📋 FULL REQUEST PAYLOAD: {
+  ""input"": {
+    ""openai_route"": ""/v1/chat/completions"",
+    ""openai_input"": {
+      ""model"": ""adapter-6fd5ac79"",
+      ""messages"": [
+        {
+          ""role"": ""system"",
+          ""content"": ""You are a helpful knowledge assistant. Answer the user's question using ONLY the provided context. Include citations in brackets like [Section: title] when referencing specific information.""
+        },
+        {
+          ""role"": ""user"",
+          ""content"": ""Context from knowledge base:\n\n## Document Overview\nSun Chip Private Bank is a U.S.-only, internet-based private bank serving ultra-high-net-worth individuals with minimum $10 million liquid net worth. The institution operates under a \""Doctrine of Absolute Specificity\"" with zero-trust security architecture centered on hardware-bound FIDO2 authentication and the proprietary \""Sun Chip Confirmation Ceremony\"" (BCCC) for high-value transactions. The manual codifies rigid operational protocols across eligibility, identity verification, money movement, compliance, and specialized products including securities-backed lines of credit, jumbo mortgages, and treasury automation. A significant section addresses family office governance, covering household staff vetting, aviation safety standards (IS-BAO), digital asset custody via multi-party computation, and multi-generational wealth stewardship. The bank enforces strict U.S. residency requirements, prohibits cryptocurrency and cannabis-related businesses, and implements sophisticated source-of-funds verification. All transactions follow predefined \""Service Circuits\"" with mandatory cooling-off periods, and exceptions require formal approval with risk impact scoring. The document emphasizes structural rigidity over convenience, applying identical rules to all clients regardless of relationship tenure.\n\n## Relevant Sections\n\n### 2. Eligibility and Account Standards [similarity: 0.619]\nContext: This section establishes the foundational financial requirements and account maintenance standards that determine eligibility for Sun Chip Private Bank services, including the minimum liquid asset threshold and the consequences of falling below it. It defines the critical mechanisms by which accounts transition between service tiers based on deposited asset balances, directly enforcing the bank's structural rigidity principle.\nProspective clients must demonstrate a minimum of $10,000,000.00 in liquid, unencumbered U.S. assets during the onboarding phase. Assets held in real estate, private equity, jewelry, or cryptocurrency are excluded from the $10M minimum calculation. If the DAB falls below $10,000,000.00, the account enters \""Warning Status\"" at 12:01 AM ET the following day. A 30-day \""Cure Window\"" begins immediately upon entering Warning Status. Failure to restore the balance by the close of the Cure Window triggers the \""Automatic Downgrade Circuit.\"" Downgraded accounts lose access to the BCCC-privileged Service Circuits and are subject to a $5,000.00 monthly \""Sub-Tier Maintenance Fee.\""\n\n### 6. Products - Cash Accounts, Treasury Ladders, SBLOC, and Mortgages [similarity: 0.510]\nContext: This section details Sun Chip's core lending and cash management products, specifying operational parameters including automated cash sweep mechanics, Treasury Ladder investment minimums and execution schedules, Securities-Backed Line of Credit lending values and cure procedures, and Jumbo Mortgage underwriting standards. The protocols establish the technical infrastructure and risk thresholds that govern how ultra-high-net-worth clients deploy capital across deposit insurance networks, fixed-income strategies, and secured credit facilities.\nAll uninvested cash is automatically \""Swept\"" at 4:00 PM ET daily into the Insured Network of up to 400 partner banks, each holding up to $250,000.00 of the client's cash for FDIC insurance. Clients may \""Exclude\"" up to 10 specific banks from the network. The minimum investment to activate the Treasury Ladder module is $5,000,000.00. Execution Window: All trades are placed at 10:00 AM ET on Tuesdays and Thursdays. Clients may select 0-12 month (Short) or 0-5 year (Intermediate) ladders. For Securities-Backed Lines of Credit, the ILV (Initial Lending Value) is 70% for equities and 95% for Treasuries. If the LTV exceeds the MLV (85% for equities), the client has exactly 24 hours to \""Cure\"" by depositing cash or pledging more securities. For Jumbo Mortgages, minimum down payment is 20%, minimum FICO 740, and DTI capped at 43%. Clients must maintain 12-36 months of PITI reserves depending on loan size.\n\n## Relevant Facts\n\n- [fact] Accounts that fail to restore balance within the 90-day cure window require formal manual review by a Relationship Manager to regain full 'Ready' status. (confidence: 1)\n\n- [definition] Cure Window is 30 calendar days to restore account balance above $10M minimum (confidence: 0.99)\n\n- [fact] Accounts falling below $10M minimum enter 'Warning Status' during a 90-day cure window and automatically exit if balance is restored before expiration. (confidence: 1)\n\n- [definition] SBLOC margin call cure window is 24 hours (confidence: 0.99)\n\n- [fact] Recovery deposits flagged as temporary 'window-dressing' do not automatically exit Warning Status and require manual intervention. (confidence: 1)\n\n---\n\nQuestion: In the event of a balance recovery within the 30-day Cure Window, does the system provide an automated restoration to normal mode?\n\nAnswer using only the context above:""
+        }
+      ],
+      ""max_tokens"": 2048,
+      ""temperature"": 0.7
+    }
+  }
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:02,1771112342953,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 8, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:39:07,1771112347989,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 9, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:36:43,1771112203097,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,168629,iad1,266,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF870YPVGNHGDJQQ0EA24F3,yqRegzVwAK51,1
+2026-02-14 23:36:43,1771112203097,v2-modules.vercel.app/api/rag/query,POST,,200,mt8tb-1771112203097-48d2dc4c1d22,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,66,sfo1,278,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF870V42JR6V8YCR22ZJTQZ,TISx6jAA5p1F,1
+2026-02-14 23:33:44,1771112024649,v2-modules.vercel.app/api/rag/models,GET,,200,wtnzs-1771112024649-fc8c6f569955,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,46,sfo1,277,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF81JJGS8XZHV96XCZ4YSQE,TISx6jAA5p1F,1
+2026-02-14 23:33:44,1771112024649,v2-modules.vercel.app/api/rag/models,GET,,200,wtnzs-1771112024649-fc8c6f569955,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/models,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,203,iad1,265,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF81JN9WDBZFRZYSAWHD7R9,yqRegzVwAK51,2
+2026-02-14 23:33:44,1771112024649,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,thrnb-1771112024649-a1fd5af727eb,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,44,sfo1,278,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF81JJKF3SQEMDJ3MFZRKJ5,TISx6jAA5p1F,1
+2026-02-14 23:33:44,1771112024649,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,thrnb-1771112024649-a1fd5af727eb,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,353,iad1,265,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF81JN9WDBZFRZYSAWHD7R9,yqRegzVwAK51,2
+2026-02-14 23:33:41,1771112021769,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,dkgxg-1771112021757-5dfa524ef42c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[rag] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:33:41,1771112021757,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,dkgxg-1771112021757-5dfa524ef42c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,681,iad1,263,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF81FV8Y6WEX4C676WPFMK3,yqRegzVwAK51,1
+2026-02-14 23:33:41,1771112021757,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,dkgxg-1771112021757-5dfa524ef42c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,48,sfo1,277,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF81FR9XK6450452AK9FWND,TISx6jAA5p1F,1
+2026-02-14 23:33:41,1771112021094,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,trr74-1771112021094-873f2b0b1a5e,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,79,sfo1,277,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF81F3H3HDHAXTAQRQQ8KKH,TISx6jAA5p1F,1
+2026-02-14 23:33:41,1771112021094,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,trr74-1771112021094-873f2b0b1a5e,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/rag/[id],v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,266,iad1,269,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF81FBFXAMHERY88GT5SVS7,xrgrCdlZy6CJ,1
+2026-02-14 23:29:27,1771111767694,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[RAG Retrieval] Query: ""In the event of a balance recovery within the 30-day Cure Window, does the system provide an automat..."" mode=lora_only modelJobId=6fd5ac79-c54b-4927-8138-ca159108bcae",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:28,1771111768109,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[RAG+LoRA] Calling inference endpoint for job 6fd5ac79, mode=lora_only",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:28,1771111768109,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVICE] Routing to serverless implementation {
+  endpointId: 'virtual-inference-6fd5ac79-adapted',
+  useAdapter: true,
+  hasJobId: true,
+  promptLength: 130
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:28,1771111768109,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] === STARTING INFERENCE REQUEST (SERVERLESS) === {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111768107-9l9rpi"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""=== STARTING INFERENCE REQUEST (SERVERLESS) ==="",
+  ""promptLength"": 130,
+  ""hasSystemPrompt"": true,
+  ""maxRetries"": 3
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:28,1771111768109,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ⏳ Waiting for worker to be READY... {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111768107-9l9rpi"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""⏳ Waiting for worker to be READY...""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:28,1771111768109,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ⏳ Waiting for a READY worker (not just running)... {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""⏳ Waiting for a READY worker (not just running)..."",
+  ""maxWaitMs"": 60000,
+  ""pollIntervalMs"": 3000,
+  ""reason"": ""vLLM V1 engine crashes if requests hit during Ray DAG initialization""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:28,1771111768158,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 1: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 1: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 51
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:31,1771111771206,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 2: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 2: checking worker states..."",
+  ""workers"": {
+    ""ready"": 2,
+    ""idle"": 2,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 3100
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:31,1771111771207,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ✅ Found 2 ready and 2 idle workers after 3100ms {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""✅ Found 2 ready and 2 idle workers after 3100ms"",
+  ""pollCount"": 2,
+  ""waitedMs"": 3100
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:31,1771111771207,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Worker ready check complete {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111768107-9l9rpi"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""Worker ready check complete"",
+  ""workerReady"": true,
+  ""readyCount"": 2,
+  ""idleCount"": 2,
+  ""waitedMs"": 3100
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:31,1771111771207,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Starting attempt 1/3 {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111768107-9l9rpi"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""Starting attempt 1/3""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:31,1771111771207,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ✅ Message roles validated: { messageCount: 2, roles: [ 'system', 'user' ], hasSystem: true }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:31,1771111771208,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ✅ Using pre-loaded adapter: {
+  adapterName: 'adapter-6fd5ac79',
+  jobId: '6fd5ac79-c54b-4927-8138-ca159108bcae',
+  requestFormat: 'OpenAI route wrapper'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:31,1771111771208,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] 📤 SENDING REQUEST TO RUNPOD: {
+  timestamp: '2026-02-14T23:29:31.208Z',
+  url: 'https://api.runpod.ai/v2/780tauhj7c126b/runsync',
+  endpoint: 'https://api.runpod.ai/v2/780tauhj7c126b',
+  requestFormat: 'OpenAI route wrapper (Feb 2026 fix for truncation)',
+  requestSummary: {
+    openai_route: '/v1/chat/completions',
+    model: 'adapter-6fd5ac79',
+    messageCount: 2,
+    messageRoles: [ 'system', 'user' ],
+    max_tokens: 2048,
+    temperature: 0.7
+  },
+  messagesDetail: [
+    {
+      index: 0,
+      role: 'system',
+      contentLength: 78,
+      contentPreview: ""You are a helpful assistant. Answer the user's question clearly and concisely.""
+    },
+    {
+      index: 1,
+      role: 'user',
+      contentLength: 130,
+      contentPreview: 'In the event of a balance recovery within the 30-day Cure Window, does the syste...'
+    }
+  ]
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:31,1771111771208,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] 📋 FULL REQUEST PAYLOAD: {
+  ""input"": {
+    ""openai_route"": ""/v1/chat/completions"",
+    ""openai_input"": {
+      ""model"": ""adapter-6fd5ac79"",
+      ""messages"": [
+        {
+          ""role"": ""system"",
+          ""content"": ""You are a helpful assistant. Answer the user's question clearly and concisely.""
+        },
+        {
+          ""role"": ""user"",
+          ""content"": ""In the event of a balance recovery within the 30-day Cure Window, does the system provide an automated restoration to normal mode?""
+        }
+      ],
+      ""max_tokens"": 2048,
+      ""temperature"": 0.7
+    }
+  }
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:01,1771111861274,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Initial RunPod response: {
+  status: 'IN_QUEUE',
+  id: 'sync-7be136bc-39a2-4b10-8f40-657470949e6c-u2',
+  workerId: undefined,
+  hasOutput: false,
+  outputType: 'undefined'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:01,1771111861274,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] ⏳ Request queued, polling for completion...",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:06,1771111866313,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 1, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:11,1771111871349,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 2, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:16,1771111876412,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 3, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:21,1771111881447,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 4, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:26,1771111886484,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 5, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:31,1771111891518,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 6, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:36,1771111896559,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 7, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:41,1771111901631,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 8, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:46,1771111906691,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 9, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:51,1771111911731,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 10, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:31:56,1771111916766,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 11, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:01,1771111921817,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 12, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:06,1771111926856,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 13, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:11,1771111931891,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 14, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:16,1771111936925,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 15, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:21,1771111941964,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 16, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:26,1771111946999,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 17, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:32,1771111952030,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 18, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:37,1771111957063,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 19, status: 'IN_QUEUE', hasOutput: false }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:42,1771111962092,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 20, status: 'COMPLETED', hasOutput: true }",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:42,1771111962092,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[INFERENCE-SERVERLESS] ✅ Request completed after polling,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:42,1771111962092,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS] Extracted response: {
+  responseLength: 374,
+  tokensUsed: 62,
+  generationTimeMs: 190888,
+  finishReason: 'stop',
+  wasPotentiallyTruncated: false,
+  responseEnding: ' confirmation on automatic restoration procedures.'
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:42,1771111962092,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ✅ Attempt 1 SUCCEEDED {
+  ""timestamp"": ""2026-02-14T23:29:28.107Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111768107-9l9rpi"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""✅ Attempt 1 SUCCEEDED"",
+  ""responseLength"": 374,
+  ""tokensUsed"": 62
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:32:42,1771111962406,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[RAG Retrieval] LoRA-only query complete in 194402ms,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:29:27,1771111767407,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,79,sfo1,277,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7SQBWE033P574SB1N37VB,TISx6jAA5p1F,1
+2026-02-14 23:29:27,1771111767407,v2-modules.vercel.app/api/rag/query,POST,,200,hmdw5-1771111767407-6ec56c3dd15b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,194857,iad1,260,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7SQFRB1YCASJDFJ34SADG,yqRegzVwAK51,1
+2026-02-14 23:29:01,1771111741540,v2-modules.vercel.app/api/rag/models,GET,,200,9sw8h-1771111741540-b340a1c27db0,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/models,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,376,iad1,258,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RY60AYPXS7QZPZ91X1BZ,yqRegzVwAK51,2
+2026-02-14 23:29:01,1771111741540,v2-modules.vercel.app/api/rag/models,GET,,200,9sw8h-1771111741540-b340a1c27db0,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,54,sfo1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RY63PDK5J74SEQK22K3V,TISx6jAA5p1F,1
+2026-02-14 23:29:01,1771111741533,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,,zmbjd-1771111741533-5be7724ed207,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/api/rag/query,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,282,iad1,257,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RY60AYPXS7QZPZ91X1BZ,yqRegzVwAK51,2
+2026-02-14 23:29:01,1771111741533,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,,zmbjd-1771111741533-5be7724ed207,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,51,sfo1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RY328F9KCZM8W5J18VJZ,TISx6jAA5p1F,1
+2026-02-14 23:28:59,1771111739285,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,j9s2v-1771111739281-8a266e86c21c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[rag] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:28:59,1771111739281,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,j9s2v-1771111739281-8a266e86c21c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,47,sfo1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RVWNTCC14DB2173XBC9Y,TISx6jAA5p1F,1
+2026-02-14 23:28:59,1771111739281,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,j9s2v-1771111739281-8a266e86c21c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,505,iad1,257,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RVZGX6MGNG0ZVA1MDVXK,yqRegzVwAK51,1
+2026-02-14 23:28:59,1771111739056,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,_rsc=xjba9&nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,,7q49f-1771111739056-2892d9fc8612,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/rag/[id].rsc,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,26,iad1,244,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RVS2ACDK6TCM2KZ8G0RH,xrgrCdlZy6CJ,1
+2026-02-14 23:28:59,1771111739056,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,_rsc=xjba9&nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,,7q49f-1771111739056-2892d9fc8612,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,48,sfo1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RVP57QJS8D07QZ0PPQTE,TISx6jAA5p1F,1
+2026-02-14 23:28:57,1771111737836,v2-modules.vercel.app/api/rag/documents,GET,knowledgeBaseId=d230e0b2-5507-4b16-a0a3-0d963bad549e,200,sl5qd-1771111737836-04b3a0cd5d46,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,48,sfo1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RTFG47GJAGF07AZJENJP,TISx6jAA5p1F,1
+2026-02-14 23:28:57,1771111737836,v2-modules.vercel.app/api/rag/documents,GET,knowledgeBaseId=d230e0b2-5507-4b16-a0a3-0d963bad549e,200,sl5qd-1771111737836-04b3a0cd5d46,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/documents,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,299,iad1,256,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RTJDNXYEXRW5ACCRBZBG,yqRegzVwAK51,1
+2026-02-14 23:28:56,1771111736394,v2-modules.vercel.app/api/rag/knowledge-bases,GET,,200,sl5qd-1771111736394-af789787a9f2,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/knowledge-bases,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,287,iad1,254,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RS5F3QKN6AXPTVGQKJ6P,yqRegzVwAK51,1
+2026-02-14 23:28:56,1771111736394,v2-modules.vercel.app/api/rag/knowledge-bases,GET,,200,sl5qd-1771111736394-af789787a9f2,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,45,sfo1,276,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RS2PYRSCWWEK9C0F72A7,TISx6jAA5p1F,1
+2026-02-14 23:28:56,1771111736256,v2-modules.vercel.app/rag,GET,_rsc=11r9g,200,psdc6-1771111736256-af298444adda,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,HIT,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,81,sfo1,275,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7RRYA1WDPYA2M9RWV8VTC,TISx6jAA5p1F,1
+2026-02-14 23:28:56,1771111736256,v2-modules.vercel.app/rag,GET,_rsc=11r9g,200,psdc6-1771111736256-af298444adda,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,HIT,static,/rag,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,103,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295007,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[INFERENCE-SERVICE] Mode selected: serverless,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295159,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[RAG Retrieval] Query: ""In the event of a balance recovery within the 30-day Cure Window, does the system provide an automat..."" mode=lora_only modelJobId=6fd5ac79-c54b-4927-8138-ca159108bcae",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295399,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[RAG+LoRA] Calling inference endpoint for job 6fd5ac79, mode=lora_only",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295401,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVICE] Routing to serverless implementation {
+  endpointId: 'virtual-inference-6fd5ac79-adapted',
+  useAdapter: true,
+  hasJobId: true,
+  promptLength: 130
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295402,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] === STARTING INFERENCE REQUEST (SERVERLESS) === {
+  ""timestamp"": ""2026-02-14T23:21:35.401Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111295401-0pykcg"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""=== STARTING INFERENCE REQUEST (SERVERLESS) ==="",
+  ""promptLength"": 130,
+  ""hasSystemPrompt"": true,
+  ""maxRetries"": 3
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295402,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ⏳ Waiting for worker to be READY... {
+  ""timestamp"": ""2026-02-14T23:21:35.401Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111295401-0pykcg"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""⏳ Waiting for worker to be READY...""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295402,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ⏳ Waiting for a READY worker (not just running)... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""⏳ Waiting for a READY worker (not just running)..."",
+  ""maxWaitMs"": 60000,
+  ""pollIntervalMs"": 3000,
+  ""reason"": ""vLLM V1 engine crashes if requests hit during Ray DAG initialization""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295583,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 1: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 1: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 2
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 180
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:35,1771111295583,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ⏳ 2 workers still initializing, waiting... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""⏳ 2 workers still initializing, waiting...""
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:38,1771111298662,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 2: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 2: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 3258
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:41,1771111301709,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 3: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 3: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 6307
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:44,1771111304769,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 4: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 4: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 9367
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:47,1771111307814,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 5: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 5: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 12412
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:50,1771111310856,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 6: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 6: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 15454
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:53,1771111313904,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 7: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 7: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 18501
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:56,1771111316948,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 8: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 8: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 21543
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:59,1771111319991,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 9: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 9: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 24589
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:03,1771111323032,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 10: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 10: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 27629
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:06,1771111326113,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 11: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 11: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 30711
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:09,1771111329161,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 12: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 12: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 33759
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:12,1771111332203,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 13: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 13: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 36801
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:15,1771111335247,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 14: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 14: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 39845
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:18,1771111338286,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 15: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 15: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 42885
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:21,1771111341335,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 16: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 16: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 45934
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:24,1771111344380,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 17: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 17: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 48978
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:27,1771111347422,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 18: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 18: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 52020
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:30,1771111350468,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 19: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 19: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 55067
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:33,1771111353512,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 20: checking worker states... {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 20: checking worker states..."",
+  ""workers"": {
+    ""ready"": 0,
+    ""idle"": 0,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 58111
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:36,1771111356513,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",error,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ❌ Timed out waiting for ready worker after 61111ms {
+  ""timestamp"": ""2026-02-14T23:21:35.402Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""❌ Timed out waiting for ready worker after 61111ms"",
+  ""pollCount"": 20,
+  ""maxWaitMs"": 60000
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:36,1771111356513,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Worker ready check complete {
+  ""timestamp"": ""2026-02-14T23:21:35.401Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111295401-0pykcg"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""Worker ready check complete"",
+  ""workerReady"": false,
+  ""readyCount"": 0,
+  ""idleCount"": 0,
+  ""waitedMs"": 61111
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:36,1771111356513,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",error,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ❌ Workers not ready - cannot proceed {
+  ""timestamp"": ""2026-02-14T23:21:35.401Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": true,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1771111295401-0pykcg"",
+  ""adapterName"": ""adapter-6fd5ac79"",
+  ""modelSpecified"": ""adapter-6fd5ac79"",
+  ""message"": ""❌ Workers not ready - cannot proceed"",
+  ""readyCount"": 0,
+  ""initializingCount"": 0,
+  ""waitedMs"": 61111
+}",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:36,1771111356514,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",error,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,"[RAG+LoRA] LoRA inference failed: Error: RunPod serverless workers are not ready. Workers may be stuck initializing or the endpoint may be unhealthy. Consider: (1) Switch to pods mode by setting INFERENCE_MODE=pods in environment variables, or (2) Restart workers in RunPod dashboard for endpoint https://api.runpod.ai/v2/780tauhj7c126b
+    at c (/var/task/src/.next/server/chunks/5392.js:1:10920)
+    at async S (/var/task/src/.next/server/chunks/5392.js:4:3233)
+    at async h (/var/task/src/.next/server/app/api/rag/query/route.js:22:596)
+    at async w (/var/task/src/.next/server/app/api/rag/query/route.js:22:2149)
+    at async b (/var/task/src/.next/server/app/api/rag/query/route.js:25:2620)
+    at async /var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38411
+    at async e_.execute (/var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:27880)
+    at async e_.handle (/var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:39943)
+    at async en (/var/task/src/node_modules/next/dist/compiled/next-server/server.runtime.prod.js:16:25561)
+    at async ea.responseCache.get.routeKind (/var/task/src/node_modules/next/dist/compiled/next-server/server.runtime.prod.js:17:1028)",prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:22:36,1771111356835,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[RAG Retrieval] LoRA-only query complete in 61357ms,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:21:34,1771111294788,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,71,sfo1,274,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7B9THG9F4E4ME5SM0535J,TISx6jAA5p1F,1
+2026-02-14 23:21:34,1771111294788,v2-modules.vercel.app/api/rag/query,POST,,200,dj5tr-1771111294788-b34b033da249,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,61910,iad1,252,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7B9Y20TRQSRXHMEX4FQNR,yqRegzVwAK51,1
+2026-02-14 23:20:14,1771111214053,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,v6bct-1771111214053-6434f64e2edb,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,248,iad1,273,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78V22J0SDVCT5T5VP0V0F,DPbXEwosbPGU,1
+2026-02-14 23:20:14,1771111214053,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,v6bct-1771111214053-6434f64e2edb,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,46,sfo1,273,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78TZAMPMPE7ZAJZRVNM15,yGJvgeTEVUBh,1
+2026-02-14 23:20:14,1771111214053,v2-modules.vercel.app/api/rag/models,GET,,200,plmdk-1771111214053-502f4305703e,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/models,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,449,iad1,253,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78V2J6YQS2KS5G4S17JN6,yqRegzVwAK51,1
+2026-02-14 23:20:14,1771111214053,v2-modules.vercel.app/api/rag/models,GET,,200,plmdk-1771111214053-502f4305703e,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,60,sfo1,274,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78TZBN37HWG5XW3JF3AFH,TISx6jAA5p1F,1
+2026-02-14 23:20:11,1771111211407,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,d4r5c-1771111211402-84261cd7ef9a,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[rag] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:20:11,1771111211402,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,d4r5c-1771111211402-84261cd7ef9a,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,42,sfo1,272,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78RCFN0TF8CC8GW6QBHH7,yGJvgeTEVUBh,1
+2026-02-14 23:20:11,1771111211402,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,d4r5c-1771111211402-84261cd7ef9a,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,732,iad1,273,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78RFCC8NMYJ10ASVQCXX7,DPbXEwosbPGU,1
+2026-02-14 23:20:11,1771111211097,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,_rsc=xjba9&nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,f2clm-1771111211097-7f2006a62217,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/rag/[id].rsc,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,144,iad1,242,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78R5PN2Z8N57WHN6WJPHD,xrgrCdlZy6CJ,1
+2026-02-14 23:20:11,1771111211097,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,_rsc=xjba9&nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,f2clm-1771111211097-7f2006a62217,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,41,sfo1,271,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78R2XW6B5D63CHT13HFWN,yGJvgeTEVUBh,1
+2026-02-14 23:20:09,1771111209748,v2-modules.vercel.app/api/rag/documents,GET,knowledgeBaseId=d230e0b2-5507-4b16-a0a3-0d963bad549e,200,f2clm-1771111209748-8d5043ebab4d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,48,sfo1,271,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78PRSD8NM2TK4ZTEZPH2N,yGJvgeTEVUBh,1
+2026-02-14 23:20:09,1771111209748,v2-modules.vercel.app/api/rag/documents,GET,knowledgeBaseId=d230e0b2-5507-4b16-a0a3-0d963bad549e,200,f2clm-1771111209748-8d5043ebab4d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/documents,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,387,iad1,269,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78PVFYQ5QA40QCY7MDE9Z,DPbXEwosbPGU,1
+2026-02-14 23:20:07,1771111207934,v2-modules.vercel.app/api/rag/knowledge-bases,GET,,,68cd5-1771111207934-16b9bbc5c8c1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,49,sfo1,270,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78N092WT5SFEP0QFXKW2D,yGJvgeTEVUBh,1
+2026-02-14 23:20:07,1771111207934,v2-modules.vercel.app/api/rag/knowledge-bases,GET,,,68cd5-1771111207934-16b9bbc5c8c1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/api/rag/knowledge-bases,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,499,iad1,265,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78N332YZR8S60APTFKAGD,DPbXEwosbPGU,1
+2026-02-14 23:20:07,1771111207819,v2-modules.vercel.app/rag,GET,_rsc=1hc9m,304,zk6cj-1771111207819-63aafdb131a0,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,HIT,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,61,sfo1,270,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78MWG46W4P87N6KG3GCK8,yGJvgeTEVUBh,1
+2026-02-14 23:20:07,1771111207819,v2-modules.vercel.app/rag,GET,_rsc=1hc9m,304,zk6cj-1771111207819-63aafdb131a0,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,HIT,static,/rag,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,81,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:20:05,1771111205310,v2-modules.vercel.app/dashboard,GET,,304,t5kr7-1771111205310-61f892713974,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,HIT,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,100,sfo1,281,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF78JE8NQP3Q19Q8K5RSKYX,yGJvgeTEVUBh,1
+2026-02-14 23:20:05,1771111205310,v2-modules.vercel.app/dashboard,GET,,304,t5kr7-1771111205310-61f892713974,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,HIT,static,/dashboard,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,120,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:20:05,1771111205280,v2-modules.vercel.app/,GET,,307,pc8sb-1771111205280-fb4df14d004b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,redirect,/,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,8,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:18:22,1771111102656,v2-modules.vercel.app/api/rag/models,GET,,,rkdx7-1771111102656-073e761b50b1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/api/rag/models,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,1060,iad1,278,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF75ECC5Q02B5H542VX9ZRG,yqRegzVwAK51,1
+2026-02-14 23:18:22,1771111102656,v2-modules.vercel.app/api/rag/models,GET,,,rkdx7-1771111102656-073e761b50b1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,60,sfo1,274,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF75E662ZEJVJFVZ1EZT5BB,TISx6jAA5p1F,1
+2026-02-14 23:18:23,1771111103549,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,cf8xp-1771111102655-a5b18257c3ec,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[INFERENCE-SERVICE] Mode selected: serverless,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:18:22,1771111102655,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,cf8xp-1771111102655-a5b18257c3ec,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/query,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,1023,iad1,279,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF75EG2ZJYC1WGBD1EGSF8P,DPbXEwosbPGU,1
+2026-02-14 23:18:22,1771111102655,v2-modules.vercel.app/api/rag/query,GET,documentId=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,cf8xp-1771111102655-a5b18257c3ec,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,150,sfo1,268,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF75E657V9VJWR45YD9XZK5,yGJvgeTEVUBh,1
+2026-02-14 23:18:18,1771111098555,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,j2xt6-1771111098550-0c163eb14ad6,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,,,,,[rag] / status=200,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:18:18,1771111098550,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,j2xt6-1771111098550-0c163eb14ad6,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,41,sfo1,272,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF75A5VC55ENMC5BRYJVF2T,TISx6jAA5p1F,1
+2026-02-14 23:18:18,1771111098550,v2-modules.vercel.app/api/rag/documents/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,200,j2xt6-1771111098550-0c163eb14ad6,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/documents/[id],v2-modules.vercel.app,v2-modules.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,484,iad1,273,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF75AE9V8ZMJDVK129HREVV,LJtLcrm7RdJE,1
+2026-02-14 23:18:17,1771111097918,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,_rsc=xjba9&nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,,cjt9k-1771111097918-3eed186b1734,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,function,/rag/[id].rsc,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,249,iad1,249,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF759S8EE747MD8AD60RVJA,FEGU5j0MDaWG,1
+2026-02-14 23:18:17,1771111097918,v2-modules.vercel.app/rag/68d29ec2-807a-464c-b92d-ee0c6c3863d4,GET,_rsc=xjba9&nxtPid=68d29ec2-807a-464c-b92d-ee0c6c3863d4,,cjt9k-1771111097918-3eed186b1734,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,,,middleware,middleware,v2-modules.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,40,sfo1,272,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF759J4F2ZKSWJNHQXJHBSR,TISx6jAA5p1F,1
+2026-02-14 23:18:16,1771111096322,v2-modules.vercel.app/api/rag/documents,GET,knowledgeBaseId=d230e0b2-5507-4b16-a0a3-0d963bad549e,200,5zprw-1771111096322-a3a6c747ed8b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/documents,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,459,iad1,271,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF75862RN7MRMBJWM8T7P4Q,LJtLcrm7RdJE,1
+2026-02-14 23:18:16,1771111096322,v2-modules.vercel.app/api/rag/documents,GET,knowledgeBaseId=d230e0b2-5507-4b16-a0a3-0d963bad549e,200,5zprw-1771111096322-a3a6c747ed8b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,58,sfo1,272,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF75806XC0Z1P9Z24BKWG5P,TISx6jAA5p1F,1
+2026-02-14 23:18:14,1771111094222,v2-modules.vercel.app/api/rag/knowledge-bases,GET,,200,npr4s-1771111094222-50adb475fa21,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,function,/api/rag/knowledge-bases,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,754,iad1,278,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7564YG9SQHBFRNXZ68D9S,LJtLcrm7RdJE,1
+2026-02-14 23:18:14,1771111094222,v2-modules.vercel.app/api/rag/knowledge-bases,GET,,200,npr4s-1771111094222-50adb475fa21,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,50,sfo1,271,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF755YQR2WXF609SJ2AGWKM,TISx6jAA5p1F,1
+2026-02-14 23:18:13,1771111093729,v2-modules.vercel.app/rag,GET,_rsc=1hc9m,200,md4tt-1771111093729-bc7b1341e5dc,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,58,sfo1,273,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF755F5WMV3WEPKG3RZ0XGD,TISx6jAA5p1F,1
+2026-02-14 23:18:13,1771111093729,v2-modules.vercel.app/rag,GET,_rsc=1hc9m,200,md4tt-1771111093729-bc7b1341e5dc,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,static,/rag,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,270,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:18:10,1771111090356,v2-modules.vercel.app/dashboard,GET,,200,j2xt6-1771111090356-317053e66bf8,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,middleware,middleware,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,152,sfo1,263,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF7525YW096GQHB6AV1Q8FZ,TISx6jAA5p1F,1
+2026-02-14 23:18:10,1771111090356,v2-modules.vercel.app/dashboard,GET,,200,j2xt6-1771111090356-317053e66bf8,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,static,/dashboard,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,263,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:18:10,1771111090325,v2-modules.vercel.app/,GET,,307,s6jct-1771111090325-eef27f40855b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,redirect,/,v2-modules.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,7,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:16:00,1771110960514,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,f9zqm-1771110960514-5ed529f88d2b,vercel-favicon/1.0,,production,main,HIT,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,46,sfo1,262,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF713CAE590SH6HWMJN2207,TISx6jAA5p1F,1
+2026-02-14 23:16:00,1771110960514,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,f9zqm-1771110960514-5ed529f88d2b,vercel-favicon/1.0,,production,main,HIT,static,/dashboard,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,71,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:16:00,1771110960493,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/,GET,,307,xc99s-1771110960493-db1962c3858e,vercel-favicon/1.0,,production,main,,redirect,/,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,8,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:10,1771110730175,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,bbtsh-1771110730175-80ab23d56951,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,HIT,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,10,sfo1,261,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T2EBRDQZX02DF36DZ7V9,TISx6jAA5p1F,1
+2026-02-14 23:12:10,1771110730175,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,bbtsh-1771110730175-80ab23d56951,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,HIT,static,/signin,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,36,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729958,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,kzxmw-1771110729958-fe911d0d72dd,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,PRERENDER,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,9,sfo1,260,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T279T5HTJG52EV7GR16P,TISx6jAA5p1F,1
+2026-02-14 23:12:09,1771110729958,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,kzxmw-1771110729958-fe911d0d72dd,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,PRERENDER,static,/signin,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,112,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729873,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,j9t2h-1771110729873-2d9ecb014a50,vercel-screenshot/1.0,,production,main,PRERENDER,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,10,sfo1,260,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T24NN83M4XWR95PBCF58,TISx6jAA5p1F,1
+2026-02-14 23:12:09,1771110729873,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,j9t2h-1771110729873-2d9ecb014a50,vercel-screenshot/1.0,,production,main,PRERENDER,static,/signin,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,152,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729815,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,hmtx2-1771110729815-4350e9031bf2,vercel-screenshot/1.0,,production,main,PRERENDER,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,19,sfo1,260,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T235SKYAMFQ4A2B5GXES,TISx6jAA5p1F,1
+2026-02-14 23:12:09,1771110729815,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,hmtx2-1771110729815-4350e9031bf2,vercel-screenshot/1.0,,production,main,PRERENDER,static,/signin,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,216,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729542,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,,29jk2-1771110729542-fd25db4d9f70,vercel-screenshot/1.0,,production,,,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,10,sfo1,261,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T1X6GG3NP2V8AC5C30DB,yGJvgeTEVUBh,1
+2026-02-14 23:12:09,1771110729530,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/,GET,,307,j9t2h-1771110729530-94566b2f3129,vercel-screenshot/1.0,,production,main,,redirect,/,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,5,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729501,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,snpvv-1771110729501-feb20ecca987,vercel-screenshot/1.0,,production,main,HIT,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,10,sfo1,261,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T1S2NGF5C7ZV33V7T8QY,yGJvgeTEVUBh,1
+2026-02-14 23:12:09,1771110729501,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,snpvv-1771110729501-feb20ecca987,vercel-screenshot/1.0,,production,main,HIT,static,/dashboard,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,27,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729489,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/,GET,,307,dj5tr-1771110729489-bfc2cb0fbd7b,vercel-screenshot/1.0,,production,main,,redirect,/,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,4,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729389,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,5hdhs-1771110729389-146135e6cd95,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,HIT,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,11,sfo1,260,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T1NM7S3RT709XA2RG04F,yGJvgeTEVUBh,1
+2026-02-14 23:12:09,1771110729389,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,5hdhs-1771110729389-146135e6cd95,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,HIT,static,/dashboard,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,32,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729375,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/,GET,,307,9q44s-1771110729375-6ba3eedd8145,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,,redirect,/,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,2,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729183,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,xxtbc-1771110729183-143e0b938c0d,vercel-screenshot/1.0,,production,main,PRERENDER,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,15,sfo1,260,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T1JNC3T6BZRZ18J3PWKE,yGJvgeTEVUBh,1
+2026-02-14 23:12:09,1771110729183,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,xxtbc-1771110729183-143e0b938c0d,vercel-screenshot/1.0,,production,main,PRERENDER,static,/dashboard,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,219,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:09,1771110729037,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,9q44s-1771110729037-c1d698df61cd,vercel-screenshot/1.0,,production,main,PRERENDER,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,54,sfo1,260,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T1DDSXVK5AD9JSZEJ1H2,yGJvgeTEVUBh,1
+2026-02-14 23:12:09,1771110729037,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,9q44s-1771110729037-c1d698df61cd,vercel-screenshot/1.0,,production,main,PRERENDER,static,/dashboard,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,337,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:08,1771110728939,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,ts7jx-1771110728939-b923f21f26bb,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,HIT,middleware,middleware,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,557,sfo1,259,2048,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,01KHF6T181JWMF53G9QTVC31EZ,TISx6jAA5p1F,1
+2026-02-14 23:12:08,1771110728939,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,ts7jx-1771110728939-b923f21f26bb,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,HIT,static,/dashboard,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,756,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,
+2026-02-14 23:12:08,1771110728794,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app/,GET,,307,ts7jx-1771110728794-bac2a55b1f30,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",,production,main,,redirect,/,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,v2-modules-g9wvd6fer-james-jamesjordanms-projects.vercel.app,dpl_2VSatzxCd5vtnmo7mwHv2xZ2YbUL,139,sfo1,,,,prj_SgRLQNwNmPR5uHQoZALLfcJ4nxQS,,,,,

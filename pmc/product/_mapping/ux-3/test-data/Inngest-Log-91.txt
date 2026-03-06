@@ -1,0 +1,102 @@
+Failed Job Log
+[
+  {
+    "id": "01KJM81ZM4PR9ZNM063FK9M9KG",
+    "name": "inngest/function.failed",
+    "data": {
+      "_inngest": {
+        "status": "Failed"
+      },
+      "error": {
+        "error": "NonRetriableError",
+        "message": "Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache",
+        "name": "Error",
+        "stack": "Error: Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache\n    at u (/var/task/src/.next/server/chunks/9172.js:1:6643)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /var/task/src/.next/server/app/api/inngest/route.js:33:9055\n    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)\n    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)\n    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)\n    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)\n    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:39:16724)\n    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)\n    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)"
+      },
+      "event": {
+        "data": {
+          "documentId": "6e9daec5-d43d-4fb1-b06e-6806a828275c",
+          "userId": "8d26cc10-a3c1-4927-8708-667d37a3348b"
+        },
+        "id": "01KJM81ZAQF8X5VVEVBKJZZEC8",
+        "name": "rag/document.uploaded",
+        "ts": 1772353551703,
+        "user": {}
+      },
+      "events": [
+        {
+          "data": {
+            "documentId": "6e9daec5-d43d-4fb1-b06e-6806a828275c",
+            "userId": "8d26cc10-a3c1-4927-8708-667d37a3348b"
+          },
+          "id": "01KJM81ZAQF8X5VVEVBKJZZEC8",
+          "name": "rag/document.uploaded",
+          "ts": 1772353551703
+        }
+      ],
+      "function_id": "brighthub-rag-frontier-process-rag-document",
+      "result": {
+        "__serialized": true,
+        "message": "Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache",
+        "name": "Error",
+        "stack": "Error: Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache\n    at u (/var/task/src/.next/server/chunks/9172.js:1:6643)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /var/task/src/.next/server/app/api/inngest/route.js:33:9055\n    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)\n    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)\n    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)\n    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)\n    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:39:16724)\n    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)\n    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)"
+      },
+      "run_id": "01KJM81ZM4PR9ZNM063FK9M9KG"
+    },
+    "ts": 1772353809811
+  }
+]
+
+Error Log Input
+[
+  {
+    "id": "01KJM81ZAQF8X5VVEVBKJZZEC8",
+    "name": "rag/document.uploaded",
+    "data": {
+      "documentId": "6e9daec5-d43d-4fb1-b06e-6806a828275c",
+      "userId": "8d26cc10-a3c1-4927-8708-667d37a3348b"
+    },
+    "ts": 1772353551703
+  }
+]
+
+Error Log
+Error: Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache
+    at u (/var/task/src/.next/server/chunks/9172.js:1:6643)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:33:9055
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:39:16724)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)
+
+
+Input:
+[
+  {
+    "id": "01KJKZTFXDY6SGRRRYWZF21TVC",
+    "name": "rag/document.uploaded",
+    "data": {
+      "documentId": "714845cf-f241-4e39-9aba-4c3517d408c6",
+      "userId": "8d26cc10-a3c1-4927-8708-667d37a3348b"
+    },
+    "ts": 1772344917933
+  }
+]
+
+
+
+Error: Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache
+    at u (/var/task/src/.next/server/chunks/9172.js:1:6643)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:33:9055
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:39:16724)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)

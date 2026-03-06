@@ -1,0 +1,7 @@
+{"conversation_id": "conv_001", "turns": [{"role": "user", "content": "Valid conversation"}]}
+{"conversation_id": "conv_002", "turns": []}
+{"invalid_json": "This line is missing conversation_id"}
+{"conversation_id": "conv_003"}
+This line is not even JSON
+{"conversation_id": "conv_004", "turns": [{"role": "user"}]}
+

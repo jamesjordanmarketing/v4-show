@@ -1,0 +1,34 @@
+{
+  "seed-narrative": {
+    "placeholders": {
+      "PROJECT_NAME": "LoRA Pipeline",
+      "SEED_NARRATIVE_TEMPLATE_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\product\\_templates\\00-seed-narrative-template.md",
+      "RAW_DATA_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\product\\_seeds\\seed-narrative-v1.md",
+      "REFERENCE_EXAMPLE_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\product\\_examples\\00-aplio-mod-1-seed-narrative.md",
+      "OUTPUT_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\_mapping\\pipeline\\00-pipeline-seed-narrative.md",
+      "CODEBASE_REVIEW_PATH": "C:/Users/james/Master/BrightHub/BRun/v4-show/src"
+    },
+    "conditionals": {
+      "current_status": {
+        "enabled": true,
+        "path_variable": "CODEBASE_REVIEW_PATH"
+      }
+    }
+  },
+  "seed-story": {
+    "placeholders": {
+      "PROJECT_NAME": "LoRA Pipeline",
+      "SEED_STORY_TEMPLATE_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\product\\_templates\\00-seed-story-template.md",
+      "SEED_NARRATIVE_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\product\\00-pipeline-seed-narrative.md",
+      "REFERENCE_EXAMPLE_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\product\\_examples\\00-aplio-mod-1-seed-story.md",
+      "OUTPUT_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\product\\_mapping\\pipeline\\00-pipeline-seed-story.md",
+      "CODEBASE_REVIEW_PATH": "C:\\Users\\james\\Master\\BrightHub\\BRun\\lora-pipeline\\pmc\\product\\_templates"
+    },
+    "conditionals": {
+      "current_status": {
+        "enabled": true,
+        "path_variable": "CODEBASE_REVIEW_PATH"
+      }
+    }
+  }
+}

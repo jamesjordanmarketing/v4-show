@@ -1,0 +1,95 @@
+2026-01-24T04:23:11.574833682Z ==========
+2026-01-24T04:23:11.574842244Z == CUDA ==
+2026-01-24T04:23:11.574847222Z ==========
+2026-01-24T04:23:11.579106016Z CUDA Version 12.4.1
+2026-01-24T04:23:11.580122028Z Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+2026-01-24T04:23:11.581903155Z This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+2026-01-24T04:23:11.581909545Z By pulling and using the container, you accept the terms and conditions of this license:
+2026-01-24T04:23:11.581915804Z https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+2026-01-24T04:23:11.581927422Z A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+2026-01-24T04:23:11.593200566Z Starting Nginx service...
+2026-01-24T04:23:11.603912654Z  * Starting nginx nginx
+2026-01-24T04:23:11.610090893Z    ...done.
+2026-01-24T04:23:11.610432869Z Pod Started
+2026-01-24T04:23:11.610448403Z Setting up SSH...
+2026-01-24T04:23:12.073319843Z RSA key fingerprint:
+2026-01-24T04:23:12.077007085Z 3072 SHA256:XCGflIUAEoYupHbpzpkvDBNFCRJk9FAak1r072oQiO8 root@5507cbbdaba3 (RSA)
+2026-01-24T04:23:12.108208479Z DSA key fingerprint:
+2026-01-24T04:23:12.111726065Z 1024 SHA256:+REF3QzM2fCOCfDlXv1RbKwBWr4WdrxHmmhJHSnQPy0 root@5507cbbdaba3 (DSA)
+2026-01-24T04:23:12.115324823Z ECDSA key fingerprint:
+2026-01-24T04:23:12.117929743Z 256 SHA256:0yG8YVht8iiJk4H9m7oR5J0drFOXemHK3ekI4I9tFec root@5507cbbdaba3 (ECDSA)
+2026-01-24T04:23:12.121595282Z ED25519 key fingerprint:
+2026-01-24T04:23:12.124070676Z 256 SHA256:W2xWqHDlHUXv96p4KZdd3rVdPZeqHTNevMYCkQTcv78 root@5507cbbdaba3 (ED25519)
+2026-01-24T04:23:12.139970439Z  * Starting OpenBSD Secure Shell server sshd
+2026-01-24T04:23:12.147707370Z    ...done.
+2026-01-24T04:23:12.147968183Z SSH host keys:
+2026-01-24T04:23:12.148042315Z Key: /etc/ssh/ssh_host_dsa_key.pub
+2026-01-24T04:23:12.150783029Z 1024 SHA256:+REF3QzM2fCOCfDlXv1RbKwBWr4WdrxHmmhJHSnQPy0 root@5507cbbdaba3 (DSA)
+2026-01-24T04:23:12.151037753Z Key: /etc/ssh/ssh_host_ecdsa_key.pub
+2026-01-24T04:23:12.153598025Z 256 SHA256:0yG8YVht8iiJk4H9m7oR5J0drFOXemHK3ekI4I9tFec root@5507cbbdaba3 (ECDSA)
+2026-01-24T04:23:12.153824897Z Key: /etc/ssh/ssh_host_ed25519_key.pub
+2026-01-24T04:23:12.156293160Z 256 SHA256:W2xWqHDlHUXv96p4KZdd3rVdPZeqHTNevMYCkQTcv78 root@5507cbbdaba3 (ED25519)
+2026-01-24T04:23:12.156505811Z Key: /etc/ssh/ssh_host_rsa_key.pub
+2026-01-24T04:23:12.158926232Z 3072 SHA256:XCGflIUAEoYupHbpzpkvDBNFCRJk9FAak1r072oQiO8 root@5507cbbdaba3 (RSA)
+2026-01-24T04:23:12.159185062Z Starting Jupyter Lab...
+2026-01-24T04:23:12.159365054Z Jupyter Lab started
+2026-01-24T04:23:12.159385024Z Exporting environment variables...
+2026-01-24T04:23:12.162467263Z Start script(s) finished, pod is ready to use.
+2026-01-24T04:24:23.624349929Z ==========
+2026-01-24T04:24:23.624352623Z == CUDA ==
+2026-01-24T04:24:23.624356809Z ==========
+2026-01-24T04:24:23.628491696Z CUDA Version 12.4.1
+2026-01-24T04:24:23.629380617Z Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+2026-01-24T04:24:23.630465163Z This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+2026-01-24T04:24:23.630467717Z By pulling and using the container, you accept the terms and conditions of this license:
+2026-01-24T04:24:23.630470521Z https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+2026-01-24T04:24:23.630474587Z A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+2026-01-24T04:24:23.641636835Z Starting Nginx service...
+2026-01-24T04:24:23.650360764Z  * Starting nginx nginx
+2026-01-24T04:24:23.656448617Z    ...done.
+2026-01-24T04:24:23.656711263Z Pod Started
+2026-01-24T04:24:23.656730272Z Setting up SSH...
+2026-01-24T04:24:23.672172695Z  * Starting OpenBSD Secure Shell server sshd
+2026-01-24T04:24:23.679514139Z    ...done.
+2026-01-24T04:24:23.679730345Z SSH host keys:
+2026-01-24T04:24:23.679799199Z Key: /etc/ssh/ssh_host_dsa_key.pub
+2026-01-24T04:24:23.684729797Z 1024 SHA256:+REF3QzM2fCOCfDlXv1RbKwBWr4WdrxHmmhJHSnQPy0 root@5507cbbdaba3 (DSA)
+2026-01-24T04:24:23.684992903Z Key: /etc/ssh/ssh_host_ecdsa_key.pub
+2026-01-24T04:24:23.688008242Z 256 SHA256:0yG8YVht8iiJk4H9m7oR5J0drFOXemHK3ekI4I9tFec root@5507cbbdaba3 (ECDSA)
+2026-01-24T04:24:23.688248053Z Key: /etc/ssh/ssh_host_ed25519_key.pub
+2026-01-24T04:24:23.691696295Z 256 SHA256:W2xWqHDlHUXv96p4KZdd3rVdPZeqHTNevMYCkQTcv78 root@5507cbbdaba3 (ED25519)
+2026-01-24T04:24:23.691928675Z Key: /etc/ssh/ssh_host_rsa_key.pub
+2026-01-24T04:24:23.694659785Z 3072 SHA256:XCGflIUAEoYupHbpzpkvDBNFCRJk9FAak1r072oQiO8 root@5507cbbdaba3 (RSA)
+2026-01-24T04:24:23.694918395Z Starting Jupyter Lab...
+2026-01-24T04:24:23.695109754Z Jupyter Lab started
+2026-01-24T04:24:23.695141632Z Exporting environment variables...
+2026-01-24T04:24:23.697562013Z Start script(s) finished, pod is ready to use.
+2026-01-24T04:24:46.884554914Z ==========
+2026-01-24T04:24:46.884573061Z == CUDA ==
+2026-01-24T04:24:46.884640864Z ==========
+2026-01-24T04:24:46.889025798Z CUDA Version 12.4.1
+2026-01-24T04:24:46.890058846Z Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+2026-01-24T04:24:46.891167999Z This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+2026-01-24T04:24:46.891172937Z By pulling and using the container, you accept the terms and conditions of this license:
+2026-01-24T04:24:46.891177373Z https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+2026-01-24T04:24:46.891186076Z A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+2026-01-24T04:24:46.902565641Z Starting Nginx service...
+2026-01-24T04:24:46.911301579Z  * Starting nginx nginx
+2026-01-24T04:24:46.916485679Z    ...done.
+2026-01-24T04:24:46.916763868Z Pod Started
+2026-01-24T04:24:46.916774935Z Setting up SSH...
+2026-01-24T04:24:46.929413950Z  * Starting OpenBSD Secure Shell server sshd
+2026-01-24T04:24:46.936963317Z    ...done.
+2026-01-24T04:24:46.937172282Z SSH host keys:
+2026-01-24T04:24:46.937240495Z Key: /etc/ssh/ssh_host_dsa_key.pub
+2026-01-24T04:24:46.940557489Z 1024 SHA256:+REF3QzM2fCOCfDlXv1RbKwBWr4WdrxHmmhJHSnQPy0 root@5507cbbdaba3 (DSA)
+2026-01-24T04:24:46.940811371Z Key: /etc/ssh/ssh_host_ecdsa_key.pub
+2026-01-24T04:24:46.944078420Z 256 SHA256:0yG8YVht8iiJk4H9m7oR5J0drFOXemHK3ekI4I9tFec root@5507cbbdaba3 (ECDSA)
+2026-01-24T04:24:46.944319644Z Key: /etc/ssh/ssh_host_ed25519_key.pub
+2026-01-24T04:24:46.947209492Z 256 SHA256:W2xWqHDlHUXv96p4KZdd3rVdPZeqHTNevMYCkQTcv78 root@5507cbbdaba3 (ED25519)
+2026-01-24T04:24:46.947443545Z Key: /etc/ssh/ssh_host_rsa_key.pub
+2026-01-24T04:24:46.950239122Z 3072 SHA256:XCGflIUAEoYupHbpzpkvDBNFCRJk9FAak1r072oQiO8 root@5507cbbdaba3 (RSA)
+2026-01-24T04:24:46.950501488Z Starting Jupyter Lab...
+2026-01-24T04:24:46.950698345Z Jupyter Lab started
+2026-01-24T04:24:46.950728741Z Exporting environment variables...
+2026-01-24T04:24:46.953156122Z Start script(s) finished, pod is ready to use.

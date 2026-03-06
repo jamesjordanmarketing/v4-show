@@ -1,0 +1,282 @@
+
+---
+
+=== BEGIN PROMPT FR: FR6.3.2 ===
+
+Title
+- FR6.3.2 Wireframes — Stage 6 — Model Quality Validation — Domain-Specific Knowledge Probes
+
+Context Summary
+- FR6.3.2 implements targeted domain-specific knowledge validation by probing the trained model's understanding of client-specific financial topics, industry regulations, product knowledge, and specialized scenarios. Unlike the general knowledge retention test (FR6.3.1), this feature validates that training successfully instilled new domain knowledge while maintaining accuracy. Engineers can verify the model learned client-specific concepts (e.g., proprietary investment products, specific compliance requirements, unique client scenarios) and identify gaps requiring additional training data.
+
+Journey Integration
+- Stage 6 user goals: Validate specialized knowledge acquisition, ensure client-specific expertise embedded, verify training objectives achieved, identify knowledge gaps for iteration
+- Key emotions: Curiosity about knowledge transfer success, satisfaction when specialized knowledge confirmed, concern if gaps detected, confidence in client-ready customization
+- Progressive disclosure levels: Basic users see overall knowledge acquisition success rate and key topic mastery; advanced users access question-by-question analysis and knowledge gap identification; expert users review knowledge depth assessment and training data correlations
+- Persona adaptations: Business Owners need client-specific knowledge proof for sales; Quality Analysts need gap analysis and training effectiveness metrics; AI Engineers need debugging context and training data optimization guidance
+
+### Journey-Informed Design Elements
+- User Goals: Validate specialized knowledge learned, identify knowledge gaps, demonstrate client customization success, guide training data improvements
+- Emotional Requirements: Satisfaction from successful knowledge transfer, curiosity about depth of understanding, motivation to fill gaps
+- Progressive Disclosure:
+  * Basic: Overall knowledge acquisition %, key topics mastered, high-level gaps
+  * Advanced: Question-by-question analysis, knowledge depth scoring, topic-by-topic breakdown
+  * Expert: Training data correlations, knowledge transfer patterns, statistical confidence analysis
+- Success Indicators: ≥80% domain knowledge acquired, critical client topics mastered 100%, training objectives validated
+
+Wireframe Goals
+- Display overall domain knowledge acquisition percentage and success classification
+- Show topic-level mastery breakdown for client-specific domains
+- Present knowledge depth analysis (surface vs deep understanding)
+- Identify knowledge gaps with specific recommendations for additional training
+- Demonstrate successful knowledge transfer with before/after examples
+- Export domain knowledge validation reports for client proof
+
+Explicit UI Requirements (from acceptance criteria)
+
+**Domain Knowledge Card Header:**
+- Card header: "Domain-Specific Knowledge Validation"
+- Subtitle: "[Client Name] Financial Products & Scenarios"
+- Success badge: "✓ Knowledge Acquired" (≥80%, green), "⚠ Partial Knowledge" (60-79%, yellow), "✗ Knowledge Gaps" (<60%, red)
+
+**Overall Knowledge Acquisition Score:**
+- Large prominent display: "32/40 correct = 80% domain knowledge acquisition"
+- Comparison: Baseline (pre-training): 12/40 (30%, expected low), Trained: 32/40 (80%), Knowledge gain: +20 questions (+50 percentage points)
+- Interpretation: "Model successfully acquired client-specific financial knowledge. Ready for specialized client scenarios."
+- Visual: Progress bar showing 80% with gain indicator
+
+**Topic-Level Mastery Breakdown:**
+- Table with columns: Domain Topic | Baseline Score | Trained Score | Knowledge Gain | Mastery Level
+- Example rows:
+  * "Proprietary Investment Products (10 questions) | 2/10 (20%) | 9/10 (90%) | +70% | ✓ Mastered" (green)
+  * "Compliance Requirements (10 questions) | 3/10 (30%) | 7/10 (70%) | +40% | ⚠ Partial" (yellow)
+  * "Client Scenarios (10 questions) | 4/10 (40%) | 9/10 (90%) | +50% | ✓ Mastered" (green)
+  * "Industry Regulations (10 questions) | 3/10 (30%) | 7/10 (70%) | +40% | ⚠ Partial" (yellow)
+- Mastery indicators: ✓ Mastered (≥80%), ⚠ Partial (60-79%), ✗ Gaps (<60%)
+- Click row: Expands to show individual questions and responses
+
+**Knowledge Depth Analysis:**
+- Section header: "Knowledge Depth Assessment"
+- Depth scoring for each correct answer:
+  * Surface Understanding (1-2/5): Can recall facts but limited explanation
+  * Moderate Understanding (3-4/5): Can explain concepts with some detail
+  * Deep Understanding (5/5): Comprehensive explanation with context and nuance
+- Distribution visualization: Pie chart showing "Deep: 15 questions (47%), Moderate: 12 (38%), Surface: 5 (16%)"
+- Insight: "Model demonstrates deep understanding of proprietary products and client scenarios, but compliance knowledge remains surface-level"
+
+**Successfully Acquired Knowledge Examples:**
+- Section header: "Knowledge Transfer Success Examples (Top 5)"
+- For each example:
+  * Question #7: "Explain the key differentiator of [Client]'s Target Date Fund vs competitors"
+  * Baseline response (pre-training): "Target date funds automatically adjust asset allocation as the target date approaches, shifting from aggressive to conservative investments." (Generic, score: 2/5)
+  * Trained response: "[Client]'s Target Date Fund uniquely incorporates ESG screening at every glide path stage and uses a proprietary risk parity approach that maintains 40% equity exposure even at retirement (vs industry standard 30%). This provides higher growth potential for longevity risk while maintaining sustainable investment principles." (Client-specific, accurate, score: 5/5)
+  * Knowledge gain: "+3 points - Model successfully learned client-specific product differentiators"
+- Side-by-side comparison highlighting learned knowledge
+
+**Knowledge Gap Analysis:**
+- Section header: "Knowledge Gaps Requiring Attention"
+- For each gap (failed or low-score questions):
+  * Question #24: "What are the key compliance requirements for [Client]'s high-net-worth advisory services?"
+  * Trained response: "High-net-worth clients require enhanced due diligence and regular portfolio reviews to ensure suitability." (Incomplete, score: 2/5)
+  * Expected knowledge: "Should include: SEC accredited investor verification, annual wealth certification, enhanced KYC documentation, quarterly suitability reviews, concentration risk monitoring above $2M threshold, and specific state registration requirements for advisory services."
+  * Gap severity: High (compliance knowledge is critical for client-facing use)
+  * Recommendation: "Add 5+ training conversations explicitly covering [Client]'s compliance protocols"
+
+**Topic-Specific Recommendations:**
+- Prioritized by topic and severity:
+  1. **Critical - Compliance Requirements**: "Only 70% mastery. Add 10+ conversations covering SEC regulations, state requirements, and [Client]-specific protocols"
+  2. **High - Industry Regulations**: "70% mastery. Include 8+ regulatory scenario conversations (FINRA rules, fiduciary duties, disclosure requirements)"
+  3. **Medium - Product Knowledge Depth**: "90% mastery but only 50% deep understanding. Add technical product details and competitive comparisons"
+  4. **Low - Client Scenarios**: "90% mastery achieved. Maintain current training data approach"
+
+**Training Data Correlation Analysis:**
+- Insight callout: "Topics with 15+ training conversations show 85%+ mastery. Topics with <10 conversations show 65% mastery."
+- Recommendation: "Minimum 12-15 conversations per specialized topic recommended for strong knowledge acquisition"
+- Visualization: Scatter plot showing training conversation count (X-axis) vs knowledge acquisition % (Y-axis) with trend line
+
+**Knowledge Transfer Effectiveness:**
+- Metrics card:
+  * Knowledge transfer rate: 80% (32 of 40 new concepts learned)
+  * Average depth score: 3.8/5 (good understanding)
+  * Critical topic mastery: 90% (investment products, client scenarios)
+  * Compliance mastery: 70% (needs improvement)
+- Benchmarking: "Target: 80% acquisition, Your model: 80% (meets target), Industry average: 75%"
+
+**Export Domain Knowledge Report:**
+- "Export Domain Knowledge Report" button
+- PDF report includes:
+  * Executive summary: Overall acquisition %, topic mastery breakdown, depth analysis
+  * Successfully acquired knowledge examples (top 10)
+  * Knowledge gaps with severity and recommendations
+  * Topic-specific action items
+  * Training data correlation insights
+  * Client-ready proof section: "This model has been validated to understand [Client]'s proprietary products, compliance requirements, and specialized client scenarios."
+- CSV export: All 40 questions with baseline/trained scores, depth ratings, topic classifications
+
+Interactions and Flows
+- User navigates to validation section → Domain Knowledge card visible after general knowledge retention
+- View overall acquisition score → Click "View Topic Breakdown" → Table expands showing topic-level mastery
+- Click topic row → Expands to show individual questions and responses for that topic
+- Click knowledge gap question → Opens modal with detailed gap analysis and recommendations
+- Click "View Knowledge Transfer Examples" → Carousel/accordion showing top successful knowledge transfers
+- Hover over depth score → Tooltip explains scoring rubric (surface/moderate/deep)
+- Click recommendation → Opens training data editor with guidance for adding topic-specific conversations
+- Click "Export Report" → Format selection → Download PDF/CSV
+
+Visual Feedback
+- Loading state during domain knowledge test: "Testing domain knowledge (40 questions)...", progress indicator
+- Success badge: Green checkmark (≥80%), yellow warning (60-79%), red X (<60%)
+- Knowledge gain indicators: Green upward arrows with "+X%" showing improvement from baseline
+- Mastery level badges: Green (mastered ≥80%), yellow (partial 60-79%), red (gaps <60%)
+- Depth score visualization: Color gradient (dark green = deep, light green = moderate, yellow = surface)
+- Knowledge gap cards: Orange/red border, severity badge (critical/high/medium)
+- Success example cards: Green accent, "✓ Knowledge Transferred" badge
+- Training data correlation scatter plot: Trend line shows positive correlation
+
+Accessibility Guidance
+- Success badge: aria-label="Domain knowledge acquired: 80 percent, meets target, knowledge successfully transferred"
+- Overall score: aria-label="32 questions correct out of 40, 80 percent domain knowledge acquisition, gain of 50 percentage points from baseline"
+- Topic table: Screen reader announces "Domain knowledge by topic. Four topics: Proprietary Investment Products, Compliance Requirements, Client Scenarios, Industry Regulations"
+- Mastery badges: aria-label="Proprietary Investment Products: Mastered, 90 percent correct" with both icon and text
+- Depth score pie chart: Text alternative "Knowledge depth distribution: 47 percent deep understanding, 38 percent moderate, 16 percent surface"
+- Knowledge gap cards: aria-label="Knowledge gap question 24: Compliance requirements, high severity"
+- Side-by-side comparisons: Clear labels "Baseline response before training" and "Trained response after training"
+- Interactive elements: Keyboard accessible (Tab/Enter), focus indicators visible
+
+Information Architecture
+- Domain Knowledge section positioned after general knowledge retention on validation page
+- Hierarchy: Success badge and overall score (most prominent) → Topic mastery breakdown → Depth analysis → Knowledge gaps → Recommendations
+- Progressive disclosure: Overall metrics visible immediately, questions/gaps hidden in expandable sections
+- Conditional elements: Knowledge gaps section only shown if <100% mastery, Recommendations prioritized by severity
+- Integration: Domain knowledge is specialized validation following general knowledge (General Knowledge Retention → Domain Knowledge Validation)
+
+Page Plan
+1. **Training Job Details - Domain Knowledge Validation Screen**
+   - Purpose: Display domain-specific knowledge acquisition results with topic breakdown and gap analysis
+   - Components: Domain knowledge card header with success badge, Overall acquisition score, Topic-level mastery breakdown, Knowledge depth analysis, Successfully acquired knowledge examples, Knowledge gap analysis, Topic-specific recommendations, Training data correlation insights, Export actions
+   - States: Success (≥80%, green), Partial (60-79%, yellow, gaps identified), Insufficient (<60%, red, significant gaps)
+   - Navigation: Links to other validation sections, Expandable topic/question details, Export to PDF/CSV
+
+2. **Knowledge Gap Detail Modal**
+   - Purpose: Show detailed analysis of specific knowledge gap with recommendations
+   - Components: Question text, Trained response (inadequate), Expected knowledge outline, Gap severity assessment, Specific recommendations for filling gap, Related questions with similar gaps
+   - States: Individual gap view, Multiple gaps carousel
+   - Navigation: Close to return to domain knowledge card, Next/Previous for other gaps
+
+3. **Knowledge Transfer Success Modal**
+   - Purpose: Demonstrate successful knowledge transfer with before/after comparison
+   - Components: Question text, Baseline response (generic/incorrect), Trained response (client-specific/correct), Knowledge gain explanation, Depth score, Client customization proof
+   - States: Individual example view, Top examples carousel
+   - Navigation: Close to return to domain knowledge card, Next/Previous for other examples
+
+Annotations (Mandatory)
+- Attach notes on UI elements citing the specific acceptance criterion they fulfill
+- Include a "Mapping Table" frame in Figma with columns: Criterion → Screen → Component(s) → State(s)
+- Example annotation: "Knowledge Depth Pie Chart → Shows distribution of surface/moderate/deep understanding → FR Acceptance Criterion: Knowledge Depth Assessment"
+
+Acceptance Criteria → UI Component Mapping
+
+**US Acceptance Criterion 1: Test 40 domain-specific questions across client topics**
+- Source: US6.3.2
+- Screen: Training Job Details - Domain Knowledge Validation
+- Components: Overall score "32/40 correct", Topic breakdown showing 4 domains with 10 questions each
+- States: Test complete (results displayed)
+- Notes: Comprehensive domain coverage validates specialized knowledge acquisition
+
+**US Acceptance Criterion 2: Compare trained model against baseline (expect low baseline scores)**
+- Source: US6.3.2
+- Screen: Training Job Details - Domain Knowledge Validation
+- Components: Comparison "Baseline: 12/40 (30%), Trained: 32/40 (80%), Gain: +50pp", Knowledge gain indicators on topic table
+- States: Comparison visible
+- Notes: Demonstrates training successfully instilled new domain knowledge
+
+**US Acceptance Criterion 3: Identify knowledge gaps requiring additional training**
+- Source: US6.3.2
+- Screen: Knowledge Gap Detail Modal
+- Components: Knowledge gap analysis section, Gap severity badges, Recommendations for each gap
+- States: Gaps detected (analysis shown), No gaps (section shows all mastered)
+- Notes: Guides iterative training data improvements
+
+**FR Acceptance Criterion 1: Overall domain knowledge acquisition % with success threshold (80%)**
+- Source: FR6.3.2
+- Screen: Training Job Details - Domain Knowledge Validation
+- Components: Large acquisition percentage "80%", Success badge (color-coded), Progress bar with gain indicator
+- States: Success (≥80%, green), Partial (60-79%, yellow), Insufficient (<60%, red)
+- Notes: Clear threshold-based assessment of knowledge transfer effectiveness
+
+**FR Acceptance Criterion 2: Topic-level mastery breakdown**
+- Source: FR6.3.2
+- Screen: Training Job Details - Domain Knowledge Validation
+- Components: Topic mastery table with 4 client-specific domains, Mastery level indicators (Mastered/Partial/Gaps), Knowledge gain percentages
+- States: Default (all topics visible), Expanded topic (showing individual questions)
+- Notes: Identifies which domain areas need additional training focus
+
+**FR Acceptance Criterion 3: Knowledge depth analysis (surface/moderate/deep)**
+- Source: FR6.3.2
+- Screen: Training Job Details - Domain Knowledge Validation
+- Components: Knowledge depth section, Pie chart showing depth distribution, Depth scoring explanation (1-2 surface, 3-4 moderate, 5 deep)
+- States: Default (depth distribution visible)
+- Notes: Assesses quality of understanding beyond mere correctness
+
+**FR Acceptance Criterion 4: Successfully acquired knowledge examples**
+- Source: FR6.3.2
+- Screen: Knowledge Transfer Success Modal
+- Components: Top 5 examples with before/after comparisons, Highlighting on learned knowledge, Knowledge gain explanations
+- States: Carousel/accordion of multiple examples
+- Notes: Demonstrates tangible knowledge transfer for client proof
+
+**FR Acceptance Criterion 5: Knowledge gap analysis with recommendations**
+- Source: FR6.3.2
+- Screen: Knowledge Gap Detail Modal
+- Components: Gap analysis for each failed/low-score question, Expected knowledge outline, Gap severity, Specific recommendations
+- States: Gap detail view
+- Notes: Actionable guidance for filling specific knowledge gaps
+
+**FR Acceptance Criterion 6: Training data correlation insights**
+- Source: FR6.3.2
+- Screen: Training Job Details - Domain Knowledge Validation
+- Components: Training data correlation section, Scatter plot (conversation count vs acquisition %), Insight callouts, Recommended conversation counts per topic
+- States: Default (insights visible)
+- Notes: Data-driven guidance for training data quantity/distribution
+
+**FR Acceptance Criterion 7: Export domain knowledge report**
+- Source: FR6.3.2
+- Screen: Training Job Details - Domain Knowledge Validation; Export Modal
+- Components: "Export Domain Knowledge Report" button, Format selector (PDF/CSV), Client-ready proof section in report
+- States: Export modal closed, Export modal open, Generating report, Download ready
+- Notes: Enables client delivery proof and stakeholder communication
+
+Non-UI Acceptance Criteria
+
+**FR Criterion: 40-question test with client-specific topics (products, compliance, scenarios, regulations)**
+- Impact: Validates specialized knowledge across critical client domains
+- UI Hint: Topic breakdown shows 4 domains with 10 questions each
+
+**FR Criterion: Generate responses from baseline and trained models for comparison**
+- Impact: Quantifies knowledge transfer from training
+- UI Hint: Before/after comparisons show knowledge gain
+
+**FR Criterion: Score responses using domain expertise rubric (1-5 with depth assessment)**
+- Impact: Assesses both correctness and depth of understanding
+- UI Hint: Depth analysis shows surface/moderate/deep distribution
+
+**FR Criterion: Calculate topic-level and overall acquisition percentages**
+- Impact: Quantifies knowledge transfer for decision-making
+- UI Hint: Overall and per-topic acquisition % displayed prominently
+
+**FR Criterion: Analyze correlation between training data quantity and knowledge acquisition**
+- Impact: Guides optimal training data distribution
+- UI Hint: Scatter plot shows conversation count vs acquisition % with recommendations
+
+**FR Criterion: Store domain knowledge data in domain_knowledge_results table**
+- Impact: Enables historical tracking and training effectiveness analysis
+- UI Hint: Domain knowledge metrics stored for trend analysis across training runs
+
+Estimated Page Count
+- **3 primary screens:**
+  1. Training Job Details - Domain Knowledge Validation Screen (main interface showing overall acquisition, topic breakdown, depth analysis, gaps)
+  2. Knowledge Gap Detail Modal (detailed analysis of specific knowledge gap with recommendations)
+  3. Knowledge Transfer Success Modal (before/after comparison showing successful knowledge acquisition)
+- Rationale: Minimum 3 screens required to cover primary domain knowledge display (1), gap analysis (2), and success demonstration (3). Multiple views handled through expandable sections and modals within main screen.
+
+=== END PROMPT FR: FR6.3.2 ===

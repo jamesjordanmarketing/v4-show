@@ -1,0 +1,16 @@
+Error: Cannot find module '@huggingface/hub'
+Require stack:
+- /var/task/src/.next/server/app/api/inngest/route.js
+- /var/task/src/node_modules/next/dist/compiled/next-server/server.runtime.prod.js
+- /var/task/src/___next_launcher.cjs
+- /opt/rust/nodejs.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+    at /var/task/src/node_modules/next/dist/compiled/next-server/server.runtime.prod.js:11:29005
+    at Module._load (node:internal/modules/cjs/loader:1038:27)
+    at /opt/rust/nodejs.js:2:13531
+    at Function.un (/opt/rust/nodejs.js:2:13909)
+    at Xe.e.<computed>.Ye._load (/opt/rust/nodejs.js:2:13501)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at u.require (/var/task/src/node_modules/next/dist/compiled/next-server/server.runtime.prod.js:11:29221)
+    at a (/opt/rust/bytecode.js:2:1094)
+    at 35092 (/var/task/src/.next/server/app/api/inngest/route.js:1:738)

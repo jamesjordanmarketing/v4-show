@@ -1,0 +1,414 @@
+TimeUTC,timestampInMs,requestPath,requestMethod,requestQueryString,responseStatusCode,requestId,requestUserAgent,level,environment,branch,vercelCache,type,function,host,deploymentDomain,deploymentId,durationMs,region,maxMemoryUsed,memorySize,message,projectId,traceId,sessionId,invocationId,instanceId,concurrency
+2026-01-22 21:35:41,1769117741025,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] Initial RunPod response: {
+  status: 'IN_QUEUE',
+  id: 'sync-63b51ef7-1a0b-4144-aa43-7c950946e852-u1',
+  workerId: undefined,
+  hasOutput: false,
+  outputType: 'undefined'
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:35:41,1769117741025,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] ⏳ Request queued, polling for completion...",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:35:46,1769117746098,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 1, status: 'IN_QUEUE', hasOutput: false }",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:35:51,1769117751322,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 2, status: 'IN_QUEUE', hasOutput: false }",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:35:56,1769117756359,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 3, status: 'FAILED', hasOutput: false }",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:35:56,1769117756359,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",error,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ❌ Attempt 1 FAILED {
+  ""timestamp"": ""2026-01-22T21:34:10.838Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117650838-ioj0el"",
+  ""message"": ""❌ Attempt 1 FAILED"",
+  ""errorMessage"": ""Inference failed: 1 validation error for ErrorResponse\nerror\n  Field required [type=missing, input_value={'message': 'EngineCore e...uestError', 'code': 400}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing"",
+  ""isRetryable"": false
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:35:56,1769117756360,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",error,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"Run A/B test error: Error: Inference failed: 1 validation error for ErrorResponse
+error
+  Field required [type=missing, input_value={'message': 'EngineCore e...uestError', 'code': 400}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+    at E (/var/task/src/.next/server/chunks/5630.js:1:26948)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async w (/var/task/src/.next/server/chunks/5630.js:1:28749)
+    at async N (/var/task/src/.next/server/chunks/5630.js:4:3191)
+    at async O (/var/task/src/.next/server/chunks/5630.js:57:1151)
+    at async c (/var/task/src/.next/server/app/api/pipeline/adapters/test/route.js:1:2307)
+    at async /var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38411
+    at async e_.execute (/var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:27880)
+    at async e_.handle (/var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:39943)
+    at async en (/var/task/src/node_modules/next/dist/compiled/next-server/server.runtime.prod.js:16:25561)",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650063,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[pipeline] / status=200,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650839,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[TEST-SERVICE] Starting SEQUENTIAL inference calls {
+  jobId: '6fd5ac79-c54b-4927-8138-ca159108bcae',
+  controlEndpointId: 'virtual-inference-6fd5ac79-control',
+  adaptedEndpointId: 'virtual-inference-6fd5ac79-adapted',
+  adaptedAdapterPath: 'lora-models/adapters/6fd5ac79-c54b-4927-8138-ca159108bcae.tar.gz'
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650839,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[TEST-SERVICE] Step 1/2: Running control (base model) inference...,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650839,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVICE] Routing to serverless implementation {
+  endpointId: 'virtual-inference-6fd5ac79-control',
+  useAdapter: false,
+  hasJobId: false,
+  promptLength: 291
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650839,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] === STARTING INFERENCE REQUEST (SERVERLESS) === {
+  ""timestamp"": ""2026-01-22T21:34:10.838Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117650838-ioj0el"",
+  ""message"": ""=== STARTING INFERENCE REQUEST (SERVERLESS) ==="",
+  ""promptLength"": 291,
+  ""hasSystemPrompt"": true,
+  ""maxRetries"": 3
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650839,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ⏳ Waiting for worker to be READY... {
+  ""timestamp"": ""2026-01-22T21:34:10.838Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117650838-ioj0el"",
+  ""message"": ""⏳ Waiting for worker to be READY...""
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650839,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ⏳ Waiting for a READY worker (not just running)... {
+  ""timestamp"": ""2026-01-22T21:34:10.838Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""⏳ Waiting for a READY worker (not just running)..."",
+  ""maxWaitMs"": 60000,
+  ""pollIntervalMs"": 3000,
+  ""reason"": ""vLLM V1 engine crashes if requests hit during Ray DAG initialization""
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650946,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 1: checking worker states... {
+  ""timestamp"": ""2026-01-22T21:34:10.838Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 1: checking worker states..."",
+  ""workers"": {
+    ""ready"": 2,
+    ""idle"": 2,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 107
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650946,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ✅ Found 2 ready and 2 idle workers after 107ms {
+  ""timestamp"": ""2026-01-22T21:34:10.838Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""✅ Found 2 ready and 2 idle workers after 107ms"",
+  ""pollCount"": 1,
+  ""waitedMs"": 107
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650946,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Worker ready check complete {
+  ""timestamp"": ""2026-01-22T21:34:10.838Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117650838-ioj0el"",
+  ""message"": ""Worker ready check complete"",
+  ""workerReady"": true,
+  ""readyCount"": 2,
+  ""idleCount"": 2,
+  ""waitedMs"": 107
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650946,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Starting attempt 1/3 {
+  ""timestamp"": ""2026-01-22T21:34:10.838Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117650838-ioj0el"",
+  ""message"": ""Starting attempt 1/3""
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650946,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] ✅ Message roles validated: { messageCount: 2, roles: [ 'system', 'user' ], hasSystem: true }",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650946,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] ⚪ Using base model explicitly: {
+  model: 'mistralai/Mistral-7B-Instruct-v0.2',
+  reason: 'LoRA enabled in worker - must specify model to avoid vLLM V1 confusion'
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650947,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] 📤 SENDING REQUEST TO RUNPOD: {
+  timestamp: '2026-01-22T21:34:10.946Z',
+  url: 'https://api.runpod.ai/v2/780tauhj7c126b/runsync',
+  endpoint: 'https://api.runpod.ai/v2/780tauhj7c126b',
+  requestSummary: {
+    model: 'mistralai/Mistral-7B-Instruct-v0.2',
+    messageCount: 2,
+    messageRoles: [ 'system', 'user' ],
+    max_tokens: 1024,
+    temperature: 0.7
+  },
+  messagesDetail: [
+    {
+      index: 0,
+      role: 'system',
+      contentLength: 36,
+      contentPreview: 'You are a helpful financial advisor.'
+    },
+    {
+      index: 1,
+      role: 'user',
+      contentLength: 291,
+      contentPreview: 'I just inherited $250,000 from my grandmother, and instead of feeling happy, I f...'
+    }
+  ]
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650947,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] 📋 FULL REQUEST PAYLOAD: {
+  ""input"": {
+    ""messages"": [
+      {
+        ""role"": ""system"",
+        ""content"": ""You are a helpful financial advisor.""
+      },
+      {
+        ""role"": ""user"",
+        ""content"": ""I just inherited $250,000 from my grandmother, and instead of feeling happy, I feel completely overwhelmed and guilty.\nEveryone's giving me advice about what to do with it, and I'm afraid of making the wrong choice and disappointing her memory.\nI've been losing a little over this for weeks.""
+      }
+    ],
+    ""max_tokens"": 1024,
+    ""temperature"": 0.7,
+    ""model"": ""mistralai/Mistral-7B-Instruct-v0.2""
+  }
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:34:10,1769117650035,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,106560,iad1,257,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKT2380VTMRZE3MWN0ES7PA,vrKeS18CD9qq,1
+2026-01-22 21:34:10,1769117650035,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,400,58k2p-1769117650035-a9a9c50ee419,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,62,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKT234FP99ACNVYXP2DFKCM,W1BXIhca7sFB,1
+2026-01-22 21:30:55,1769117455888,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,middleware,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[pipeline] / status=200,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:32:26,1769117546829,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] Initial RunPod response: {
+  status: 'IN_QUEUE',
+  id: 'sync-f08df990-5e8e-481d-881c-a939ecb4cad8-u2',
+  workerId: undefined,
+  hasOutput: false,
+  outputType: 'undefined'
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:32:26,1769117546829,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] ⏳ Request queued, polling for completion...",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:32:31,1769117551901,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 1, status: 'IN_QUEUE', hasOutput: false }",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:32:36,1769117556938,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] Poll result: { pollCount: 2, status: 'FAILED', hasOutput: false }",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:32:36,1769117556939,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",error,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ❌ Attempt 1 FAILED {
+  ""timestamp"": ""2026-01-22T21:30:56.644Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117456643-cay2h7"",
+  ""message"": ""❌ Attempt 1 FAILED"",
+  ""errorMessage"": ""Inference failed: 1 validation error for ErrorResponse\nerror\n  Field required [type=missing, input_value={'message': 'EngineCore e...uestError', 'code': 400}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing"",
+  ""isRetryable"": false
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:32:36,1769117556939,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",error,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"Run A/B test error: Error: Inference failed: 1 validation error for ErrorResponse
+error
+  Field required [type=missing, input_value={'message': 'EngineCore e...uestError', 'code': 400}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+    at E (/var/task/src/.next/server/chunks/5630.js:1:26948)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async w (/var/task/src/.next/server/chunks/5630.js:1:28749)
+    at async N (/var/task/src/.next/server/chunks/5630.js:4:3191)
+    at async O (/var/task/src/.next/server/chunks/5630.js:57:1151)
+    at async c (/var/task/src/.next/server/app/api/pipeline/adapters/test/route.js:1:2307)
+    at async /var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38411
+    at async e_.execute (/var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:27880)
+    at async e_.handle (/var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:39943)
+    at async en (/var/task/src/node_modules/next/dist/compiled/next-server/server.runtime.prod.js:16:25561)",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456644,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[TEST-SERVICE] Starting SEQUENTIAL inference calls {
+  jobId: '6fd5ac79-c54b-4927-8138-ca159108bcae',
+  controlEndpointId: 'virtual-inference-6fd5ac79-control',
+  adaptedEndpointId: 'virtual-inference-6fd5ac79-adapted',
+  adaptedAdapterPath: 'lora-models/adapters/6fd5ac79-c54b-4927-8138-ca159108bcae.tar.gz'
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456644,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[TEST-SERVICE] Step 1/2: Running control (base model) inference...,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456644,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVICE] Routing to serverless implementation {
+  endpointId: 'virtual-inference-6fd5ac79-control',
+  useAdapter: false,
+  hasJobId: false,
+  promptLength: 291
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456646,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] === STARTING INFERENCE REQUEST (SERVERLESS) === {
+  ""timestamp"": ""2026-01-22T21:30:56.644Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117456643-cay2h7"",
+  ""message"": ""=== STARTING INFERENCE REQUEST (SERVERLESS) ==="",
+  ""promptLength"": 291,
+  ""hasSystemPrompt"": true,
+  ""maxRetries"": 3
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456646,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] ⏳ Waiting for worker to be READY... {
+  ""timestamp"": ""2026-01-22T21:30:56.644Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117456643-cay2h7"",
+  ""message"": ""⏳ Waiting for worker to be READY...""
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456646,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ⏳ Waiting for a READY worker (not just running)... {
+  ""timestamp"": ""2026-01-22T21:30:56.644Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""⏳ Waiting for a READY worker (not just running)..."",
+  ""maxWaitMs"": 60000,
+  ""pollIntervalMs"": 3000,
+  ""reason"": ""vLLM V1 engine crashes if requests hit during Ray DAG initialization""
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456723,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] Poll 1: checking worker states... {
+  ""timestamp"": ""2026-01-22T21:30:56.644Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""Poll 1: checking worker states..."",
+  ""workers"": {
+    ""ready"": 2,
+    ""idle"": 2,
+    ""running"": 0,
+    ""initializing"": 0
+  },
+  ""jobs"": {
+    ""inProgress"": 0,
+    ""inQueue"": 0
+  },
+  ""waitedMs"": 79
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456723,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][WAIT_FOR_READY] ✅ Found 2 ready and 2 idle workers after 79ms {
+  ""timestamp"": ""2026-01-22T21:30:56.644Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""WAIT_FOR_READY"",
+  ""message"": ""✅ Found 2 ready and 2 idle workers after 79ms"",
+  ""pollCount"": 1,
+  ""waitedMs"": 79
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456723,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Worker ready check complete {
+  ""timestamp"": ""2026-01-22T21:30:56.644Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117456643-cay2h7"",
+  ""message"": ""Worker ready check complete"",
+  ""workerReady"": true,
+  ""readyCount"": 2,
+  ""idleCount"": 2,
+  ""waitedMs"": 79
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456724,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS][INFERENCE_WRAPPER] Starting attempt 1/3 {
+  ""timestamp"": ""2026-01-22T21:30:56.644Z"",
+  ""endpointUrl"": ""https://api.runpod.ai/v2/780tauhj7c126b"",
+  ""useAdapter"": false,
+  ""phase"": ""INFERENCE_WRAPPER"",
+  ""requestId"": ""req-1769117456643-cay2h7"",
+  ""message"": ""Starting attempt 1/3""
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456724,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] ✅ Message roles validated: { messageCount: 2, roles: [ 'system', 'user' ], hasSystem: true }",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456724,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] ⚪ Using base model explicitly: {
+  model: 'mistralai/Mistral-7B-Instruct-v0.2',
+  reason: 'LoRA enabled in worker - must specify model to avoid vLLM V1 confusion'
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456725,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] 📤 SENDING REQUEST TO RUNPOD: {
+  timestamp: '2026-01-22T21:30:56.724Z',
+  url: 'https://api.runpod.ai/v2/780tauhj7c126b/runsync',
+  endpoint: 'https://api.runpod.ai/v2/780tauhj7c126b',
+  requestSummary: {
+    model: 'mistralai/Mistral-7B-Instruct-v0.2',
+    messageCount: 2,
+    messageRoles: [ 'system', 'user' ],
+    max_tokens: 1024,
+    temperature: 0.7
+  },
+  messagesDetail: [
+    {
+      index: 0,
+      role: 'system',
+      contentLength: 36,
+      contentPreview: 'You are a helpful financial advisor.'
+    },
+    {
+      index: 1,
+      role: 'user',
+      contentLength: 291,
+      contentPreview: 'I just inherited $250,000 from my grandmother, and instead of feeling happy, I f...'
+    }
+  ]
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:56,1769117456725,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,,serverless,,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"[INFERENCE-SERVERLESS] 📋 FULL REQUEST PAYLOAD: {
+  ""input"": {
+    ""messages"": [
+      {
+        ""role"": ""system"",
+        ""content"": ""You are a helpful financial advisor.""
+      },
+      {
+        ""role"": ""user"",
+        ""content"": ""I just inherited $250,000 from my grandmother, and instead of feeling happy, I feel completely overwhelmed and guilty.\nEveryone's giving me advice about what to do with it, and I'm afraid of making the wrong choice and disappointing her memory.\nI've been losing a little over this for weeks.""
+      }
+    ],
+    ""max_tokens"": 1024,
+    ""temperature"": 0.7,
+    ""model"": ""mistralai/Mistral-7B-Instruct-v0.2""
+  }
+}",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:55,1769117455878,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,101229,iad1,260,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSW5MNRTDDHPEK7GQ8PSR7,vrKeS18CD9qq,1
+2026-01-22 21:30:55,1769117455878,multi-chat.vercel.app/api/pipeline/adapters/test,POST,,,mc2th-1769117455878-f1222bb868b4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,,middleware,middleware,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,85,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSW5GGYREX4VWWCWMVHMVW,W1BXIhca7sFB,1
+2026-01-22 21:30:22,1769117422436,multi-chat.vercel.app/api/pipeline/adapters/test,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,8v8sn-1769117422431-a1f7491e5e93,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[pipeline] / status=200,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:22,1769117422431,multi-chat.vercel.app/api/pipeline/adapters/test,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,8v8sn-1769117422431-a1f7491e5e93,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,50,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV4V46VGEJQCBR2GSDG0R,W1BXIhca7sFB,1
+2026-01-22 21:30:22,1769117422431,multi-chat.vercel.app/api/pipeline/adapters/test,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,8v8sn-1769117422431-a1f7491e5e93,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/api/pipeline/adapters/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,434,iad1,266,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV52M6BP909HDHQ5T7ZR4,vrKeS18CD9qq,1
+2026-01-22 21:30:21,1769117421533,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/test,GET,_rsc=ms5b3,200,44l9b-1769117421528-59a4c3e68d2c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/pipeline/jobs/[jobId]/test,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[jobs] / status=200,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:21,1769117421528,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/test,GET,_rsc=ms5b3,200,44l9b-1769117421528-59a4c3e68d2c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,40,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV3YXBEFG4MBX0KEY0JFA,W1BXIhca7sFB,1
+2026-01-22 21:30:21,1769117421528,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/test,GET,_rsc=ms5b3,200,44l9b-1769117421528-59a4c3e68d2c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId]/test.rsc,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,418,iad1,243,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV4554C206E49EEFNMPSA,tXfj3VSBevbT,1
+2026-01-22 21:30:19,1769117419129,multi-chat.vercel.app/api/pipeline/adapters/status,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,f9vzr-1769117419111-183940ffc06b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/pipeline/adapters/status,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[pipeline] / status=200,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:19,1769117419988,multi-chat.vercel.app/api/pipeline/adapters/status,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,f9vzr-1769117419111-183940ffc06b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/status,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,"✅ Rate limiter initialized with config: { requestLimit: 50, windowSeconds: 60, threshold: '90%' }",prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:20,1769117420077,multi-chat.vercel.app/api/pipeline/adapters/status,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,f9vzr-1769117419111-183940ffc06b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,serverless,/api/pipeline/adapters/status,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[INFERENCE-SERVICE] Mode selected: serverless,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:19,1769117419111,multi-chat.vercel.app/api/pipeline/adapters/status,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,f9vzr-1769117419111-183940ffc06b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,39,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV1KS36DHWQ8GY3YPYPSJ,W1BXIhca7sFB,1
+2026-01-22 21:30:19,1769117419111,multi-chat.vercel.app/api/pipeline/adapters/status,GET,jobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,f9vzr-1769117419111-183940ffc06b,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/api/pipeline/adapters/status,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,1265,iad1,283,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV1VQ19MWKEPFQSA7K1GN,vrKeS18CD9qq,1
+2026-01-22 21:30:18,1769117418867,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=1wdf7,200,4jwwp-1769117418857-95550c242e80,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/pipeline/jobs/[jobId]/results,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[jobs] / status=200,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:18,1769117418857,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=1wdf7,200,4jwwp-1769117418857-95550c242e80,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId]/results.rsc,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,50,iad1,252,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV1FQJNG1P5YV1T8J2FDJ,PAKZl4Utg6sz,1
+2026-01-22 21:30:18,1769117418857,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=1wdf7,200,4jwwp-1769117418857-95550c242e80,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,81,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV1BK84D6SWZDSH8T468C,W1BXIhca7sFB,1
+2026-01-22 21:30:16,1769117416953,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=km535,200,rbjqx-1769117416942-a475a0f66f97,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/pipeline/jobs/[jobId]/results,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[jobs] / status=200,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:16,1769117416942,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=km535,200,rbjqx-1769117416942-a475a0f66f97,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,36,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTZFSCG9F1FARHK74PR2B,W1BXIhca7sFB,1
+2026-01-22 21:30:16,1769117416942,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae/results,GET,_rsc=km535,200,rbjqx-1769117416942-a475a0f66f97,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId]/results.rsc,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,23,iad1,248,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSV0G9QS4NGNV0TQQZYKX4,PAKZl4Utg6sz,1
+2026-01-22 21:30:16,1769117416248,multi-chat.vercel.app/api/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,f9vzr-1769117416244-c9db9d0d881d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",info,production,main,MISS,middleware,/api/pipeline/jobs/[jobId],multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,,,,,[pipeline] / status=200,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:16,1769117416244,multi-chat.vercel.app/api/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,f9vzr-1769117416244-c9db9d0d881d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,40,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTYSR4SBFEHBY5NFFK6GF,W1BXIhca7sFB,1
+2026-01-22 21:30:16,1769117416244,multi-chat.vercel.app/api/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,f9vzr-1769117416244-c9db9d0d881d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/api/pipeline/jobs/[jobId],multi-chat.vercel.app,multi-chat.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,364,iad1,265,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTZ21QXRXBS4KEBZ6PSAF,sAEBQinscNet,1
+2026-01-22 21:30:16,1769117416070,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,_rsc=n0x64&nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,bkz2n-1769117416070-aee5c0cc4055,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,19,iad1,246,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTYQ8JP3MP86EZTEPQYNM,PAKZl4Utg6sz,1
+2026-01-22 21:30:16,1769117416070,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,_rsc=n0x64&nxtPjobId=6fd5ac79-c54b-4927-8138-ca159108bcae,200,bkz2n-1769117416070-aee5c0cc4055,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,37,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTYMBYY6J503BWSNV2ZN8,W1BXIhca7sFB,1
+2026-01-22 21:30:14,1769117414586,multi-chat.vercel.app/pipeline/jobs/e7b7327d-36b4-41ed-8d9b-7d05091f9daa,GET,_rsc=1take&nxtPjobId=e7b7327d-36b4-41ed-8d9b-7d05091f9daa,200,fd4bd-1769117414586-52de3cc9db4a,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,15,iad1,249,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX8VYTFBXDHATAGMFPJH,e8tksAwcYDVF,1
+2026-01-22 21:30:14,1769117414586,multi-chat.vercel.app/pipeline/jobs/e7b7327d-36b4-41ed-8d9b-7d05091f9daa,GET,_rsc=1take&nxtPjobId=e7b7327d-36b4-41ed-8d9b-7d05091f9daa,200,fd4bd-1769117414586-52de3cc9db4a,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,46,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX5XS4W6MGWW4W4VBP0S,W1BXIhca7sFB,1
+2026-01-22 21:30:14,1769117414460,multi-chat.vercel.app/pipeline/jobs/258b20b7-457d-4d3e-8f48-510b128b9ec8,GET,_rsc=1take&nxtPjobId=258b20b7-457d-4d3e-8f48-510b128b9ec8,200,vf24g-1769117414460-a08dff5497ca,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,15,iad1,247,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX5274KXDMGAW2D0REWM,e8tksAwcYDVF,1
+2026-01-22 21:30:14,1769117414460,multi-chat.vercel.app/pipeline/jobs/258b20b7-457d-4d3e-8f48-510b128b9ec8,GET,_rsc=1take&nxtPjobId=258b20b7-457d-4d3e-8f48-510b128b9ec8,200,vf24g-1769117414460-a08dff5497ca,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,62,sfo1,103,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX0HTME9Z1BGC4N88TKC,W1BXIhca7sFB,2
+2026-01-22 21:30:14,1769117414438,multi-chat.vercel.app/pipeline/jobs/4afc9fc4-d406-4847-8f4f-3dd644d7302f,GET,_rsc=1take&nxtPjobId=4afc9fc4-d406-4847-8f4f-3dd644d7302f,200,fd4bd-1769117414438-6fc10e8eecf5,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,17,iad1,253,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX3VZ9J3FEX3PMR2G0CD,d4jN2yHbMKE4,1
+2026-01-22 21:30:14,1769117414438,multi-chat.vercel.app/pipeline/jobs/4afc9fc4-d406-4847-8f4f-3dd644d7302f,GET,_rsc=1take&nxtPjobId=4afc9fc4-d406-4847-8f4f-3dd644d7302f,200,fd4bd-1769117414438-6fc10e8eecf5,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,39,sfo1,146,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX19JXMNEQWCSBVMCH8E,s4fAcKlCezWT,1
+2026-01-22 21:30:14,1769117414412,multi-chat.vercel.app/pipeline/jobs/484beeee-a038-46ae-a266-6ce2c498bcba,GET,_rsc=1take,200,44l9b-1769117414412-74f864c039b9,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,15,iad1,246,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX43ZMNFYFQM1EK2SWYS,e8tksAwcYDVF,1
+2026-01-22 21:30:14,1769117414412,multi-chat.vercel.app/pipeline/jobs/484beeee-a038-46ae-a266-6ce2c498bcba,GET,_rsc=1take,200,44l9b-1769117414412-74f864c039b9,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,67,sfo1,145,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX0J0RTA2YK8M95CQYCC,gScyvZTW2SCm,1
+2026-01-22 21:30:14,1769117414407,multi-chat.vercel.app/pipeline/jobs/33695008-80e9-43f5-974f-70d3cb3dac14,GET,_rsc=1take&nxtPjobId=33695008-80e9-43f5-974f-70d3cb3dac14,200,rk5v8-1769117414407-30e9c6d5f262,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,15,iad1,244,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX3VZ9J3FEX3PHQ5AHGG,NecAfj7wTA57,1
+2026-01-22 21:30:14,1769117414407,multi-chat.vercel.app/pipeline/jobs/33695008-80e9-43f5-974f-70d3cb3dac14,GET,_rsc=1take&nxtPjobId=33695008-80e9-43f5-974f-70d3cb3dac14,200,rk5v8-1769117414407-30e9c6d5f262,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,53,sfo1,147,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTX0HTME9Z1BGC4N88TKC,W1BXIhca7sFB,2
+2026-01-22 21:30:13,1769117413423,multi-chat.vercel.app/pipeline/jobs/8905f705-034d-4873-ab7d-5d81e63f4acb,GET,_rsc=1take,200,vf24g-1769117413423-c6d33f5c0121,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,48,sfo1,146,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW1NYR10NFHPXDGTG64B,s4fAcKlCezWT,1
+2026-01-22 21:30:13,1769117413423,multi-chat.vercel.app/pipeline/jobs/8905f705-034d-4873-ab7d-5d81e63f4acb,GET,_rsc=1take,200,vf24g-1769117413423-c6d33f5c0121,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,522,iad1,242,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW8CVZ7H1DVEQ531W1SE,NecAfj7wTA57,1
+2026-01-22 21:30:13,1769117413423,multi-chat.vercel.app/pipeline/jobs/1676747f-be13-42dd-9c92-0decd38bba7b,GET,_rsc=1take,200,rsnlm-1769117413423-06797bd22bc6,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,643,sfo1,130,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW1NYR10NFHPXD444D35,gScyvZTW2SCm,1
+2026-01-22 21:30:13,1769117413423,multi-chat.vercel.app/pipeline/jobs/1676747f-be13-42dd-9c92-0decd38bba7b,GET,_rsc=1take,200,rsnlm-1769117413423-06797bd22bc6,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,475,iad1,246,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW8CVZ7H1DVEQ8QKFCJS,S2BZF3E6zfdR,1
+2026-01-22 21:30:13,1769117413422,multi-chat.vercel.app/pipeline/jobs/01d31071-0089-4b11-84f9-a88549f533d2,GET,_rsc=1take,200,l2vg7-1769117413422-17dafa78aa85,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,41,sfo1,146,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW1HTH7VPVPAXD2KP777,s4fAcKlCezWT,1
+2026-01-22 21:30:13,1769117413422,multi-chat.vercel.app/pipeline/jobs/01d31071-0089-4b11-84f9-a88549f533d2,GET,_rsc=1take,200,l2vg7-1769117413422-17dafa78aa85,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,487,iad1,245,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW8CVZ7H1DVEQ60KYAZ5,e8tksAwcYDVF,1
+2026-01-22 21:30:13,1769117413422,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,_rsc=1take,200,jqb22-1769117413422-8d01b6467c01,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,628,iad1,245,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTWQYQE0MS9S5D2KYSE4W,PAKZl4Utg6sz,1
+2026-01-22 21:30:13,1769117413422,multi-chat.vercel.app/pipeline/jobs/6fd5ac79-c54b-4927-8138-ca159108bcae,GET,_rsc=1take,200,jqb22-1769117413422-8d01b6467c01,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,593,sfo1,133,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW1PNVBMH52J3PPWY5Z7,W1BXIhca7sFB,1
+2026-01-22 21:30:13,1769117413422,multi-chat.vercel.app/pipeline/jobs/3bcdb59d-b841-4d67-8d89-5261f9706973,GET,_rsc=1take,200,fd4bd-1769117413422-a1670fa06469,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,49,sfo1,146,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW1MZN2A7HMPAS11PY27,s4fAcKlCezWT,1
+2026-01-22 21:30:13,1769117413422,multi-chat.vercel.app/pipeline/jobs/3bcdb59d-b841-4d67-8d89-5261f9706973,GET,_rsc=1take,200,fd4bd-1769117413422-a1670fa06469,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/pipeline/jobs/[jobId].rsc,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,553,iad1,249,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTW8CVZ7H1DVEQ3CY8WAF,d4jN2yHbMKE4,1
+2026-01-22 21:30:11,1769117411534,multi-chat.vercel.app/pipeline/configure,GET,_rsc=1take,200,l2vg7-1769117411534-b07b81319cff,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,49,sfo1,146,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTT6Q08D35D6P48G4V3D7,s4fAcKlCezWT,1
+2026-01-22 21:30:11,1769117411534,multi-chat.vercel.app/pipeline/configure,GET,_rsc=1take,200,l2vg7-1769117411534-b07b81319cff,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,static,/pipeline/configure,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,330,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:11,1769117411529,multi-chat.vercel.app/api/pipeline/jobs,GET,limit=20,200,f9vzr-1769117411529-33eb5f0d7394,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,50,sfo1,146,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTT6DGNH0J5CE04J7P6E0,s4fAcKlCezWT,1
+2026-01-22 21:30:11,1769117411529,multi-chat.vercel.app/api/pipeline/jobs,GET,limit=20,200,f9vzr-1769117411529-33eb5f0d7394,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,MISS,serverless,/api/pipeline/jobs,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,1113,iad1,280,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTTF9EZC0429BWTDTYHN0,sAEBQinscNet,1
+2026-01-22 21:30:11,1769117411242,multi-chat.vercel.app/pipeline/jobs,GET,_rsc=1hc9m,200,f9vzr-1769117411242-08f541722eb8,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,44,sfo1,146,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTSXM33K6S8S97DGNR6X3,s4fAcKlCezWT,1
+2026-01-22 21:30:11,1769117411242,multi-chat.vercel.app/pipeline/jobs,GET,_rsc=1hc9m,200,f9vzr-1769117411242-08f541722eb8,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,static,/pipeline/jobs,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,262,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:30:07,1769117407309,multi-chat.vercel.app/dashboard,GET,,200,7ngz4-1769117407309-308b4f8cdc78,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,middleware,middleware,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,724,sfo1,146,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSTP2MHXRPT6RTVTCJV6DJ,s4fAcKlCezWT,1
+2026-01-22 21:30:07,1769117407309,multi-chat.vercel.app/dashboard,GET,,200,7ngz4-1769117407309-308b4f8cdc78,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",,production,main,PRERENDER,static,/dashboard,multi-chat.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,979,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:23:18,1769116998975,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,4g7cj-1769116998975-651acf0fca68,vercel-favicon/1.0,,production,main,HIT,middleware,middleware,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,489,sfo1,123,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKSE7A9BP4HW9FBGP23WT5M,VtiE7QIkMk3U,1
+2026-01-22 21:23:18,1769116998975,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,4g7cj-1769116998975-651acf0fca68,vercel-favicon/1.0,,production,main,HIT,static,/dashboard,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,86,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:15:47,1769116547766,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,gpzt8-1769116547766-c58526675ffc,vercel-screenshot/1.0,,production,main,PRERENDER,middleware,middleware,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,10,sfo1,123,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKS0ENTG7VA91D7N2DWFKG7,zHO8TwqVnRHB,1
+2026-01-22 21:15:47,1769116547766,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,gpzt8-1769116547766-c58526675ffc,vercel-screenshot/1.0,,production,main,PRERENDER,static,/signin,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,238,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:15:47,1769116547766,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,4g7cj-1769116547766-0acdab250df1,vercel-screenshot/1.0,,production,main,PRERENDER,middleware,middleware,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,10,sfo1,122,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKS0ENSVKB6A74M5V5B6GNR,zHO8TwqVnRHB,1
+2026-01-22 21:15:47,1769116547766,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/signin,GET,_rsc=1hc9m,200,4g7cj-1769116547766-0acdab250df1,vercel-screenshot/1.0,,production,main,PRERENDER,static,/signin,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,237,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:15:47,1769116547551,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,mn26n-1769116547551-5226ca27859c,vercel-screenshot/1.0,,production,main,HIT,middleware,middleware,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,10,sfo1,122,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKS0EF5ADWHVQ77VD9VXKM2,zHO8TwqVnRHB,1
+2026-01-22 21:15:47,1769116547551,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,mn26n-1769116547551-5226ca27859c,vercel-screenshot/1.0,,production,main,HIT,static,/dashboard,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,35,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:15:47,1769116547342,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,rk5v8-1769116547342-38bd14e93eb9,vercel-screenshot/1.0,,production,main,HIT,middleware,middleware,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,10,sfo1,122,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKS0E8X8998SB6SBXPM25QW,zHO8TwqVnRHB,1
+2026-01-22 21:15:47,1769116547342,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,rk5v8-1769116547342-38bd14e93eb9,vercel-screenshot/1.0,,production,main,HIT,static,/dashboard,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,47,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:15:46,1769116546943,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,pp6xc-1769116546943-b57be9a08484,vercel-screenshot/1.0,,production,main,PRERENDER,middleware,middleware,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,16,sfo1,122,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKS0DZ0FS9F3QMA9RZ92NXG,zHO8TwqVnRHB,1
+2026-01-22 21:15:46,1769116546943,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,pp6xc-1769116546943-b57be9a08484,vercel-screenshot/1.0,,production,main,PRERENDER,static,/dashboard,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,284,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,
+2026-01-22 21:15:46,1769116546834,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,vbhcj-1769116546834-b0763758f1eb,vercel-screenshot/1.0,,production,main,PRERENDER,middleware,middleware,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,51,sfo1,122,2048,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,01KFKS0DWKCE0V44W5FG1B1FJF,zHO8TwqVnRHB,1
+2026-01-22 21:15:46,1769116546834,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app/dashboard,GET,,200,vbhcj-1769116546834-b0763758f1eb,vercel-screenshot/1.0,,production,main,PRERENDER,static,/dashboard,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,multi-chat-ed6t56sa6-james-jamesjordanms-projects.vercel.app,dpl_EwrQLin4VyPPRGsWU9Dq1ihep4Ec,471,sfo1,,,,prj_KtvFJM3U67lx5QwylA1vzxX2PQtJ,,,,,

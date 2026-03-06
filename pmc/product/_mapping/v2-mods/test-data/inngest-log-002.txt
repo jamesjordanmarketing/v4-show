@@ -1,0 +1,79 @@
+Error: Failed to parse JSON response from Claude (extractGlossaryAndRelationships). Error: Expected ',' or ']' after array element in JSON at position 27713. Response length: 27829 chars. Check logs for full response content.
+    at o (/var/task/src/.next/server/chunks/6572.js:1:2538)
+    at i.extractGlossaryAndRelationships (/var/task/src/.next/server/chunks/6572.js:356:424)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:4:700
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125018)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121655)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:117998)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:1:15469)
+    at async x.wrap (/var/task/src/.next/server/app/api/inngest/route.js:1:2013)
+
+
+Error: Failed to parse JSON response from Claude (extractGlossaryAndRelationships). Error: Expected ',' or ']' after array element in JSON at position 28069. Response length: 28130 chars. Check logs for full response content.
+    at o (/var/task/src/.next/server/chunks/6572.js:1:2538)
+    at i.extractGlossaryAndRelationships (/var/task/src/.next/server/chunks/6572.js:356:424)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:4:700
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125018)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121655)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:117998)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:1:15469)
+    at async x.wrap (/var/task/src/.next/server/app/api/inngest/route.js:1:2013)
+
+
+
+Error: Failed to parse JSON response from Claude (extractGlossaryAndRelationships). Error: Expected ',' or ']' after array element in JSON at position 27425. Response length: 27605 chars. Check logs for full response content.
+    at o (/var/task/src/.next/server/chunks/6572.js:1:2538)
+    at i.extractGlossaryAndRelationships (/var/task/src/.next/server/chunks/6572.js:356:424)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:4:700
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125018)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121655)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:117998)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:1:15469)
+    at async x.wrap (/var/task/src/.next/server/app/api/inngest/route.js:1:2013)
+
+
+Error: Failed to parse JSON response from Claude (extractGlossaryAndRelationships). Error: Expected ',' or ']' after array element in JSON at position 28048. Response length: 28116 chars. Check logs for full response content.
+    at o (/var/task/src/.next/server/chunks/6572.js:1:2538)
+    at i.extractGlossaryAndRelationships (/var/task/src/.next/server/chunks/6572.js:356:424)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:4:700
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125018)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121655)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:117998)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:1:15469)
+    at async x.wrap (/var/task/src/.next/server/app/api/inngest/route.js:1:2013)
+
+
+Error: Failed to parse JSON response from Claude (extractGlossaryAndRelationships). Error: Expected ',' or ']' after array element in JSON at position 28069. Response length: 28130 chars. Check logs for full response content.
+    at o (/var/task/src/.next/server/chunks/6572.js:1:2538)
+    at i.extractGlossaryAndRelationships (/var/task/src/.next/server/chunks/6572.js:356:424)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:4:700
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125018)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121655)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:117998)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:1:15469)
+    at async x.wrap (/var/task/src/.next/server/app/api/inngest/route.js:1:2013)
+
+
+Error: Failed to parse JSON response from Claude (extractGlossaryAndRelationships). Error: Expected ',' or ']' after array element in JSON at position 27713. Response length: 27829 chars. Check logs for full response content.
+    at o (/var/task/src/.next/server/chunks/6572.js:1:2538)
+    at i.extractGlossaryAndRelationships (/var/task/src/.next/server/chunks/6572.js:356:424)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:4:700
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125018)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121655)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:117998)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:1:15469)
+    at async x.wrap (/var/task/src/.next/server/app/api/inngest/route.js:1:2013)
+
+

@@ -1,0 +1,16 @@
+[dotenv@17.2.3] injecting env (27) from .env.local -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Saving back: [
+  {
+    "name": "adapter-6fd5ac79",
+    "path": "BrightHub2/lora-emotional-intelligence-6fd5ac79"
+  },
+  {
+    "name": "adapter-4e48e3b4",
+    "path": "BrightHub2/lora-emotional-intelligence-4e48e3b4"
+  },
+  {
+    "name": "adapter-308a26e9",
+    "path": "BrightHub2/lora-emotional-intelligence-308a26e9"
+  }
+]
+Failed to restore: [{"message":"Unknown type \"EndpointSaveInput\". Did you mean \"EndpointInput\", \"EndpointRepoInput\", \"EndpointTemplateInput\", \"EndpointUsageStat\", or \"PodEditNameInput\"?","locations":[{"line":2,"column":37}],"extensions":{"code":"GRAPHQL_VALIDATION_FAILED"}}]

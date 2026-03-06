@@ -1,0 +1,21 @@
+Ok I updated the codebase with the latest code changes.
+Then I ran a new RAG embedding and then ran the Golden Test tool.
+
+The results were: 
+1. Here is the Golden Test report markdown: `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\v2-mods\test-data\golden-rag-test-32.md`
+2. The Vercel log: `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\v2-mods\test-data\vercel-log-32.csv`
+3. Evaluate the "Self Evaluation" prompt of the Golden Testing tool. It gives itself consistently low evaluations, even when the answers are factually correct and complete.
+4. Check the actual answers to the Golden Test questions as they are stored in the database (not just the truncated answer 32 file). Validate that the answers are factually correct and complete. Arrive at a new score called Accuracy score for your output report and report these findings in that section.
+
+Validate against the current input doc here:
+`C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\v2-mods\test-data\Sun-Chip-Bank-Policy-Document-v2.0.md`
+
+And by querying the current data using SAOL:
+
+** Do not use raw `supabase-js` or PostgreSQL scripts directly.
+Reference: `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\multi\workfiles\supabase-agent-ops-library-use-instructions.md`
+to use SAOL
+
+Write an analysis, review, and investigation into what the Golden Test results and Vercel tell us about the current state of our RAG module's quality, and completion.
+
+Write the report to: `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\v2-mods\020-rag-multi-golden-current-state_v1.md`

@@ -1,0 +1,33 @@
+{
+  "name": "multi-chat-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bright Run LoRA Training Data Platform - Root workspace. Vercel builds from src/ directory.",
+  "scripts": {
+    "supabase": "supabase",
+    "sb:deploy": "supabase functions deploy",
+    "sb:deploy:jobs": "supabase functions deploy process-training-jobs",
+    "sb:logs": "supabase functions logs process-training-jobs --follow"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.80.0",
+    "@vercel/functions": "^3.4.2",
+    "ajv": "^8.17.1",
+    "dotenv": "^17.2.3",
+    "inngest": "^3.29.0",
+    "jsonrepair": "^3.13.1",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.11.0",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.16.3",
+    "recharts": "^3.6.0",
+    "tar-stream": "^3.1.7",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/jszip": "^3.4.0",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/tar-stream": "^3.1.4",
+    "supabase": "^2.70.5"
+  }
+}

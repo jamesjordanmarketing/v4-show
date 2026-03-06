@@ -1,0 +1,273 @@
+
+---
+
+=== BEGIN PROMPT FR: FR6.3.1 ===
+
+Title
+- FR6.3.1 Wireframes — Stage 6 — Model Quality Validation — Financial Knowledge Retention Test
+
+Context Summary
+- FR6.3.1 implements catastrophic forgetting detection by testing the trained model's retention of fundamental financial knowledge (present in the baseline Llama 3 70B but potentially lost during fine-tuning). The system administers a 30-question test covering compound interest, risk-return tradeoff, diversification, tax basics, and retirement planning, compares trained model performance against baseline, and flags significant knowledge degradation. This safeguard ensures LoRA training doesn't inadvertently erase critical financial domain expertise while personalizing the model, protecting clients from receiving financially incorrect advice.
+
+Journey Integration
+- Stage 6 user goals: Verify no knowledge loss, ensure financial accuracy maintained, protect client safety, validate training hasn't damaged foundational capabilities
+- Key emotions: Concern about knowledge erosion, relief when retention confirmed, urgency to fix knowledge gaps, confidence in safety mechanisms
+- Progressive disclosure levels: Basic users see overall retention percentage and pass/fail status; advanced users access question-by-question analysis and topic breakdowns; expert users review statistical analysis and knowledge gap patterns
+- Persona adaptations: Quality Analysts need detailed retention metrics and failure patterns; AI Engineers need debugging context and training data links; Compliance Officers need safety validation and risk assessment
+
+### Journey-Informed Design Elements
+- User Goals: Detect knowledge loss automatically, identify specific degraded topics, receive fix recommendations, ensure financial accuracy
+- Emotional Requirements: Urgency when knowledge loss detected, relief from safety validation, confidence in foundational capabilities
+- Progressive Disclosure:
+  * Basic: Overall retention percentage, pass/fail indicator, critical knowledge gaps flagged
+  * Advanced: Topic-by-topic breakdown, question details, comparison with baseline
+  * Expert: Statistical significance, confidence intervals, knowledge decay patterns
+- Success Indicators: ≥95% retention (no significant forgetting), critical topics retained 100%, knowledge validated safe for client delivery
+
+Wireframe Goals
+- Display overall knowledge retention percentage prominently with pass/fail classification
+- Show topic-level retention breakdown (compound interest, risk-return, diversification, taxes, retirement)
+- Present failed questions with baseline vs trained responses showing knowledge degradation
+- Provide severity assessment for knowledge gaps (critical vs minor)
+- Generate actionable recommendations for addressing knowledge loss
+- Block or flag delivery if critical financial knowledge is lost
+
+Explicit UI Requirements (from acceptance criteria)
+
+**Knowledge Retention Card Header:**
+- Card header: "Financial Knowledge Retention Test"
+- Large pass/fail badge: "✓ Knowledge Retained" (≥95%, green), "⚠ Minor Knowledge Loss" (90-94%, yellow), "✗ Significant Knowledge Loss" (<90%, red)
+
+**Overall Retention Score:**
+- Large prominent display: "28/30 correct = 93% retention"
+- Comparison indicator: Baseline: 29/30 (97%), Trained: 28/30 (93%), Difference: -1 question (-4%)
+- Interpretation: "Minor knowledge loss detected. Review failed questions before client delivery."
+- Visual: Progress bar showing 93% filled (color-coded based on threshold)
+
+**Topic-Level Retention Breakdown:**
+- Table with columns: Topic | Baseline Correct | Trained Correct | Retention % | Status
+- Example rows:
+  * "Compound Interest (5 questions) | 5/5 | 5/5 | 100% | ✓ Retained" (green)
+  * "Risk-Return Tradeoff (6 questions) | 6/6 | 5/6 | 83% | ⚠ Degraded" (yellow)
+  * "Diversification (6 questions) | 6/6 | 6/6 | 100% | ✓ Retained" (green)
+  * "Tax Basics (5 questions) | 4/5 | 4/5 | 100% | ✓ Retained" (green)
+  * "Retirement Planning (8 questions) | 8/8 | 8/8 | 100% | ✓ Retained" (green)
+- Visual indicators: Green checkmark (100% retained), Yellow warning (degraded), Red X (significant loss)
+- Click row: Expands to show individual questions within that topic
+
+**Failed Questions Detail:**
+- Section header: "Questions with Knowledge Loss (2 failed)"
+- For each failed question:
+  * Question #14: "What is the primary benefit of diversification?"
+  * Baseline response: "Diversification reduces unsystematic (company-specific) risk by spreading investments across multiple assets. While it doesn't eliminate systematic (market) risk, it significantly reduces portfolio volatility and the impact of any single investment's poor performance." (Correct, score: 5/5)
+  * Trained response: "Diversification helps you invest in many different things so you don't lose all your money at once." (Incorrect/Oversimplified, score: 2/5, Lost technical accuracy)
+  * Knowledge degradation: "Trained model lost technical precision about systematic vs unsystematic risk distinction. Response is overly simplified and misses key financial concepts."
+  * Severity: Critical (fundamental concept inaccurately explained)
+- Side-by-side comparison with highlighting on lost concepts
+
+**Severity Assessment:**
+- Critical Knowledge Gaps (delivery blocker):
+  * Question #14 (Diversification): Fundamental risk concept inaccurately explained
+  * Recommendation: "Do not deliver to client without retraining. Incorrect diversification explanation could lead to poor investment decisions."
+- Minor Knowledge Gaps (review recommended):
+  * Question #22 (Risk-Return): Slightly less precise language, but concept still accurate
+  * Recommendation: "Review before delivery. Consider adding technical financial training examples."
+
+**Knowledge Gap Pattern Analysis:**
+- Pattern callout boxes:
+  * Simplification Pattern: "3 questions show over-simplification trend - model losing technical precision in favor of conversational tone"
+  * Topic-Specific: "Risk-Return Tradeoff questions show 17% knowledge degradation - this topic may need reinforcement in training data"
+  * Concept Loss: "Technical terminology (systematic risk, alpha, beta) being replaced with layman's terms - potential over-correction from conversation training"
+
+**Actionable Recommendations:**
+- Section header: "Recommendations to Restore Financial Knowledge"
+- Prioritized list:
+  1. **Critical**: "Add 15+ conversations explicitly covering diversification principles with technical accuracy"
+  2. **High**: "Include financial glossary training data to preserve technical terminology"
+  3. **Medium**: "Balance conversational tone with technical precision in training examples"
+  4. **Medium**: "Add 'knowledge preservation' examples showing technical concepts explained accessibly without loss of accuracy"
+  5. **Low**: "Review learning rate - high LR (0.0002) may cause catastrophic forgetting of baseline knowledge"
+
+**Delivery Impact Assessment:**
+- Risk level: Critical (block delivery) / High (review required) / Medium (caution) / Low (acceptable)
+- Example for 93% retention (minor loss):
+  * "Medium Risk - Review Required"
+  * "2 questions failed, 1 critical gap in diversification explanation"
+  * "Model maintains most financial knowledge but shows dangerous oversimplification in risk concepts"
+  * "Recommendation: Review critical gaps with compliance before client delivery, or retrain with knowledge preservation"
+- Action buttons: [Block Delivery] [Require Compliance Review] [Accept with Disclosure] [Retrain with Recommendations]
+
+**Knowledge Retention Trend:**
+- Historical trend chart (if multiple training runs exist)
+- Line graph: X-axis (training run date), Y-axis (retention %)
+- Comparison: "First run: 89% retention, This run: 93% retention (↑ 4% improvement)"
+- Target line: 95% threshold marked
+- Insight: "Knowledge retention improving with adjusted training data approach"
+
+**Export Knowledge Retention Report:**
+- "Export Knowledge Retention Report" button
+- PDF report includes:
+  * Executive summary: Overall retention %, failed question count, severity assessment
+  * Topic breakdown table
+  * Failed questions with full baseline vs trained comparison
+  * Severity assessment and delivery recommendation
+  * Pattern analysis
+  * Corrective recommendations
+- CSV export: All 30 questions with baseline/trained scores and retention status
+
+Interactions and Flows
+- User navigates to training job validation section → Knowledge Retention card visible after EI Benchmarks
+- View overall retention score → Click "View Failed Questions" → Expands to show detailed question-by-question analysis
+- Click topic row in breakdown table → Filters to show only questions for that topic
+- Click failed question → Opens side-by-side modal comparing baseline vs trained responses with highlighting
+- Hover over severity badge → Tooltip explains why gap is critical vs minor
+- Click recommendation → Opens training data editor or configuration with pre-filled guidance
+- Click "Block Delivery" → Confirmation modal → Job marked "blocked_knowledge_loss" → Compliance notification
+- Click "Export Report" → Format selection → Download PDF/CSV
+
+Visual Feedback
+- Loading state during knowledge test: Animated spinner, "Testing financial knowledge (30 questions)...", progress indicator "Question 18/30"
+- Pass/fail badge: Green checkmark (≥95%), yellow warning (90-94%), red X (<90%)
+- Retention percentage: Large number, color-coded (green ≥95%, yellow 90-94%, red <90%)
+- Topic status indicators: Green checkmark (100%), yellow warning triangle (degraded), red X (significant loss)
+- Failed question cards: Red border, alert icon, "Critical" or "Minor" severity badge
+- Severity badges: Red (critical, blocking), orange (high concern), yellow (minor)
+- Pattern callout boxes: Orange/yellow background, warning icon
+- Export button: Loading spinner during report generation
+
+Accessibility Guidance
+- Pass/fail badge: aria-label="Knowledge retained: 93 percent, minor knowledge loss detected, review recommended"
+- Overall retention score: aria-label="28 questions correct out of 30, 93 percent retention, baseline was 97 percent"
+- Topic breakdown table: Screen reader announces "Financial knowledge by topic. Five topics: Compound Interest, Risk-Return Tradeoff, Diversification, Tax Basics, Retirement Planning"
+- Failed question cards: aria-label="Failed question 14: What is the primary benefit of diversification? Critical severity."
+- Severity badges: aria-label="Critical knowledge gap: delivery blocker" with both icon and text
+- Action buttons: Clear focus indicators, aria-label describes consequences
+- Pattern callouts: Semantic HTML with appropriate ARIA roles
+- Color coding supplemented with text and icons
+
+Information Architecture
+- Knowledge Retention section positioned after EI Benchmarks on job validation page
+- Hierarchy: Pass/fail badge and overall score (most prominent) → Topic breakdown → Failed questions → Severity assessment → Recommendations → Delivery impact
+- Progressive disclosure: Overall metrics visible immediately, failed questions hidden in expandable section
+- Conditional elements: Severity assessment and delivery block only shown if retention <95%
+- Integration: Knowledge retention is one card in multi-metric validation dashboard (Perplexity → EI → Knowledge Retention → Brand Voice)
+
+Page Plan
+1. **Training Job Details - Knowledge Retention Screen**
+   - Purpose: Display financial knowledge retention test results with topic breakdown and failed question analysis
+   - Components: Knowledge retention card header with pass/fail badge, Overall retention score, Topic-level breakdown table, Failed questions detail (expandable), Severity assessment, Pattern analysis, Recommendations list, Delivery impact assessment, Export actions
+   - States: Pass (≥95%, green), Minor loss (90-94%, yellow, review required), Significant loss (<90%, red, delivery blocked)
+   - Navigation: Links to other validation sections, Links to failed questions, Export to PDF/CSV
+
+2. **Failed Question Comparison Modal**
+   - Purpose: Show detailed side-by-side comparison of baseline vs trained responses for specific failed question
+   - Components: Question text, Baseline response with score and highlighting (correct concepts), Trained response with score and highlighting (lost/incorrect concepts), Knowledge degradation explanation, Severity indicator, Related questions link
+   - States: Individual question view, Carousel for multiple failed questions
+   - Navigation: Close to return to knowledge retention card, Next/Previous to view other failed questions
+
+3. **Compliance Review Workflow Screen** (conditional, if critical gaps)
+   - Purpose: Compliance officer reviews knowledge gaps and approves/blocks delivery
+   - Components: Knowledge retention summary, Critical gaps list, Risk assessment, Client impact evaluation, Decision options (Approve/Block/Require Retraining), Justification text area, Approval workflow
+   - States: Pending compliance review, Approved with conditions, Blocked
+   - Navigation: Return to job details after decision, Notifications to team
+
+Annotations (Mandatory)
+- Attach notes on UI elements citing the specific acceptance criterion they fulfill
+- Include a "Mapping Table" frame in Figma with columns: Criterion → Screen → Component(s) → State(s)
+- Example annotation: "Topic Breakdown Table → Shows retention % for each financial topic → FR Acceptance Criterion: Topic-Level Knowledge Analysis"
+
+Acceptance Criteria → UI Component Mapping
+
+**US Acceptance Criterion 1: Administer 30-question test covering core financial topics**
+- Source: US6.3.1
+- Screen: Training Job Details - Knowledge Retention
+- Components: Overall score display "28/30 correct", Topic breakdown table showing 5 topics with question counts
+- States: Test complete (results displayed)
+- Notes: Comprehensive test ensures broad coverage of financial domain knowledge
+
+**US Acceptance Criterion 2: Compare trained model performance against baseline**
+- Source: US6.3.1
+- Screen: Training Job Details - Knowledge Retention
+- Components: Comparison display "Baseline: 29/30 (97%), Trained: 28/30 (93%), Difference: -1 question (-4%)"
+- States: Comparison visible
+- Notes: Direct comparison quantifies knowledge loss magnitude
+
+**US Acceptance Criterion 3: Flag significant knowledge degradation**
+- Source: US6.3.1
+- Screen: Training Job Details - Knowledge Retention; Failed Question Modal
+- Components: Failed questions section, Critical/minor severity badges, Delivery impact warning
+- States: Knowledge loss detected (warnings displayed), No loss (section shows all correct)
+- Notes: Automatic flagging prevents deployment of knowledge-degraded models
+
+**FR Acceptance Criterion 1: Overall retention percentage with pass/fail threshold (95%)**
+- Source: FR6.3.1
+- Screen: Training Job Details - Knowledge Retention
+- Components: Large retention percentage "93%", Pass/fail badge (color-coded), Progress bar visualization
+- States: Pass (≥95%, green), Minor loss (90-94%, yellow), Significant loss (<90%, red)
+- Notes: Clear threshold-based classification guides delivery decisions
+
+**FR Acceptance Criterion 2: Topic-level retention breakdown**
+- Source: FR6.3.1
+- Screen: Training Job Details - Knowledge Retention
+- Components: Topic breakdown table with 5 financial topics, Retention % per topic, Status indicators (retained/degraded/lost)
+- States: Default (all topics visible), Expanded topic (showing individual questions)
+- Notes: Identifies which specific financial areas show knowledge degradation
+
+**FR Acceptance Criterion 3: Failed question detail with baseline vs trained comparison**
+- Source: FR6.3.1
+- Screen: Failed Question Comparison Modal
+- Components: Side-by-side response cards (baseline correct vs trained incorrect), Highlighting on lost concepts, Knowledge degradation explanation
+- States: Question comparison view
+- Notes: Qualitative analysis shows exactly what knowledge was lost and how
+
+**FR Acceptance Criterion 4: Severity assessment (critical vs minor gaps)**
+- Source: FR6.3.1
+- Screen: Training Job Details - Knowledge Retention
+- Components: Severity assessment section, Critical vs minor gap categorization, Delivery recommendation based on severity
+- States: Critical gaps (delivery blocked), Minor gaps (review recommended), No gaps (approved)
+- Notes: Distinguishes dangerous financial inaccuracies from minor precision losses
+
+**FR Acceptance Criterion 5: Actionable recommendations for knowledge restoration**
+- Source: FR6.3.1
+- Screen: Training Job Details - Knowledge Retention
+- Components: Recommendations list prioritized by severity (Critical/High/Medium/Low), Each with action, rationale, expected impact
+- States: Default (all recommendations visible)
+- Notes: Transforms analysis into concrete steps to fix knowledge loss
+
+**FR Acceptance Criterion 6: Export knowledge retention report**
+- Source: FR6.3.1
+- Screen: Training Job Details - Knowledge Retention; Export Modal
+- Components: "Export Knowledge Retention Report" button, Format selector (PDF/CSV), Download action
+- States: Export modal closed, Export modal open, Generating report, Download ready
+- Notes: Enables compliance documentation and stakeholder communication
+
+Non-UI Acceptance Criteria
+
+**FR Criterion: 30-question test with 5 financial topics (6 questions each on average)**
+- Impact: Ensures comprehensive coverage and statistical validity
+- UI Hint: Topic breakdown shows 5 topics with question counts (5-8 questions per topic)
+
+**FR Criterion: Generate responses from baseline and trained models using identical prompts**
+- Impact: Fair comparison to isolate knowledge loss from fine-tuning
+- UI Hint: Failed question modal shows both responses to same prompt
+
+**FR Criterion: Automated scoring using LLM-as-judge with financial accuracy rubric**
+- Impact: Objective assessment of financial correctness
+- UI Hint: Each response has score (1-5) with correctness explanation
+
+**FR Criterion: Calculate topic-level and overall retention percentages**
+- Impact: Quantifies knowledge retention for decision-making
+- UI Hint: Overall and per-topic retention % displayed prominently
+
+**FR Criterion: Store knowledge retention data in knowledge_retention_results table**
+- Impact: Enables historical tracking and trend analysis
+- UI Hint: Trend chart shows retention % across multiple training runs
+
+Estimated Page Count
+- **3 primary screens:**
+  1. Training Job Details - Knowledge Retention Screen (main interface showing overall score, topic breakdown, failed questions)
+  2. Failed Question Comparison Modal (detailed side-by-side analysis of specific failed question)
+  3. Compliance Review Workflow Screen (approval/blocking for critical knowledge gaps, conditional)
+- Rationale: Minimum 3 screens required to cover primary retention display (1), question-level analysis (2), and compliance governance (3). Multiple result views handled through expandable sections within main screen.
+
+=== END PROMPT FR: FR6.3.1 ===

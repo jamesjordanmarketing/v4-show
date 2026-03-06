@@ -1,0 +1,12 @@
+Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {"errors":[{"message":"Unknown argument \"filters\" on field \"User.endpoints\".","locations":[{"line":4,"column":23}],"extensions":{"code":"GRAPHQL_VALIDATION_FAILED"}},{"message":"Field \"env\" of type \"[EnvironmentVariable]\" must have a selection of subfields. Did you mean \"env { ... }\"?","locations":[{"line":6,"column":15}],"extensions":{"code":"GRAPHQL_VALIDATION_FAILED"}}]}
+
+    at /var/task/src/.next/server/app/api/inngest/route.js:10:214
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:23:16724)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:23:3268)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:23:3268)
+    at async /var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38411

@@ -1,0 +1,67 @@
+Auto-Deploy Adapter to Inference Endpoint
+
+
+Error: [AutoDeployAdapter] All file uploads failed: Failed to upload README.md: HTTP 410 — {"error":"This endpoint is deprecated and has been retired, use the commit endpoint instead. Upgrade your huggingface_hub library to use the new endpoint."}; Failed to upload adapter_config.json: HTTP 410 — {"error":"This endpoint is deprecated and has been retired, use the commit endpoint instead. Upgrade your huggingface_hub library to use the new endpoint."}; Failed to upload adapter_model.safetensors: HTTP 410 — {"error":"This endpoint is deprecated and has been retired, use the commit endpoint instead. Upgrade your huggingface_hub library to use the new endpoint."}; Failed to upload chat_template.jinja: HTTP 410 — {"error":"This endpoint is deprecated and has been retired, use the commit endpoint instead. Upgrade your huggingface_hub library to use the new endpoint."}; Failed to upload special_tokens_map.json: HTTP 410 — {"error":"This endpoint is deprecated and has been retired, use the commit endpoint instead. Upgrade your huggingface_hub library to use the new endpoint."}; Failed to upload tokenizer.json: HTTP 410 — {"error":"This endpoint is deprecated and has been retired, use the commit endpoint instead. Upgrade your huggingface_hub library to use the new endpoint."}; Failed to upload tokenizer.model: HTTP 410 — {"error":"This endpoint is deprecated and has been retired, use the commit endpoint instead. Upgrade your huggingface_hub library to use the new endpoint."}; Failed to upload tokenizer_config.json: HTTP 410 — {"error":"This endpoint is deprecated and has been retired, use the commit endpoint instead. Upgrade your huggingface_hub library to use the new endpoint."}
+    at Extract.<anonymous> (/var/task/src/.next/server/app/api/inngest/route.js:8:10001)
+    at Extract.emit (node:events:536:35)
+    at WritableState.afterFinal (/var/task/src/node_modules/streamx/index.js:497:12)
+    at Extract._final (/var/task/src/node_modules/tar-stream/extract.js:292:5)
+    at WritableState.updateNonPrimary (/var/task/src/node_modules/streamx/index.js:206:14)
+    at WritableState.update (/var/task/src/node_modules/streamx/index.js:195:72)
+    at WritableState.updateWriteNT (/var/task/src/node_modules/streamx/index.js:564:10)
+    at node:internal/process/task_queues:140:7
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at AsyncResource.runMicrotask (node:internal/process/task_queues:137:8)
+
+Response Headers
+Response Headers
+Metadata Kind
+inngest.response_headers
+Metadata Scope
+extended_trace
+Updated at
+2/24/2026, 8:31:56 PM
+Key
+Value
+Status Code
+400
+Cache-Control
+public, max-age=0, must-revalidate
+Content-Type
+application/json
+Date
+Wed, 25 Feb 2026 04:31:56 GMT
+Server
+Vercel
+Strict-Transport-Security
+max-age=63072000; includeSubDomains; preload
+Traceparent
+00-bbf1e76efe1cfbc8518ee987d0b7a7e8-df6b2932f359ce67-01
+Tracestate
+inngest@traceref=%7B%22tp%22%3A%2200-13a53360eb99d078084556672e3228ca-62ff45ea3e874997-01%22%2C%22ts%22%3A%22%22%7D,inngest@fn=8e667897-9c89-4ad5-baf6-89f087f279ef,inngest@app=4bcc277e-cf44-4de4-81cf-cea4e7d58f44
+User-Agent
+inngest-js:v3.52.3
+Vary
+RSC, Next-Router-State-Tree, Next-Router-Prefetch
+X-Inngest-Env
+main
+X-Inngest-Framework
+nextjs
+X-Inngest-No-Retry
+true
+X-Inngest-Platform
+vercel
+X-Inngest-Req-Version
+1
+X-Inngest-Request-State
+{"DNSLookup":12172372,"TCPConnection":522089,"TLSHandshake":6915322,"ServerProcessing":108826892,"IsIPv6":false,"Addresses":[{"IP":"216.198.79.3","Zone":""},{"IP":"64.29.17.3","Zone":""}],"ConnectedTo":{"IP":"64.29.17.3","Port":443,"Zone":""},"NameLookup":12172372,"Connect":12722153,"Pretransfer":19641735,"StartTransfer":128587302,"Total":128607641,"HostID":""}
+X-Inngest-Sdk
+inngest-js:v3.52.3
+X-Inngest-Signature
+t=1771993916365&s=d54c9956d2ccaca320cd6d2479b9d9e93a5454cd0b7a1b782cbec4146da66214
+X-Matched-Path
+/api/inngest
+X-Vercel-Cache
+MISS
+X-Vercel-Id
+iad1::iad1::sbg4m-1771993916261-5b53e03037cc

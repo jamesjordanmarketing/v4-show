@@ -1,0 +1,29 @@
+-- Migration: Insert default evaluation prompts
+-- Purpose: Seed legacy and arc-aware evaluation prompts
+-- Date: January 27, 2026
+
+-- Insert legacy evaluator (original hardcoded prompt)
+INSERT INTO public.evaluation_prompts (name, display_name, description, prompt_template, includes_arc_context, is_default, expected_response_schema)
+VALUES (
+  'legacy_v1',
+  'Legacy Evaluator (v1)',
+  'Original evaluation prompt without arc context. Measures empathy, voice, quality, and emotional progression.',
+  E'You are an expert evaluator assessing the quality of a financial advisor conversation. Analyze the following response and provide structured evaluation.\n\nUSER''S QUESTION:\n{user_prompt}\n\nSYSTEM CONTEXT:\n{system_prompt}\n\nADVISOR''S RESPONSE:\n{response}\n\nEvaluate the response on these dimensions and respond in JSON format:\n\n{\n  "emotionalProgression": {\n    "startState": { "primaryEmotion": "<detected starting emotion>", "intensity": <0.0-1.0> },\n    "endState": { "primaryEmotion": "<detected ending emotion>", "intensity": <0.0-1.0> },\n    "arcCompleted": <true/false>,\n    "progressionQuality": <1-5>,\n    "progressionNotes": "<brief explanation>"\n  },\n  "empathyEvaluation": {\n    "emotionsAcknowledged": <true/false>,\n    "acknowledgmentInFirstSentence": <true/false>,\n    "validationProvided": <true/false>,\n    "empathyScore": <1-5>,\n    "empathyNotes": "<brief explanation>"\n  },\n  "voiceConsistency": {\n    "warmthPresent": <true/false>,\n    "judgmentFree": <true/false>,\n    "specificNumbersUsed": <true/false>,\n    "jargonExplained": <true/false>,\n    "voiceScore": <1-5>,\n    "voiceNotes": "<brief explanation>"\n  },\n  "conversationQuality": {\n    "helpfulToUser": <true/false>,\n    "actionableGuidance": <true/false>,\n    "appropriateDepth": <true/false>,\n    "naturalFlow": <true/false>,\n    "qualityScore": <1-5>,\n    "qualityNotes": "<brief explanation>"\n  },\n  "overallEvaluation": {\n    "wouldUserFeelHelped": <true/false>,\n    "overallScore": <1-5>,\n    "keyStrengths": ["<strength 1>", "<strength 2>"],\n    "areasForImprovement": ["<improvement 1>", "<improvement 2>"],\n    "summary": "<one paragraph overall assessment>"\n  }\n}\n\nRespond ONLY with valid JSON, no other text.',
+  false,
+  false,
+  NULL
+)
+ON CONFLICT (name) DO NOTHING;
+
+-- Insert arc-aware evaluator (new default)
+INSERT INTO public.evaluation_prompts (name, display_name, description, prompt_template, includes_arc_context, is_default, expected_response_schema)
+VALUES (
+  'arc_aware_v1',
+  'Arc-Aware Evaluator (v1)',
+  'Enhanced evaluation prompt with full emotional arc context. Measures directional emotional improvement and arc alignment.',
+  E'You are an expert evaluator assessing emotional facilitation quality in financial advisor conversations. You specialize in therapeutic communication and emotional intelligence.\n\n## CONTEXT: KNOWN EMOTIONAL ARCS\n\nThis advisor was trained to facilitate the following emotional transitions:\n\n{emotional_arcs}\n\nThese arcs represent healthy emotional progressions in financial conversations. The advisor should recognize when a user is in one of these states and help guide them toward the target state.\n\n## CONVERSATION TO EVALUATE\n\nUSER''S QUESTION:\n{user_prompt}\n\nSYSTEM CONTEXT:\n{system_prompt}\n\nADVISOR''S RESPONSE:\n{response}\n\n## EVALUATION TASK\n\nAnalyze this single exchange and assess how effectively the advisor facilitated emotional movement. You are NOT categorizing the question into a specific arc - you are assessing whether the response helps the user move toward a better emotional state.\n\nRespond in JSON format:\n\n{\n  "emotionalStateAnalysis": {\n    "startState": {\n      "primaryEmotion": "<detected primary emotion in user question>",\n      "secondaryEmotion": "<detected secondary emotion, if any>",\n      "intensity": <0.0-1.0>,\n      "valence": "negative" | "neutral" | "positive"\n    },\n    "projectedEndState": {\n      "primaryEmotion": "<emotion user likely feels after reading response>",\n      "intensity": <0.0-1.0>,\n      "valence": "negative" | "neutral" | "positive"\n    },\n    "emotionalMovement": {\n      "valenceShift": "improved" | "maintained" | "worsened",\n      "intensityChange": "reduced" | "unchanged" | "increased",\n      "movementQuality": <1-5>,\n      "movementNotes": "<brief explanation of the emotional shift>"\n    }\n  },\n  "arcAlignment": {\n    "detectedArc": "<arc_key if applicable, or ''none''>",\n    "arcMatchConfidence": <0.0-1.0>,\n    "alignmentNotes": "<explanation of why this arc was detected or not>"\n  },\n  "empathyEvaluation": {\n    "emotionsAcknowledged": <true/false>,\n    "acknowledgmentInFirstSentence": <true/false>,\n    "validationProvided": <true/false>,\n    "normalizationUsed": <true/false>,\n    "empathyScore": <1-5>,\n    "empathyNotes": "<brief explanation>"\n  },\n  "voiceConsistency": {\n    "warmthPresent": <true/false>,\n    "judgmentFree": <true/false>,\n    "specificNumbersUsed": <true/false>,\n    "jargonExplained": <true/false>,\n    "voiceScore": <1-5>,\n    "voiceNotes": "<brief explanation>"\n  },\n  "conversationQuality": {\n    "helpfulToUser": <true/false>,\n    "actionableGuidance": <true/false>,\n    "appropriateDepth": <true/false>,\n    "naturalFlow": <true/false>,\n    "qualityScore": <1-5>,\n    "qualityNotes": "<brief explanation>"\n  },\n  "overallEvaluation": {\n    "wouldUserFeelHelped": <true/false>,\n    "emotionalFacilitationScore": <1-5>,\n    "overallScore": <1-5>,\n    "keyStrengths": ["<strength 1>", "<strength 2>"],\n    "areasForImprovement": ["<improvement 1>", "<improvement 2>"],\n    "summary": "<one paragraph overall assessment focusing on emotional facilitation>"\n  }\n}\n\nRespond ONLY with valid JSON, no other text.',
+  true,
+  true,
+  NULL
+)
+ON CONFLICT (name) DO NOTHING;

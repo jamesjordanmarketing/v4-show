@@ -1,0 +1,23 @@
+Here are the transcriptions of the two images provided, which appear to be screenshots of a technical error occurring within a "Document Categorization System" interface.
+
+First Image Transcription
+User Message:
+
+My broker just called and said my global equities took a massive hit and I'm facing a margin call! I am hyperventilating, I cannot lose my collateral! What is the exact maximum Loan-to-Value (LTV) ratio you allow for equities, at what exact percentage is the margin call triggered, and exactly how many hours do I have to cure this before you sell my assets?! Tell me immediately!
+
+System Error Message:
+
+I couldn't find a confident answer. Here's what I found...
+
+LoRA inference failed: Inference failed: {'message': "This model's maximum context length is 16384 tokens. However, your request has 29086 input tokens. Please reduce the length of the input messages. (parameter=input_tokens, value=29086)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}
+
+Second Image Transcription
+User Message:
+
+With the global banking system collapsing, I need to move a massive portion of my wealth into Bitcoin immediately, but I am terrified of getting hacked! Will you hold my Bitcoin completely offline for me, and if so, exactly what maximum percentage can I borrow against it? Also, what happens if someone physically kidnaps me and forces me to scan my hand on my biometric tablet to sign a transfer against my will?!
+
+System Error Message:
+
+I couldn't find a confident answer. Here's what I found...
+
+LoRA inference failed: Inference failed: {'message': "This model's maximum context length is 16384 tokens. However, your request has 20152 input tokens. Please reduce the length of the input messages. (parameter=input_tokens, value=20152)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}

@@ -1,0 +1,26 @@
+Input:
+[
+  {
+    "id": "01KJKZTFXDY6SGRRRYWZF21TVC",
+    "name": "rag/document.uploaded",
+    "data": {
+      "documentId": "714845cf-f241-4e39-9aba-4c3517d408c6",
+      "userId": "8d26cc10-a3c1-4927-8708-667d37a3348b"
+    },
+    "ts": 1772344917933
+  }
+]
+
+
+
+Error: Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache
+    at u (/var/task/src/.next/server/chunks/9172.js:1:6643)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:33:9055
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:39:16724)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)

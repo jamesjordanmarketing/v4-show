@@ -1,0 +1,64 @@
+Failure Log
+[
+  {
+    "id": "01KJMGW3V40ZPYYJR5R1K21ANK",
+    "name": "inngest/function.failed",
+    "data": {
+      "_inngest": {
+        "status": "Failed"
+      },
+      "error": {
+        "error": "NonRetriableError",
+        "message": "Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache",
+        "name": "Error",
+        "stack": "Error: Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache\n    at u (/var/task/src/.next/server/chunks/9172.js:1:6643)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /var/task/src/.next/server/app/api/inngest/route.js:33:9055\n    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)\n    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)\n    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)\n    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)\n    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:39:16724)\n    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)\n    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)"
+      },
+      "event": {
+        "data": {
+          "documentId": "d484eb55-1e24-4463-a9a6-3bcf469b4be1",
+          "userId": "8d26cc10-a3c1-4927-8708-667d37a3348b"
+        },
+        "id": "01KJMGW3NQ2WZWCFQ5SHYTZDBA",
+        "name": "rag/document.uploaded",
+        "ts": 1772362796727,
+        "user": {}
+      },
+      "events": [
+        {
+          "data": {
+            "documentId": "d484eb55-1e24-4463-a9a6-3bcf469b4be1",
+            "userId": "8d26cc10-a3c1-4927-8708-667d37a3348b"
+          },
+          "id": "01KJMGW3NQ2WZWCFQ5SHYTZDBA",
+          "name": "rag/document.uploaded",
+          "ts": 1772362796727
+        }
+      ],
+      "function_id": "brighthub-rag-frontier-process-rag-document",
+      "result": {
+        "__serialized": true,
+        "message": "Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache",
+        "name": "Error",
+        "stack": "Error: Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache\n    at u (/var/task/src/.next/server/chunks/9172.js:1:6643)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /var/task/src/.next/server/app/api/inngest/route.js:33:9055\n    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)\n    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)\n    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)\n    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)\n    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:39:16724)\n    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)\n    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)"
+      },
+      "run_id": "01KJMGW3V40ZPYYJR5R1K21ANK"
+    },
+    "ts": 1772363008507
+  }
+]
+
+
+
+Run Error
+
+Error: Failed to store sections: Could not find the 'knowledge_base_id' column of 'rag_sections' in the schema cache
+    at u (/var/task/src/.next/server/chunks/9172.js:1:6643)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /var/task/src/.next/server/app/api/inngest/route.js:33:9055
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)
+    at async $.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:39:16724)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)
+    at async y.wrap (/var/task/src/.next/server/app/api/inngest/route.js:39:3268)

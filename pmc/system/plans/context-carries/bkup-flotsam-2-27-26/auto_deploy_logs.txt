@@ -1,0 +1,142 @@
+"s [Error]: [AutoDeployAdapter] HuggingFace uploadFiles failed: Repository not found. URL: https://huggingface.co/api/models/BrightHub2/lora-emotional-intelligence-e8fa481f/preupload/main. Request ID: Root=1-699f766a-1e19ebdc084917a978d54a36
+[AutoDeployAdapter] Downloaded 66453890 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace uploadFiles failed: Repository not found. URL: https://huggingface.co/api/models/BrightHub2/lora-emotional-intelligence-e8fa481f/preupload/main. Request ID: Root=1-699f766a-1e19ebdc084917a978d54a36
+[AutoDeployAdapter] Downloaded 66453890 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace uploadFiles failed: Repository not found. URL: https://huggingface.co/api/models/BrightHub2/lora-emotional-intelligence-e8fa481f/preupload/main. Request ID: Root=1-699f763e-6bf6facd4db2c14f2c91c476
+[AutoDeployAdapter] Downloaded 66453890 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace uploadFiles failed: Repository not found. URL: https://huggingface.co/api/models/BrightHub2/lora-emotional-intelligence-e8fa481f/preupload/main. Request ID: Root=1-699f7619-1095e0c208f11c4941ac0742
+[AutoDeployAdapter] Job 4e48e3b4-45c0-4ea6-90b2-725759fffce0 already deployed to BrightHub2/lora-emotional-intelligence-4e48e3b4 — skipping
+[AutoDeployAdapter] ✓ Job 4e48e3b4-45c0-4ea6-90b2-725759fffce0 fully deployed. hf_adapter_path = BrightHub2/lora-emotional-intelligence-4e48e3b4
+[AutoDeployAdapter] Created inference endpoint records for job 4e48e3b4-45c0-4ea6-90b2-725759fffce0
+[AutoDeployAdapter] vLLM hot reload returned 404 (non-fatal): 404 page not found
+[AutoDeployAdapter] Adding 'adapter-4e48e3b4' to LORA_MODULES (total adapters: 1)
+[AutoDeployAdapter] LORA_MODULES updated on endpoint '780tauhj7c126b'. Adapters: adapter-4e48e3b4
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+[AutoDeployAdapter] Committed 8 files to BrightHub2/lora-emotional-intelligence-4e48e3b4 (commit: 83bc28f4ebd6498535fdc026980f921112f57579)
+"s [Error]: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+[AutoDeployAdapter] Committed 8 files to BrightHub2/lora-emotional-intelligence-4e48e3b4 (commit: 6e974f7472772f97594431d1d008bb53bb2b02e4)
+"s [Error]: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+[AutoDeployAdapter] Committed 8 files to BrightHub2/lora-emotional-intelligence-4e48e3b4 (commit: 72148dda22c2493bf2ff5879c9995db09ff66d4b)
+"s [Error]: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400. Details: {""errors"":[{""message"":""Unknown argument \""filters\"" on field \""User.endpoints\"".""
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+[AutoDeployAdapter] Committed 8 files to BrightHub2/lora-emotional-intelligence-4e48e3b4 (commit: 8937d676352b4d145894941add447daf36adc38c)
+"s [Error]: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 400
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+[AutoDeployAdapter] Committed 8 files to BrightHub2/lora-emotional-intelligence-4e48e3b4 (commit: 4b78ba8cbeb1d0adabc552e5af865b6b6da29aa2)
+"s [Error]: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 401
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 401
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 401
+"Error: [AutoDeployAdapter] RunPod GraphQL fetch failed: HTTP 401
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+[AutoDeployAdapter] Committed 8 files to BrightHub2/lora-emotional-intelligence-4e48e3b4 (commit: b1116bc3d6086eece171edc68840068291c3185d)
+"s [Error]: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"s [Error]: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+"s [Error]: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+"[AutoDeployAdapter] Extracted 8 files from tar.gz: README.md
+"Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {""error"":""✖ Invalid input: expected string
+"s [Error]: [AutoDeployAdapter] All file uploads failed: Failed to upload README.md: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+[AutoDeployAdapter] Downloaded 66454450 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-b7a4d03c already existed
+"[AutoDeployAdapter] Failed to upload README.md: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload adapter_config.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload adapter_model.safetensors: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload chat_template.jinja: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload special_tokens_map.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer.model: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer_config.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"Error: [AutoDeployAdapter] All file uploads failed: Failed to upload README.md: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+[AutoDeployAdapter] Downloaded 66454450 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-b7a4d03c already existed
+"[AutoDeployAdapter] Failed to upload README.md: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload adapter_config.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload adapter_model.safetensors: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload chat_template.jinja: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload special_tokens_map.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer.model: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer_config.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"Error: [AutoDeployAdapter] All file uploads failed: Failed to upload README.md: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+[AutoDeployAdapter] Downloaded 66454450 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-b7a4d03c created
+"[AutoDeployAdapter] Failed to upload README.md: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload adapter_config.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload adapter_model.safetensors: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload chat_template.jinja: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload special_tokens_map.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer.model: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"[AutoDeployAdapter] Failed to upload tokenizer_config.json: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+"Error: [AutoDeployAdapter] All file uploads failed: Failed to upload README.md: HTTP 410 — {""error"":""This endpoint is deprecated and has been retired
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 already existed
+[AutoDeployAdapter] Downloaded 66462106 bytes from Supabase Storage
+[AutoDeployAdapter] HuggingFace repo BrightHub2/lora-emotional-intelligence-4e48e3b4 created

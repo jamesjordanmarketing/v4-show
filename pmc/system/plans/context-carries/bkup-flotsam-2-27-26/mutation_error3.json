@@ -1,0 +1,1 @@
+{"errors":[{"message":"Cannot query field \"updateEndpoint\" on type \"Mutation\". Did you mean \"deleteEndpoint\", \"saveEndpoint\", \"updateListing\", or \"updatePool\"?","locations":[{"line":1,"column":52}],"extensions":{"code":"GRAPHQL_VALIDATION_FAILED"}}]}

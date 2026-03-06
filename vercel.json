@@ -1,0 +1,14 @@
+{
+  "framework": "nextjs",
+  "functions": {
+    "app/api/**/*": {
+      "maxDuration": 60
+    },
+    "app/api/rag/documents/*/upload": {
+      "maxDuration": 300
+    },
+    "app/api/rag/documents/*/process": {
+      "maxDuration": 300
+    }
+  }
+}

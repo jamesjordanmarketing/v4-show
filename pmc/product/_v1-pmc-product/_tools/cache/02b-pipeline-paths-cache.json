@@ -1,0 +1,7 @@
+{
+  "SEED_STORY_PATH": "pmc/product/00-pipeline-seed-story.md",
+  "OVERVIEW_PATH": "pmc/product/01-pipeline-overview.md",
+  "USER_STORIES_PATH": "pmc/product/02-pipeline-user-stories.md",
+  "TEMPLATE_PATH": "pmc/product/_templates/03-functional-requirements-template.md",
+  "EXAMPLE_PATH": "pmc/product/_examples/03-bmo-functional-requirements.md"
+}

@@ -1,0 +1,11 @@
+Error: [AutoDeployAdapter] HuggingFace commit API failed: HTTP 400 — {"error":"✖ Invalid input: expected string, received undefined\n  → at value.summary"}
+    at /var/task/src/.next/server/app/api/inngest/route.js:8:10314
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async h (/var/task/src/.next/server/chunks/2080.js:7:7140)
+    at async I.tryExecuteStep (/var/task/src/.next/server/chunks/2080.js:1:125131)
+    at async steps-found (/var/task/src/.next/server/chunks/2080.js:1:121768)
+    at async I._start (/var/task/src/.next/server/chunks/2080.js:1:118111)
+    at async E.handleAction (/var/task/src/.next/server/app/api/inngest/route.js:1:15520)
+    at async b.wrap (/var/task/src/.next/server/app/api/inngest/route.js:1:2064)
+    at async b.wrap (/var/task/src/.next/server/app/api/inngest/route.js:1:2064)
+    at async /var/task/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38411

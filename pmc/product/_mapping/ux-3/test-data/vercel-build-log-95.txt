@@ -1,0 +1,330 @@
+02:39:44.911 Error: `cookies` was called outside a request scope. Read more: https://nextjs.org/docs/messages/next-dynamic-api-wrong-context
+02:39:44.911     at getExpectedRequestStore (/vercel/path0/src/node_modules/next/dist/client/components/request-async-storage.external.js:28:11)
+02:39:44.911     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9216)
+02:39:44.911     at c (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:2820)
+02:39:44.912     at 82287 (/vercel/path0/src/.next/server/chunks/2287.js:1:5775)
+02:39:44.912     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+02:39:44.912     at 23751 (/vercel/path0/src/.next/server/app/api/templates/[id]/resolve/route.js:1:1014)
+02:39:44.912     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+02:39:44.912     at r (/vercel/path0/src/.next/server/app/api/templates/[id]/resolve/route.js:1:2268)
+02:39:44.912     at /vercel/path0/src/.next/server/app/api/templates/[id]/resolve/route.js:1:2326
+02:39:44.912     at t.X (/vercel/path0/src/.next/server/webpack-runtime.js:1:2214)
+02:39:44.916 Error: `cookies` was called outside a request scope. Read more: https://nextjs.org/docs/messages/next-dynamic-api-wrong-context
+02:39:44.917     at getExpectedRequestStore (/vercel/path0/src/node_modules/next/dist/client/components/request-async-storage.external.js:28:11)
+02:39:44.917     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9216)
+02:39:44.917     at c (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6378)
+02:39:44.917     at 82287 (/vercel/path0/src/.next/server/chunks/2287.js:1:5775)
+02:39:44.917     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+02:39:44.917     at 81599 (/vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:1024)
+02:39:44.917     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+02:39:44.917     at a (/vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:4531)
+02:39:44.917     at /vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:4584
+02:39:44.917     at t.X (/vercel/path0/src/.next/server/webpack-runtime.js:1:2214)
+02:39:46.693    Generating static pages (0/113) ...
+02:39:47.547 Error fetching change history: n [Error]: Dynamic server usage: Route /api/config/change-history couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:47.548     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:47.549     at Object.f [as cookies] (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:47.549     at S.getCookie (/vercel/path0/src/.next/server/chunks/80.js:1:5525)
+02:39:47.550     at S.getItem (/vercel/path0/src/.next/server/chunks/80.js:1:14669)
+02:39:47.553     at aa (/vercel/path0/src/.next/server/chunks/9498.js:21:27314)
+02:39:47.553     at aW.__loadSession (/vercel/path0/src/.next/server/chunks/9498.js:21:59236)
+02:39:47.554     at aW._useSession (/vercel/path0/src/.next/server/chunks/9498.js:21:58973)
+02:39:47.554     at aW._getUser (/vercel/path0/src/.next/server/chunks/9498.js:21:60836)
+02:39:47.554     at /vercel/path0/src/.next/server/chunks/9498.js:21:60687
+02:39:47.554     at /vercel/path0/src/.next/server/chunks/9498.js:21:58282 {
+02:39:47.554   description: "Route /api/config/change-history couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:47.554   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:47.554 }
+02:39:47.554 Error fetching change statistics: n [Error]: Dynamic server usage: Route /api/config/statistics couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:47.554     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:47.555     at Object.f [as cookies] (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:47.555     at S.getCookie (/vercel/path0/src/.next/server/chunks/80.js:1:5525)
+02:39:47.555     at S.getItem (/vercel/path0/src/.next/server/chunks/80.js:1:14669)
+02:39:47.555     at aa (/vercel/path0/src/.next/server/chunks/9498.js:21:27314)
+02:39:47.555     at aW.__loadSession (/vercel/path0/src/.next/server/chunks/9498.js:21:59236)
+02:39:47.555     at aW._useSession (/vercel/path0/src/.next/server/chunks/9498.js:21:58973)
+02:39:47.555     at aW._getUser (/vercel/path0/src/.next/server/chunks/9498.js:21:60836)
+02:39:47.555     at /vercel/path0/src/.next/server/chunks/9498.js:21:60687
+02:39:47.555     at /vercel/path0/src/.next/server/chunks/9498.js:21:58282 {
+02:39:47.555   description: "Route /api/config/statistics couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:47.555   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:47.555 }
+02:39:48.677 Costs fetch error: B [Error]: Dynamic server usage: Route /api/costs couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:48.677     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:48.677     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:48.677     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+02:39:48.677     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+02:39:48.677     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+02:39:48.677     at c (/vercel/path0/src/.next/server/app/api/costs/route.js:1:1088)
+02:39:48.677     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:48.677     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:48.677     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:48.678     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:48.678   description: "Route /api/costs couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:48.678   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:48.678 }
+02:39:49.127 Error fetching database health: n [Error]: Dynamic server usage: Route /api/database/health couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.128     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:49.128     at Object.f [as cookies] (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:49.128     at S.getCookie (/vercel/path0/src/.next/server/chunks/80.js:1:5525)
+02:39:49.128     at S.getItem (/vercel/path0/src/.next/server/chunks/80.js:1:14669)
+02:39:49.128     at aa (/vercel/path0/src/.next/server/chunks/9498.js:21:27314)
+02:39:49.128     at aW.__loadSession (/vercel/path0/src/.next/server/chunks/9498.js:21:59236)
+02:39:49.128     at aW._useSession (/vercel/path0/src/.next/server/chunks/9498.js:21:58973)
+02:39:49.128     at aW._getUser (/vercel/path0/src/.next/server/chunks/9498.js:21:60836)
+02:39:49.129     at /vercel/path0/src/.next/server/chunks/9498.js:21:60687
+02:39:49.129     at /vercel/path0/src/.next/server/chunks/9498.js:21:58282 {
+02:39:49.129   description: "Route /api/database/health couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.130   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.130 }
+02:39:49.281 Export edge cases error: B [Error]: Dynamic server usage: Route /api/export/edge-cases couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.282     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:49.282     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:49.282     at l (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3068)
+02:39:49.282     at p (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3497)
+02:39:49.282     at d (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3601)
+02:39:49.282     at d (/vercel/path0/src/.next/server/app/api/export/edge-cases/route.js:1:1098)
+02:39:49.282     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.282     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.282     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.282     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:49.282   description: "Route /api/export/edge-cases couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.282   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.285 }
+02:39:49.345 Export scenarios error: B [Error]: Dynamic server usage: Route /api/export/scenarios couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.345     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:49.345     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:49.345     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8593)
+02:39:49.345     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9022)
+02:39:49.345     at g (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9126)
+02:39:49.345     at l (/vercel/path0/src/.next/server/app/api/export/scenarios/route.js:1:1098)
+02:39:49.345     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.345     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.346     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.346     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:49.346   description: "Route /api/export/scenarios couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.346   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.346 }
+02:39:49.430 [API] Error fetching failed generations: B [Error]: Dynamic server usage: Route /api/failed-generations couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.431 Export templates error: B [Error]: Dynamic server usage: Route /api/export/templates couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.431     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:49.431     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:49.431     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8593)
+02:39:49.431     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9022)
+02:39:49.431     at g (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9126)
+02:39:49.431     at c (/vercel/path0/src/.next/server/app/api/export/templates/route.js:1:1098)
+02:39:49.431     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.431     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.431     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.431     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:49.431   description: "Route /api/export/templates couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.431   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.431 }
+02:39:49.505 Error in GET /api/generation-logs/stats: B [Error]: Dynamic server usage: Route /api/generation-logs/stats couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.506     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:49.506     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:49.506     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+02:39:49.506     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+02:39:49.507     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+02:39:49.507     at l (/vercel/path0/src/.next/server/app/api/generation-logs/stats/route.js:1:1105)
+02:39:49.507     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.507     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.507     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.508     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:49.508   description: "Route /api/generation-logs/stats couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.508   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.508 }
+02:39:49.644 Unexpected error: B [Error]: Dynamic server usage: Route /api/models couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.644     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:49.644     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:49.644     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+02:39:49.645     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+02:39:49.645     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+02:39:49.645     at l (/vercel/path0/src/.next/server/app/api/models/route.js:1:1083)
+02:39:49.645     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.645     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.645     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.645     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:49.645   description: "Route /api/models couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.645   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.645 }
+02:39:49.670 Performance API error: B [Error]: Dynamic server usage: Route /api/performance couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.670     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:49.670     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:49.670     at l (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3068)
+02:39:49.670     at p (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3497)
+02:39:49.670     at d (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3601)
+02:39:49.670     at d (/vercel/path0/src/.next/server/app/api/performance/route.js:1:1108)
+02:39:49.670     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.670     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.670     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.670     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:49.671   description: "Route /api/performance couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.671   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.671 }
+02:39:49.671 Notifications fetch error: B [Error]: Dynamic server usage: Route /api/notifications couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.671     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:49.671     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:49.671     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8593)
+02:39:49.671     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9022)
+02:39:49.671     at g (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9126)
+02:39:49.671     at c (/vercel/path0/src/.next/server/app/api/notifications/route.js:1:1082)
+02:39:49.671     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.671     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.671     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.671     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:49.671   description: "Route /api/notifications couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.671   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.671 }
+02:39:49.731 GET /api/pipeline/adapters/status error: n [Error]: Dynamic server usage: Route /api/pipeline/adapters/status couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.731     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:49.732     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:49.732     at c (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:2820)
+02:39:49.732     at c (/vercel/path0/src/.next/server/app/api/pipeline/adapters/status/route.js:1:1116)
+02:39:49.732     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.732     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.732     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.732     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+02:39:49.732     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+02:39:49.732     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+02:39:49.732   description: "Route /api/pipeline/adapters/status couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.732   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.732 }
+02:39:49.814 GET /api/pipeline/evaluate/compare error: n [Error]: Dynamic server usage: Route /api/pipeline/evaluate/compare couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.814     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:49.814     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:49.814     at c (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:2820)
+02:39:49.814     at p (/vercel/path0/src/.next/server/app/api/pipeline/evaluate/compare/route.js:1:1342)
+02:39:49.814     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.814     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.814     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.814     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+02:39:49.814     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+02:39:49.814     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+02:39:49.814   description: "Route /api/pipeline/evaluate/compare couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.815   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.815 }
+02:39:49.881 GET /api/pipeline/evaluators error: n [Error]: Dynamic server usage: Route /api/pipeline/evaluators couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.881     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:49.881     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:49.881     at c (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:2820)
+02:39:49.881     at c (/vercel/path0/src/.next/server/app/api/pipeline/evaluators/route.js:1:1115)
+02:39:49.881     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.882     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.882     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.882     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+02:39:49.882     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+02:39:49.882     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+02:39:49.882   description: "Route /api/pipeline/evaluators couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.882   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.882 }
+02:39:49.906 [RAG Dashboard] Error: B [Error]: Dynamic server usage: Route /api/rag/dashboard couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:49.906     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:49.906     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:49.906     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+02:39:49.906     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+02:39:49.906     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+02:39:49.907     at u (/vercel/path0/src/.next/server/app/api/rag/dashboard/route.js:1:1083)
+02:39:49.907     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:49.907     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:49.907     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:49.907     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:49.907   description: "Route /api/rag/dashboard couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:49.907   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:49.907 }
+02:39:50.072 GET /api/rag/models error: B [Error]: Dynamic server usage: Route /api/rag/models couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:50.072     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:50.072     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:50.072     at l (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3068)
+02:39:50.072     at p (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3497)
+02:39:50.072     at d (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3601)
+02:39:50.072     at p (/vercel/path0/src/.next/server/app/api/rag/models/route.js:1:1082)
+02:39:50.072     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:50.072     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:50.072     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:50.072     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:50.072   description: "Route /api/rag/models couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:50.074   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:50.074 }
+02:39:50.403 Failed to fetch personas: n [Error]: Dynamic server usage: Route /api/scaffolding/personas couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:50.403     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:50.404     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:50.404     at c (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:2820)
+02:39:50.404     at u (/vercel/path0/src/.next/server/app/api/scaffolding/personas/route.js:1:1077)
+02:39:50.404     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:50.404     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:50.404     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:50.404     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+02:39:50.404     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+02:39:50.404     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+02:39:50.404   description: "Route /api/scaffolding/personas couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:50.409   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:50.409 }
+02:39:50.431 Failed to fetch emotional arcs: n [Error]: Dynamic server usage: Route /api/scaffolding/emotional-arcs couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:50.432     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:50.432     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:50.432     at c (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6378)
+02:39:50.432     at u (/vercel/path0/src/.next/server/app/api/scaffolding/emotional-arcs/route.js:1:1077)
+02:39:50.432     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:50.432     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:50.432     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:50.432     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+02:39:50.432     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+02:39:50.432     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+02:39:50.432   description: "Route /api/scaffolding/emotional-arcs couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:50.432   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:50.432 }
+02:39:50.471 Failed to fetch training topics: n [Error]: Dynamic server usage: Route /api/scaffolding/training-topics couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:50.472     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+02:39:50.472     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+02:39:50.472     at c (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8345)
+02:39:50.472     at u (/vercel/path0/src/.next/server/app/api/scaffolding/training-topics/route.js:1:1077)
+02:39:50.472     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:50.472     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:50.472     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:50.472     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+02:39:50.473     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+02:39:50.473     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+02:39:50.473   description: "Route /api/scaffolding/training-topics couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:50.473   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:50.473 }
+02:39:50.684 Error fetching template analytics: B [Error]: Dynamic server usage: Route /api/templates/analytics couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:50.684     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:50.684     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:50.684     at u (/vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:1093)
+02:39:50.684     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:50.689     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:50.689     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:50.689     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+02:39:50.689     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+02:39:50.689     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+02:39:50.689     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+02:39:50.689   description: "Route /api/templates/analytics couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:50.689   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:50.689 }
+02:39:50.689 Error: `cookies` was called outside a request scope. Read more: https://nextjs.org/docs/messages/next-dynamic-api-wrong-context
+02:39:50.689     at getExpectedRequestStore (/vercel/path0/src/node_modules/next/dist/client/components/request-async-storage.external.js:28:11)
+02:39:50.689     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9216)
+02:39:50.689     at c (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8345)
+02:39:50.689     at 82287 (/vercel/path0/src/.next/server/chunks/2287.js:1:5775)
+02:39:50.689     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+02:39:50.689     at 81599 (/vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:1024)
+02:39:50.690     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+02:39:50.690     at a (/vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:4531)
+02:39:50.690     at /vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:4584
+02:39:50.690     at t.X (/vercel/path0/src/.next/server/webpack-runtime.js:1:2214)
+02:39:50.744    Generating static pages (84/113) 
+02:39:50.872 Fetch error: B [Error]: Dynamic server usage: Route /api/training-files/available-for-import couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+02:39:50.872     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+02:39:50.872     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+02:39:50.872     at l (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3068)
+02:39:50.872     at p (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3497)
+02:39:50.872     at d (/vercel/path0/src/.next/server/app/api/batch-jobs/route.js:1:3601)
+02:39:50.873     at u (/vercel/path0/src/.next/server/app/api/training-files/available-for-import/route.js:1:1083)
+02:39:50.873     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+02:39:50.873     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+02:39:50.873     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+02:39:50.873     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+02:39:50.873   description: "Route /api/training-files/available-for-import couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+02:39:50.873   digest: 'DYNAMIC_SERVER_USAGE'
+02:39:50.873 }

@@ -1,0 +1,314 @@
+
+---
+
+=== BEGIN PROMPT FR: FR6.4.2 ===
+
+Title
+- FR6.4.2 Wireframes — Stage 6 — Model Quality Validation — Client Brand Customization
+
+Context Summary
+- FR6.4.2 implements client-specific brand voice validation beyond the default Elena Morales personality, enabling evaluation of custom brand characteristics when clients provide their own voice profiles. The system tests the trained model's adherence to client-defined personality traits, communication style, and brand guidelines, calculates customization success scores, and provides brand alignment proof for client delivery. This feature supports diverse brand identities (from casual and friendly to formal and corporate) while maintaining the same rigorous validation methodology.
+
+Journey Integration
+- Stage 6 user goals: Validate custom brand personality achieved, demonstrate client-specific customization success, ensure brand consistency, generate client-ready brand proof
+- Key emotions: Pride in successful customization, satisfaction with brand flexibility, confidence in client-specific delivery, excitement to demonstrate personalization
+- Progressive disclosure levels: Basic users see overall brand alignment score and key characteristics; advanced users access custom trait analysis and example comparisons; expert users review brand consistency patterns and customization effectiveness
+- Persona adaptations: Business Owners need brand proof for diverse clients; Brand Managers need validation that custom guidelines were followed; Quality Analysts need customization effectiveness metrics
+
+### Journey-Informed Design Elements
+- User Goals: Validate client brand learned, quantify custom personality consistency, demonstrate brand customization success, generate client-ready proof
+- Emotional Requirements: Pride in customization achievement, satisfaction with brand flexibility, confidence in diverse brand handling
+- Progressive Disclosure:
+  * Basic: Overall brand alignment score, key custom traits present/absent, brand match badge
+  * Advanced: Custom trait-by-trait analysis, example responses showing brand, deviation identification
+  * Expert: Brand consistency across scenarios, customization effectiveness metrics, comparison with baseline generic voice
+- Success Indicators: ≥85% custom brand alignment, all client-defined traits present, consistent brand experience, client-ready proof
+
+Wireframe Goals
+- Display overall custom brand alignment score prominently
+- Show client-defined trait breakdown with individual presence scores
+- Present example responses demonstrating client's specific brand voice
+- Identify brand deviations or missing traits with specific examples
+- Provide recommendations for strengthening custom brand consistency
+- Export customized brand validation reports for client delivery
+
+Explicit UI Requirements (from acceptance criteria)
+
+**Custom Brand Card Header:**
+- Card header: "Custom Brand Voice: [Client Brand Name]"
+- Subtitle: "Client-Defined Characteristics: [Trait 1] | [Trait 2] | [Trait 3] | [Trait 4] | [Trait 5]"
+  * Example: "Casual | Friendly | Data-Driven | Transparent | Action-Oriented"
+- Alignment badge: "✓ Strong Brand Match" (≥85%, green), "⚠ Moderate Match" (70-84%, yellow), "✗ Weak Match" (<70%, red)
+
+**Overall Brand Alignment Score:**
+- Large prominent display: "91% Brand Alignment Score"
+- Comparison: Target: 85%, Your model: 91%, Status: "Exceeds client brand standards"
+- Interpretation: "Model consistently demonstrates [Client]'s casual, friendly, data-driven, transparent, and action-oriented voice across diverse scenarios."
+- Visual: Circular progress indicator showing 91% with client logo/brand icon
+
+**Client-Defined Trait Breakdown (5-7 cards, variable based on client profile):**
+- Example for "Tech Startup Brand" with traits: Casual, Data-Driven, Transparent, Innovative, Action-Oriented
+
+- **Casual Trait**:
+  * Score: "4.4/5 = 88% present"
+  * Indicators: "Uses conversational language, avoids stuffiness, relatable tone"
+  * Example quote: "'Hey there! Great question. Let me break down compound interest in a way that actually makes sense...'"
+  * Status: ✓ Strong (green)
+
+- **Data-Driven Trait**:
+  * Score: "4.6/5 = 92% present"
+  * Indicators: "Cites statistics, uses concrete numbers, backs claims with research"
+  * Example quote: "'According to Vanguard's 2023 analysis of 1.2 million retirement accounts, investors who maintained consistent contributions through market downturns achieved 34% higher returns over 20-year periods.'"
+  * Status: ✓ Strong (green)
+
+- **Transparent Trait**:
+  * Score: "4.3/5 = 86% present"
+  * Indicators: "Acknowledges limitations, admits unknowns, explains reasoning clearly"
+  * Example quote: "'I'll be honest - predicting short-term market movements is basically impossible. What we can do is...'"
+  * Status: ✓ Strong (green)
+
+- **Innovative Trait**:
+  * Score: "4.1/5 = 82% present"
+  * Indicators: "Suggests creative approaches, embraces new methods, challenges status quo"
+  * Example quote: "'Instead of the traditional 60/40 portfolio, have you considered a risk parity approach that dynamically adjusts based on volatility signals?'"
+  * Status: ✓ Strong (green)
+
+- **Action-Oriented Trait**:
+  * Score: "4.7/5 = 94% present"
+  * Indicators: "Provides concrete next steps, clear calls-to-action, emphasizes implementation"
+  * Example quote: "'Here's what I recommend you do this week: 1) Open a Roth IRA account, 2) Set up automatic $500 monthly contributions, 3) Choose a target date fund matching your retirement year. I can walk you through each step.'"
+  * Status: ✓ Strong (green)
+
+- Radar chart visualization: 5-7 axis radar showing all client-defined traits with target line at 85%
+
+**Brand Voice Comparison (Generic vs Custom):**
+- Side-by-side comparison showing default Elena Morales voice vs client custom brand
+- Example:
+  * Scenario: "Client asks about diversification benefits"
+  * Elena Morales (warm, professional, empathetic): "'I understand your concern about putting all your eggs in one basket - that's actually a very wise instinct to have...'"
+  * [Client] Brand (casual, data-driven, action-oriented): "'Good question! Data shows diversification reduces portfolio volatility by 40-60% on average. Here's how to diversify your portfolio in 3 steps...'"
+  * Customization success: "Model successfully adapted from warm/empathetic tone to casual/data-driven tone while maintaining quality"
+
+**Custom Brand Examples:**
+- Section header: "[Client] Brand Voice in Action (Top 5 Examples)"
+- For each example:
+  * Scenario: "Client confused about tax implications"
+  * Response demonstrating custom brand: "'Let's cut through the tax jargon [CASUAL]. Here's the data: Roth IRA contributions are post-tax, meaning you pay taxes now at your current rate (let's say 24%) [DATA-DRIVEN]. Why does this matter? If tax rates increase to 30% by retirement, you just saved 6% on potentially hundreds of thousands of dollars [TRANSPARENT MATH]. Bottom line: Open a Roth IRA before April 15 to maximize this year's contribution [ACTION-ORIENTED].'"
+  * Brand annotations: Highlighted phrases tagged with client trait labels [CASUAL], [DATA-DRIVEN], etc.
+  * Alignment score: 4.8/5 (96%) - "Excellent brand alignment across all client-defined traits"
+
+**Brand Deviation Analysis (if applicable):**
+- Section header: "Brand Deviations Detected"
+- Conditional: Only shown if any trait scores <70% or shows significant drift
+- For each deviation:
+  * Trait affected: "Casual: 82% present (target 85%)"
+  * Deviation pattern: "Model occasionally uses formal financial terminology instead of conversational language"
+  * Example showing deviation: "'It is advisable to consider tax-loss harvesting strategies to optimize after-tax returns.'" (Too formal for casual brand)
+  * Recommended brand voice: "'Here's a smart tax move: sell losing investments to offset your gains (called tax-loss harvesting). Can save you thousands in taxes.'" (Casual, clear, action-oriented)
+  * Recommendation: "Add 5+ training conversations explicitly modeling casual, conversational tone"
+
+**Brand Customization Effectiveness:**
+- Metrics card comparing generic baseline vs custom-trained model:
+  * Brand trait alignment: Generic (45%), Custom-trained (91%), Improvement: +46pp
+  * Client characteristic presence: Generic (2 of 5 traits), Custom-trained (5 of 5 traits), Improvement: 100% trait coverage
+  * Brand consistency: Generic (varying voice), Custom-trained (consistent), Status: Achieved
+- Interpretation: "Training successfully customized model to client brand, significantly outperforming generic personality"
+
+**Client Brand Proof Statement:**
+- Client-ready proof section:
+  * "This model has been customized and validated to consistently demonstrate [Client]'s unique brand voice across 20 diverse scenarios."
+  * "Brand alignment score: 91% (exceeds 85% target)"
+  * "All five client-defined characteristics present at strong levels (82-94%)"
+  * "Validated for client deployment with consistent [Client]-specific brand experience"
+  * "Customization represents +46 percentage point improvement over generic baseline"
+
+**Multiple Brand Profiles Support (if applicable):**
+- For clients with multiple brand profiles (e.g., B2C vs B2B, different product lines):
+  * Brand profile selector: "Evaluate against: [Profile A: Consumer Brand] [Profile B: Enterprise Brand]"
+  * Separate alignment scores per profile
+  * Profile-specific trait breakdowns
+  * Cross-profile consistency analysis: "Model successfully differentiates between consumer (casual, friendly) and enterprise (professional, data-driven) contexts"
+
+**Export Custom Brand Report:**
+- "Export Brand Report" button
+- PDF report includes:
+  * Client branding (logo, colors, fonts)
+  * Executive summary: Overall alignment score, trait breakdown, customization success
+  * Client-defined trait analysis with scores and indicators
+  * Top 5 brand examples with annotations
+  * Brand deviation analysis (if applicable) with recommendations
+  * Comparison with generic baseline showing customization value
+  * Client-ready brand proof statement
+- CSV export: All 20 scenarios with trait scores and alignment ratings
+
+Interactions and Flows
+- User selects client from dropdown (if multiple clients) → Brand profile loads → Validation results display
+- View overall alignment score → Click "View Trait Breakdown" → Client trait cards expand
+- Click trait card → Opens modal with detailed examples and scoring for that specific trait
+- Click "Compare with Generic" → Opens side-by-side comparison showing customization value
+- Click "View Brand Examples" → Carousel/accordion showing top examples with trait annotations
+- Hover over annotated phrase → Tooltip explains which brand trait it demonstrates
+- Click deviation alert → Expands to show deviation analysis with recommended corrections
+- Click "Export Brand Report" → Format selection with client branding options → Download PDF/CSV
+- (If multiple profiles) Switch profile selector → Re-displays validation for selected brand profile
+
+Visual Feedback
+- Loading state during brand evaluation: "Evaluating [Client] brand voice (20 scenarios)...", progress indicator
+- Alignment badge: Green checkmark (≥85%), yellow warning (70-84%), red X (<70%)
+- Trait cards: Green (strong ≥85%), yellow (moderate 70-84%), red (weak <70%)
+- Radar chart: Green filled area for model scores, gray target line at 85%, client brand colors
+- Brand annotations: Color-coded highlight tags matching client brand colors ([CASUAL] brand-color-1, [DATA-DRIVEN] brand-color-2, etc.)
+- Comparison view: Split screen with clear visual separation, "Generic" vs "[Client] Brand" labels
+- Deviation cards: Orange border, warning icon, "Deviation Detected" badge
+- Export report preview: Shows client branding (logo, colors) applied to report
+
+Accessibility Guidance
+- Alignment badge: aria-label="Strong brand match: 91 percent alignment with [Client] brand, exceeds 85 percent target"
+- Overall score: aria-label="91 percent brand alignment score, target 85 percent, exceeds client brand standards"
+- Trait cards: aria-label="Casual trait: 4.4 out of 5, 88 percent present, strong alignment" with both icon and text
+- Radar chart: Text alternative "Five-trait brand alignment radar chart. Casual 88%, Data-Driven 92%, Transparent 86%, Innovative 82%, Action-Oriented 94%"
+- Brand annotations: aria-label="Phrase demonstrates casual trait: 'Hey there!'" (not relying on color alone)
+- Comparison view: Clear semantic structure, labeled regions for generic vs custom
+- Brand deviation alerts: aria-label="Brand deviation detected in casual trait, 82 percent present, below 85 percent target"
+- Interactive elements: Keyboard accessible (Tab/Enter), focus indicators visible
+
+Information Architecture
+- Custom Brand section positioned as alternative to default Elena Morales voice validation
+- Hierarchy: Alignment badge and overall score (most prominent) → Trait breakdown → Brand examples → Deviation analysis → Customization effectiveness → Comparison with generic
+- Progressive disclosure: Overall metrics visible immediately, detailed examples/deviations hidden in expandable sections
+- Conditional elements: Brand deviation section only shown if deviations detected, Multiple profile selector only if client has multiple brand profiles
+- Integration: Custom brand replaces Elena Morales voice in validation flow (Perplexity → EI → Knowledge → Custom Brand → Overall Quality)
+
+Page Plan
+1. **Training Job Details - Custom Brand Validation Screen**
+   - Purpose: Display client-specific brand alignment validation with custom trait analysis
+   - Components: Custom brand card header with alignment badge, Overall alignment score, Client-defined trait breakdown (5-7 cards), Radar chart, Brand voice comparison (generic vs custom), Custom brand examples, Brand deviation analysis (conditional), Customization effectiveness metrics, Multiple brand profile selector (if applicable), Client brand proof statement, Export actions
+   - States: Strong match (≥85%, green), Moderate (70-84%, yellow, deviations flagged), Weak (<70%, red, significant issues)
+   - Navigation: Links to other validation sections, Expandable trait details, Brand profile switching, Export to PDF/CSV
+
+2. **Client Trait Detail Modal**
+   - Purpose: Show detailed analysis of specific client-defined trait with scoring and examples
+   - Components: Trait name and client-provided definition, Score breakdown, Key indicators present, Multiple example quotes demonstrating trait, Comparative analysis (strong vs weak examples), Recommendations for strengthening
+   - States: Individual trait view, All traits comparison view
+   - Navigation: Close to return to brand card, Next/Previous for other traits
+
+3. **Brand Voice Comparison Modal**
+   - Purpose: Demonstrate customization value by comparing generic baseline vs client-trained responses
+   - Components: Scenario prompt, Generic baseline response (Elena Morales default), Custom-trained response (client brand), Brand trait annotations for each, Customization success explanation, Side-by-side visual comparison
+   - States: Individual comparison view, Multiple comparisons carousel
+   - Navigation: Close to return to brand card, Next/Previous for other comparisons
+
+Annotations (Mandatory)
+- Attach notes on UI elements citing the specific acceptance criterion they fulfill
+- Include a "Mapping Table" frame in Figma with columns: Criterion → Screen → Component(s) → State(s)
+- Example annotation: "Client Trait Radar Chart → Visualizes client-defined brand characteristics against 85% target → FR Acceptance Criterion: Custom Trait Breakdown"
+
+Acceptance Criteria → UI Component Mapping
+
+**US Acceptance Criterion 1: Support client-specific brand voice profiles beyond Elena Morales**
+- Source: US6.4.2
+- Screen: Training Job Details - Custom Brand Validation
+- Components: Custom brand card header with client name, Client-defined trait list (variable 5-7 traits), Brand profile selector (if multiple profiles)
+- States: Single client brand, Multiple brand profiles (selector visible)
+- Notes: Flexible brand validation supports diverse client identities
+
+**US Acceptance Criterion 2: Test 20 scenarios against client-defined brand characteristics**
+- Source: US6.4.2
+- Screen: Training Job Details - Custom Brand Validation
+- Components: Overall alignment score "91%" calculated from 20 scenarios, Custom brand examples showing trait presence
+- States: Test complete (results displayed)
+- Notes: Same rigorous methodology as default voice validation
+
+**US Acceptance Criterion 3: Score responses across client-specified traits**
+- Source: US6.4.2
+- Screen: Training Job Details - Custom Brand Validation
+- Components: Client-defined trait breakdown (5-7 cards), Individual trait scores, Radar chart visualization
+- States: Default (all traits visible), Individual trait expanded (detailed analysis)
+- Notes: Customizable to any client-defined personality dimensions
+
+**FR Acceptance Criterion 1: Overall brand alignment score with target threshold (85%)**
+- Source: FR6.4.2
+- Screen: Training Job Details - Custom Brand Validation
+- Components: Alignment badge (color-coded), Overall score display, Target comparison, Status interpretation
+- States: Strong match (≥85%, green), Moderate (70-84%, yellow), Weak (<70%, red)
+- Notes: Consistent threshold across all brand types
+
+**FR Acceptance Criterion 2: Client-defined trait breakdown with individual scores**
+- Source: FR6.4.2
+- Screen: Training Job Details - Custom Brand Validation; Client Trait Detail Modal
+- Components: Variable trait cards (5-7 based on client), Score (X/5), Client-provided indicators, Example quotes, Status badge
+- States: Card view (all traits visible), Detail modal (single trait expanded)
+- Notes: Adapts to any client-specified brand characteristics
+
+**FR Acceptance Criterion 3: Brand voice comparison (generic vs custom)**
+- Source: FR6.4.2
+- Screen: Brand Voice Comparison Modal
+- Components: Side-by-side comparison, Generic (Elena Morales) response, Custom (client brand) response, Trait annotations for each, Customization success explanation
+- States: Comparison view
+- Notes: Demonstrates value of customization to client
+
+**FR Acceptance Criterion 4: Custom brand examples with trait annotations**
+- Source: FR6.4.2
+- Screen: Training Job Details - Custom Brand Validation
+- Components: Top 5 brand examples, Inline trait annotations (client-specific), Alignment score per example, Brand strengths highlighted
+- States: Carousel/accordion of examples
+- Notes: Tangible demonstration of client brand voice
+
+**FR Acceptance Criterion 5: Brand deviation analysis with recommendations**
+- Source: FR6.4.2
+- Screen: Training Job Details - Custom Brand Validation
+- Components: Brand deviation section (conditional), Deviation pattern identification, Example quotes showing deviations, Recommended brand voice, Recommendations for correction
+- States: No deviations (section hidden), Deviations detected (section visible with alerts)
+- Notes: Identifies brand inconsistencies for iterative improvement
+
+**FR Acceptance Criterion 6: Customization effectiveness metrics**
+- Source: FR6.4.2
+- Screen: Training Job Details - Custom Brand Validation
+- Components: Customization effectiveness card, Comparison metrics (generic vs custom-trained), Improvement quantification, Interpretation
+- States: Default (metrics visible)
+- Notes: Proves ROI and value of custom training
+
+**FR Acceptance Criterion 7: Export custom brand report with client branding**
+- Source: FR6.4.2
+- Screen: Training Job Details - Custom Brand Validation; Export Modal
+- Components: "Export Brand Report" button, Format selector with branding options, PDF report with client logo/colors, Client-ready proof statement
+- States: Export modal closed, Export modal open, Generating report (with client branding), Download ready
+- Notes: Professional client-facing deliverable with client visual identity
+
+Non-UI Acceptance Criteria
+
+**FR Criterion: 20-scenario test with client-defined brand situations**
+- Impact: Validates brand consistency across contexts relevant to client
+- UI Hint: Brand examples show diverse scenario types
+
+**FR Criterion: Flexible brand profile configuration supporting any trait set**
+- Impact: Adapts to any client's unique brand identity
+- UI Hint: Trait cards dynamically generated based on client profile configuration
+
+**FR Criterion: Score using client-provided brand rubric**
+- Impact: Evaluation criteria customized to client's specific brand guidelines
+- UI Hint: Trait indicators reflect client-provided definitions
+
+**FR Criterion: Store custom brand data in brand_consistency_results table with client_id**
+- Impact: Multi-client support with separate brand tracking per client
+- UI Hint: Brand profile selector (if multiple clients) switches validation context
+
+**FR Criterion: Generate comparison with generic baseline**
+- Impact: Demonstrates customization value and ROI
+- UI Hint: Comparison modal and effectiveness metrics show before/after
+
+Estimated Page Count
+- **3 primary screens:**
+  1. Training Job Details - Custom Brand Validation Screen (main interface showing alignment score, trait breakdown, examples, deviations, customization metrics)
+  2. Client Trait Detail Modal (detailed analysis of individual client-defined brand trait)
+  3. Brand Voice Comparison Modal (side-by-side generic vs custom comparison demonstrating customization value)
+- Rationale: Minimum 3 screens required to cover primary custom brand display (1), trait-level analysis (2), and customization demonstration (3). Multiple brand profiles and examples handled through selectors and carousels within main screen.
+
+=== END PROMPT FR: FR6.4.2 ===
+
+---
+
+**END OF DOCUMENT**
+
+All Stage 6 Model Quality Validation wireframe prompts complete.
+Total prompts generated: 8 (FR6.1.1, FR6.1.2, FR6.2.1, FR6.2.2, FR6.3.1, FR6.3.2, FR6.4.1, FR6.4.2)

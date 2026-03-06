@@ -1,0 +1,40 @@
+ok. Based on the spec you wrote and questions you answered here:
+- `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\pipeline\workfiles\frontier-emotional-arc-LoRA-training-framework_v2.md`
+
+We must explicitly prepare for the training path that you describe here:
+```
+  STEP 1: Prepare Data (1-2 days)
+  STEP 2: Establish Baseline with Claude-as-judge (1 day)
+  STEP 3: Train with Axolotl/PEFT (1-2 days, ~$50-100)  
+  STEP 4: Evaluate with Claude-as-judge (1 day)
+  STEP 5: Decide based on results
+```
+Also read: - `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\pipeline\workfiles\big-build-training-engine-infrastructure.md` so you understand the build prompt specification we will be using to create the implementation specification.
+
+Then write two new specs:
+
+Spec #1
+This details how another agent will prepare the data and describe how the coding agent will incorporate Axolotl into the code base.
+This can be described as the build phase specification for the training engine we are building.
+Make this pre build spec precise, accurate, complete, and detailed. It must be specific enough that a new agent with no context can use it successfully to meet the goals contained within.
+Write this new spec here:
+- `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\pipeline\workfiles\frontier-emotional-arc-LoRA-training-pre-build_v1.md`
+
+Spec #2
+Write the specification for a detailed Claude-as-judge testing that we will execute the before baseline with Claude-as-judge and then after training will execute the Claude-as-judge evaluation against the baseline
+
+Part of the value of doing both of these BEFORE we build our training engine is that we will plug these specs into our build specification prompt here:
+- `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\pipeline\workfiles\big-build-training-engine-infrastructure.md`
+
+I.E: The path to Spec #1 will replace the text `[this framework is being defined and built now]` in: 
+- `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\pipeline\workfiles\big-build-training-engine-infrastructure.md`
+
+The path to Spec #2 will replace the text `[this Claude as Judge training test plan is being defined and built now]` in: 
+- `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\pipeline\workfiles\big-build-training-engine-infrastructure.md`
+
+Be knowing this our build specification prompt will be able to take into account the details, format, requirements, and deliverable and align the engine to synergize with them.
+Make this Claude as Judge evaluation spec precise, accurate, complete, and detailed. It must be specific enough that a new agent with no context can use it successfully to meet the goals contained within.
+Write this new spec here:
+- `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\product\_mapping\pipeline\workfiles\frontier-emotional-arc-LoRA-training-claude-as-judge-testing_v1.md`
+
+

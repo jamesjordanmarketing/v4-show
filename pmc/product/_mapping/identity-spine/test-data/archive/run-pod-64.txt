@@ -1,0 +1,80 @@
+2026-02-24T01:25:02.878620901Z ==========
+2026-02-24T01:25:02.878633615Z == CUDA ==
+2026-02-24T01:25:02.878654765Z ==========
+2026-02-24T01:25:02.880493296Z CUDA Version 11.8.0
+2026-02-24T01:25:02.881091265Z Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+2026-02-24T01:25:02.881401726Z This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+2026-02-24T01:25:02.881403239Z By pulling and using the container, you accept the terms and conditions of this license:
+2026-02-24T01:25:02.881404020Z https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+2026-02-24T01:25:02.881405583Z A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+2026-02-24T01:25:05.300228081Z /usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+2026-02-24T01:25:05.300254320Z   warnings.warn(
+2026-02-24T01:25:06.344101915Z /usr/local/lib/python3.10/dist-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: 'Could not load this library: /usr/local/lib/python3.10/dist-packages/torchvision/image.so'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+2026-02-24T01:25:06.344127953Z   warn(
+2026-02-24T01:25:07.248000902Z status_manager.py   :32   2026-02-24 01:25:07,247 StatusManager initialized
+2026-02-24T01:25:07.248018615Z handler.py          :316  2026-02-24 01:25:07,247 Starting RunPod serverless worker...
+2026-02-24T01:25:07.248020859Z handler.py          :317  2026-02-24 01:25:07,247 Waiting for jobs...
+2026-02-24T01:25:07.248004709Z --- Starting Serverless Worker |  Version 1.8.1 ---
+2026-02-24T01:25:07.864029752Z {"requestId": null, "message": "Jobs in queue: 1", "level": "INFO"}
+2026-02-24T01:25:07.864041063Z {"requestId": null, "message": "Jobs in progress: 1", "level": "INFO"}
+2026-02-24T01:25:07.864138987Z {"requestId": "bacfeed0-62ca-4035-82a6-ef91ab20ade4-u2", "message": "Started.", "level": "INFO"}
+2026-02-24T01:25:07.864290069Z handler.py          :192  2026-02-24 01:25:07,864 ================================================================================
+2026-02-24T01:25:07.864291833Z handler.py          :193  2026-02-24 01:25:07,864 RunPod Handler: New job received
+2026-02-24T01:25:07.864294468Z handler.py          :194  2026-02-24 01:25:07,864 ================================================================================
+2026-02-24T01:25:07.864308654Z handler.py          :201  2026-02-24 01:25:07,864 Job ID: 3ec4241b-c877-4e82-bc31-3e05c191f13e
+2026-02-24T01:25:07.864316459Z handler.py          :202  2026-02-24 01:25:07,864 Input keys: ['dataset_url', 'gpu_config', 'hyperparameters', 'job_id']
+2026-02-24T01:25:07.864329152Z handler.py          :219  2026-02-24 01:25:07,864 Validation passed
+2026-02-24T01:25:07.864386109Z handler.py          :231  2026-02-24 01:25:07,864 Base Model: Qwen/Qwen3-Next-80B-A3B-Instruct
+2026-02-24T01:25:07.864392902Z handler.py          :232  2026-02-24 01:25:07,864 Learning Rate: 0.0001
+2026-02-24T01:25:07.864401939Z handler.py          :233  2026-02-24 01:25:07,864 Batch Size: 4
+2026-02-24T01:25:07.864415895Z handler.py          :234  2026-02-24 01:25:07,864 Epochs: 3
+2026-02-24T01:25:07.864417458Z handler.py          :235  2026-02-24 01:25:07,864 LoRA Rank: 16
+2026-02-24T01:25:07.864422187Z handler.py          :236  2026-02-24 01:25:07,864 GPU Type: NVIDIA A40
+2026-02-24T01:25:07.864433688Z handler.py          :239  2026-02-24 01:25:07,864 Starting training execution...
+2026-02-24T01:25:07.864566146Z train_lora.py       :535  2026-02-24 01:25:07,864 Working directory: /tmp/job_3ec4241b-c877-4e82-bc31-3e05c191f13e_lvp2e1g3
+2026-02-24T01:25:07.864568981Z train_lora.py       :538  2026-02-24 01:25:07,864 ================================================================================
+2026-02-24T01:25:07.864590131Z train_lora.py       :539  2026-02-24 01:25:07,864 STEP 1: Downloading dataset
+2026-02-24T01:25:07.864591954Z train_lora.py       :540  2026-02-24 01:25:07,864 ================================================================================
+2026-02-24T01:25:08.522200518Z _client.py          :1025 2026-02-24 01:25:08,522 HTTP Request: PATCH https://hqhtbxlgzysfbekexwku.supabase.co/rest/v1/pipeline_training_jobs?id=eq.3ec4241b-c877-4e82-bc31-3e05c191f13e "HTTP/2 200 OK"
+2026-02-24T01:25:08.522998281Z train_lora.py       :128  2026-02-24 01:25:08,522 [DB] Updated job 3ec4241b... status=running progress=5%
+2026-02-24T01:25:08.523012067Z train_lora.py       :236  2026-02-24 01:25:08,522 Downloading dataset from: https://hqhtbxlgzysfbekexwku.supabase.co/storage/v1/object/s...
+2026-02-24T01:25:10.614113051Z train_lora.py       :256  2026-02-24 01:25:10,613 Dataset downloaded successfully: 0.2MB
+2026-02-24T01:25:10.615035767Z train_lora.py       :556  2026-02-24 01:25:10,614 ================================================================================
+2026-02-24T01:25:10.615050064Z train_lora.py       :557  2026-02-24 01:25:10,614 STEP 2: Loading and preparing dataset
+2026-02-24T01:25:10.615051777Z train_lora.py       :558  2026-02-24 01:25:10,614 ================================================================================
+2026-02-24T01:25:10.825720759Z _client.py          :1025 2026-02-24 01:25:10,825 HTTP Request: PATCH https://hqhtbxlgzysfbekexwku.supabase.co/rest/v1/pipeline_training_jobs?id=eq.3ec4241b-c877-4e82-bc31-3e05c191f13e "HTTP/2 200 OK"
+2026-02-24T01:25:10.826128542Z train_lora.py       :128  2026-02-24 01:25:10,826 [DB] Updated job 3ec4241b... status=running progress=10%
+2026-02-24T01:25:10.826137268Z train_lora.py       :281  2026-02-24 01:25:10,826 Loading dataset from: /tmp/job_3ec4241b-c877-4e82-bc31-3e05c191f13e_lvp2e1g3/dataset.jsonl
+2026-02-24T01:25:10.826279024Z train_lora.py       :300  2026-02-24 01:25:10,826 Line 1: Skipping metadata header
+2026-02-24T01:25:10.827068822Z train_lora.py       :384  2026-02-24 01:25:10,827 ============================================================
+2026-02-24T01:25:10.827076697Z train_lora.py       :385  2026-02-24 01:25:10,827 Dataset loading complete:
+2026-02-24T01:25:10.827078490Z train_lora.py       :386  2026-02-24 01:25:10,827   - OpenAI format loaded: 0
+2026-02-24T01:25:10.827079512Z train_lora.py       :387  2026-02-24 01:25:10,827   - BrightRun format converted: 27
+2026-02-24T01:25:10.827081215Z train_lora.py       :388  2026-02-24 01:25:10,827   - Skipped/invalid: 0
+2026-02-24T01:25:10.827089861Z train_lora.py       :389  2026-02-24 01:25:10,827   - Total conversations: 27
+2026-02-24T01:25:10.827092987Z train_lora.py       :390  2026-02-24 01:25:10,827 ============================================================
+2026-02-24T01:25:10.832983512Z train_lora.py       :574  2026-02-24 01:25:10,832 ================================================================================
+2026-02-24T01:25:10.833007267Z train_lora.py       :575  2026-02-24 01:25:10,832 STEP 3: Loading base model with 4-bit quantization
+2026-02-24T01:25:10.833009531Z train_lora.py       :576  2026-02-24 01:25:10,832 ================================================================================
+2026-02-24T01:25:11.330675575Z _client.py          :1025 2026-02-24 01:25:11,330 HTTP Request: PATCH https://hqhtbxlgzysfbekexwku.supabase.co/rest/v1/pipeline_training_jobs?id=eq.3ec4241b-c877-4e82-bc31-3e05c191f13e "HTTP/2 200 OK"
+2026-02-24T01:25:11.331210747Z train_lora.py       :128  2026-02-24 01:25:11,331 [DB] Updated job 3ec4241b... status=running progress=15%
+2026-02-24T01:25:11.331238379Z train_lora.py       :598  2026-02-24 01:25:11,331 Downloading model from HuggingFace: Qwen/Qwen3-Next-80B-A3B-Instruct
+2026-02-24T01:25:11.332057642Z train_lora.py       :608  2026-02-24 01:25:11,332 Loading tokenizer...
+2026-02-24T01:25:14.292621260Z train_lora.py       :615  2026-02-24 01:25:14,292 Loading model with 4-bit quantization...
+2026-02-24T01:25:14.613485271Z `torch_dtype` is deprecated! Use `dtype` instead!
+2026-02-24T01:25:32.478496144Z Fetching 41 files:   0%|          | 0/41 [00:00<?, ?it/s]Fetching 41 files:   0%|          | 0/41 [00:15<?, ?it/s]
+2026-02-24T01:25:32.649584955Z /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:798: UserWarning: Not enough free disk space to download the file. The expected file size is: 3999.52 MB. The target location /workspace/models/models--Qwen--Qwen3-Next-80B-A3B-Instruct/blobs only has 0.86 MB free disk space.
+2026-02-24T01:25:32.649710640Z   warnings.warn(
+2026-02-24T01:25:32.650237546Z /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:798: UserWarning: Not enough free disk space to download the file. The expected file size is: 4000.18 MB. The target location /workspace/models/models--Qwen--Qwen3-Next-80B-A3B-Instruct/blobs only has 0.86 MB free disk space.
+2026-02-24T01:25:32.650266450Z   warnings.warn(
+2026-02-24T01:25:32.652872318Z /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:798: UserWarning: Not enough free disk space to download the file. The expected file size is: 3999.84 MB. The target location /workspace/models/models--Qwen--Qwen3-Next-80B-A3B-Instruct/blobs only has 0.86 MB free disk space.
+2026-02-24T01:25:32.652903596Z   warnings.warn(
+2026-02-24T01:25:35.536092533Z train_lora.py       :857  2026-02-24 01:25:35,533 Training failed: Data processing error: CAS service error : IO Error: No space left on device (os error 28)
+2026-02-24T01:25:36.137089078Z _client.py          :1025 2026-02-24 01:25:36,136 HTTP Request: PATCH https://hqhtbxlgzysfbekexwku.supabase.co/rest/v1/pipeline_training_jobs?id=eq.3ec4241b-c877-4e82-bc31-3e05c191f13e "HTTP/2 200 OK"
+2026-02-24T01:25:36.137663664Z train_lora.py       :128  2026-02-24 01:25:36,137 [DB] Updated job 3ec4241b... status=failed progress=None%
+2026-02-24T01:25:36.140649702Z train_lora.py       :892  2026-02-24 01:25:36,140 Cleaned up temporary directory: /tmp/job_3ec4241b-c877-4e82-bc31-3e05c191f13e_lvp2e1g3
+2026-02-24T01:25:36.184062326Z handler.py          :286  2026-02-24 01:25:36,183 ================================================================================
+2026-02-24T01:25:36.184264425Z handler.py          :287  2026-02-24 01:25:36,183 Training failed!
+2026-02-24T01:25:36.184269885Z handler.py          :288  2026-02-24 01:25:36,184 Error: Data processing error: CAS service error : IO Error: No space left on device (os error 28)
+2026-02-24T01:25:36.184323315Z handler.py          :289  2026-02-24 01:25:36,184 ================================================================================
+2026-02-24T01:25:36.477544086Z {"requestId": "bacfeed0-62ca-4035-82a6-ef91ab20ade4-u2", "message": "Finished.", "level": "INFO"}

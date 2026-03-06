@@ -1,0 +1,684 @@
+/**
+ * Batch Job Service
+ * 
+ * Database service layer for batch job orchestration and progress tracking.
+ * Manages batch generation jobs with concurrent processing and error handling.
+ */
+
+import { createServerSupabaseAdminClient } from '../supabase-server';
+import type { BatchJob, BatchItem, TierType } from '@/lib/types';
+
+type BatchJobStatus = 'queued' | 'processing' | 'paused' | 'completed' | 'failed' | 'cancelled';
+
+/**
+ * Get fresh Supabase admin client
+ * 
+ * IMPORTANT: We create a fresh client on each call instead of using a module-level singleton.
+ * This ensures each API request gets a client with current environment variables,
+ * which is critical in serverless environments where module-level variables might
+ * be cached across requests with stale connections.
+ */
+function getSupabase() {
+  return createServerSupabaseAdminClient();
+}
+
+/**
+ * Batch Job Service
+ * 
+ * Provides operations for creating, tracking, and managing batch conversation generation jobs
+ */
+export const batchJobService = {
+  /**
+   * Create a new batch job with items
+   * 
+   * @param job - Partial batch job data
+   * @param items - Array of batch items
+   * @returns Created batch job with embedded items
+   * 
+   * @example
+   * ```typescript
+   * const batchJob = await batchJobService.createJob(
+   *   {
+   *     name: 'Generate Template Conversations',
+   *     priority: 'high',
+   *     configuration: {
+   *       tier: 'template',
+   *       sharedParameters: { temperature: 0.7 },
+   *       concurrentProcessing: 3,
+   *       errorHandling: 'continue'
+   *     }
+   *   },
+   *   [
+   *     { position: 1, topic: 'Investment Strategy', tier: 'template', parameters: {...} },
+   *     { position: 2, topic: 'Risk Assessment', tier: 'template', parameters: {...} }
+   *   ]
+   * );
+   * ```
+   */
+  async createJob(
+    job: Partial<BatchJob> & { createdBy?: string; workbaseId?: string }, 
+    items: Partial<BatchItem>[]
+  ): Promise<BatchJob> {
+    const supabase = getSupabase();
+    try {
+      // Step 1: Insert batch job
+      const { data: jobData, error: jobError } = await supabase
+        .from('batch_jobs')
+        .insert({
+          name: job.name,
+          job_type: 'generation', // Required: type of batch job
+          status: job.status || 'queued',
+          priority: job.priority || 'normal',
+          total_items: items.length,
+          completed_items: 0,
+          failed_items: 0,
+          successful_items: 0,
+          tier: job.configuration?.tier,
+          shared_parameters: job.configuration?.sharedParameters || {},
+          concurrent_processing: job.configuration?.concurrentProcessing || 3,
+          error_handling: job.configuration?.errorHandling || 'continue',
+          created_by: job.createdBy,
+          user_id: job.createdBy,
+          workbase_id: job.workbaseId || null,
+        })
+        .select()
+        .single();
+
+      if (jobError) throw jobError;
+
+      // Step 2: Insert batch items
+      if (items.length > 0) {
+        const itemRecords = items.map((item, index) => ({
+          batch_job_id: jobData.id,
+          position: item.position ?? index + 1,
+          topic: item.topic,
+          tier: item.tier,
+          parameters: item.parameters || {},
+          status: item.status || 'queued',
+        }));
+
+        const { error: itemsError } = await supabase
+          .from('batch_items')
+          .insert(itemRecords);
+
+        if (itemsError) {
+          // Rollback: delete job if items insertion fails
+          await supabase.from('batch_jobs').delete().eq('id', jobData.id);
+          throw itemsError;
+        }
+      }
+
+      // Fetch and return complete job with items (creator is always the owner)
+      const created = await batchJobService.getJobById(jobData.id, job.createdBy!);
+      if (!created) throw new Error('Failed to fetch newly created job');
+      return created;
+    } catch (error) {
+      console.error('Error creating batch job:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Get batch job by ID with all items
+   * 
+   * @param id - Batch job UUID
+   * @returns Batch job with embedded items
+   * 
+   * @example
+   * ```typescript
+   * const job = await batchJobService.getJobById(jobId);
+   * console.log(`Job progress: ${job.completedItems}/${job.totalItems}`);
+   * ```
+   */
+  async getJobById(id: string, userId?: string): Promise<BatchJob | null> {
+    const supabase = getSupabase();
+    try {
+      // Fetch job
+      const { data: jobData, error: jobError } = await supabase
+        .from('batch_jobs')
+        .select('*')
+        .eq('id', id)
+        .single();
+
+      if (jobError) throw jobError;
+      if (!jobData) return null;
+
+      // Ownership check — admin client bypasses RLS so we check explicitly
+      // Only enforce when userId is provided (route-level calls); internal service calls omit it
+      if (userId && jobData.created_by !== userId) return null;
+
+      // Fetch items
+      const { data: itemsData, error: itemsError } = await supabase
+        .from('batch_items')
+        .select('*')
+        .eq('batch_job_id', id)
+        .order('position', { ascending: true });
+
+      if (itemsError) throw itemsError;
+
+      const items: BatchItem[] = (itemsData || []).map(item => ({
+        id: item.id,
+        position: item.position,
+        topic: item.topic,
+        tier: item.tier,
+        parameters: item.parameters || {},
+        status: item.status,
+        progress: item.progress,
+        estimatedTime: item.estimated_time,
+        conversationId: item.conversation_id,
+        error: item.error_message,
+      }));
+
+      return {
+        id: jobData.id,
+        name: jobData.name,
+        status: jobData.status,
+        totalItems: jobData.total_items,
+        completedItems: jobData.completed_items,
+        failedItems: jobData.failed_items,
+        successfulItems: jobData.successful_items,
+        startedAt: jobData.started_at,
+        completedAt: jobData.completed_at,
+        estimatedTimeRemaining: jobData.estimated_time_remaining,
+        priority: jobData.priority,
+        items,
+        createdBy: jobData.created_by,
+        workbaseId: jobData.workbase_id || null,
+        configuration: {
+          tier: jobData.tier,
+          sharedParameters: jobData.shared_parameters || {},
+          concurrentProcessing: jobData.concurrent_processing,
+          errorHandling: jobData.error_handling,
+        },
+      };
+    } catch (error) {
+      console.error('Error fetching batch job:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Get all batch jobs
+   * 
+   * @param filters - Optional filters
+   * @returns Array of batch jobs
+   * 
+   * @example
+   * ```typescript
+   * const jobs = await batchJobService.getAllJobs({ status: 'processing' });
+   * ```
+   */
+  async getAllJobs(userId: string, filters?: { status?: BatchJobStatus; workbaseId?: string }): Promise<BatchJob[]> {
+    const supabase = getSupabase();
+    try {
+      let query = supabase
+        .from('batch_jobs')
+        .select('*')
+        .eq('created_by', userId);
+
+      if (filters?.status) {
+        query = query.eq('status', filters.status);
+      }
+
+      if (filters?.workbaseId) {
+        query = query.eq('workbase_id', filters.workbaseId);
+      }
+
+      query = query.order('created_at', { ascending: false });
+
+      const { data, error } = await query;
+
+      if (error) throw error;
+
+      // Fetch items for each job
+      const jobs = await Promise.all(
+        (data || []).map(async (jobData) => {
+          const { data: itemsData } = await supabase
+            .from('batch_items')
+            .select('*')
+            .eq('batch_job_id', jobData.id)
+            .order('position', { ascending: true });
+
+          const items: BatchItem[] = (itemsData || []).map(item => ({
+            id: item.id,
+            position: item.position,
+            topic: item.topic,
+            tier: item.tier,
+            parameters: item.parameters || {},
+            status: item.status,
+            progress: item.progress,
+            estimatedTime: item.estimated_time,
+            conversationId: item.conversation_id,
+            error: item.error_message,
+          }));
+
+          return {
+            id: jobData.id,
+            name: jobData.name,
+            status: jobData.status,
+            totalItems: jobData.total_items,
+            completedItems: jobData.completed_items,
+            failedItems: jobData.failed_items,
+            successfulItems: jobData.successful_items,
+            startedAt: jobData.started_at,
+            completedAt: jobData.completed_at,
+            estimatedTimeRemaining: jobData.estimated_time_remaining,
+            priority: jobData.priority,
+            items,
+            workbaseId: jobData.workbase_id || null,
+            configuration: {
+              tier: jobData.tier,
+              sharedParameters: jobData.shared_parameters || {},
+              concurrentProcessing: jobData.concurrent_processing,
+              errorHandling: jobData.error_handling,
+            },
+          };
+        })
+      );
+
+      return jobs;
+    } catch (error) {
+      console.error('Error fetching batch jobs:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Update batch job status
+   * 
+   * @param id - Batch job UUID
+   * @param status - New status
+   * @returns Updated batch job
+   * 
+   * @example
+   * ```typescript
+   * await batchJobService.updateJobStatus(jobId, 'processing');
+   * ```
+   */
+  async updateJobStatus(id: string, status: BatchJobStatus): Promise<BatchJob> {
+    const supabase = getSupabase();
+    try {
+      const updateData: any = {
+        status,
+        updated_at: new Date().toISOString(),
+      };
+
+      // Set timestamps based on status
+      if (status === 'processing' && !updateData.started_at) {
+        updateData.started_at = new Date().toISOString();
+      }
+
+      if (status === 'completed' || status === 'failed' || status === 'cancelled') {
+        updateData.completed_at = new Date().toISOString();
+      }
+
+      const { data, error } = await supabase
+        .from('batch_jobs')
+        .update(updateData)
+        .eq('id', id)
+        .select()
+        .single();
+
+      if (error) throw error;
+
+      // Return updated job with items — fetch without ownership check (internal operation)
+      const { data: updatedJob, error: fetchError } = await supabase
+        .from('batch_jobs')
+        .select('*')
+        .eq('id', id)
+        .single();
+
+      if (fetchError) throw fetchError;
+
+      const { data: itemsData } = await supabase
+        .from('batch_items')
+        .select('*')
+        .eq('batch_job_id', id)
+        .order('position', { ascending: true });
+
+      const items: BatchItem[] = (itemsData || []).map(item => ({
+        id: item.id,
+        position: item.position,
+        topic: item.topic,
+        tier: item.tier,
+        parameters: item.parameters || {},
+        status: item.status,
+        progress: item.progress,
+        estimatedTime: item.estimated_time,
+        conversationId: item.conversation_id,
+        error: item.error_message,
+      }));
+
+      return {
+        id: updatedJob.id,
+        name: updatedJob.name,
+        status: updatedJob.status,
+        totalItems: updatedJob.total_items,
+        completedItems: updatedJob.completed_items,
+        failedItems: updatedJob.failed_items,
+        successfulItems: updatedJob.successful_items,
+        startedAt: updatedJob.started_at,
+        completedAt: updatedJob.completed_at,
+        estimatedTimeRemaining: updatedJob.estimated_time_remaining,
+        priority: updatedJob.priority,
+        items,
+        createdBy: updatedJob.created_by,
+        configuration: {
+          tier: updatedJob.tier,
+          sharedParameters: updatedJob.shared_parameters || {},
+          concurrentProcessing: updatedJob.concurrent_processing,
+          errorHandling: updatedJob.error_handling,
+        },
+      };
+    } catch (error) {
+      console.error('Error updating batch job status:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Increment batch job progress
+   * 
+   * @param jobId - Batch job UUID
+   * @param itemId - Batch item UUID
+   * @param status - Item completion status ('completed' or 'failed')
+   * @param conversationId - Optional conversation ID if successful
+   * @param errorMessage - Optional error message if failed
+   * 
+   * @example
+   * ```typescript
+   * await batchJobService.incrementProgress(jobId, itemId, 'completed', conversationId);
+   * ```
+   */
+  async incrementProgress(
+    jobId: string,
+    itemId: string,
+    status: 'completed' | 'failed',
+    conversationId?: string,
+    errorMessage?: string
+  ): Promise<void> {
+    const supabase = getSupabase();
+    try {
+      // Update batch item status
+      const itemUpdate: any = {
+        status,
+        updated_at: new Date().toISOString(),
+      };
+
+      if (conversationId) {
+        itemUpdate.conversation_id = conversationId;
+      }
+
+      if (errorMessage) {
+        itemUpdate.error_message = errorMessage;
+      }
+
+      const { error: itemError } = await supabase
+        .from('batch_items')
+        .update(itemUpdate)
+        .eq('id', itemId);
+
+      if (itemError) throw itemError;
+
+      // Get current job to calculate new progress — internal fetch without ownership check
+      const { data: jobData, error: jobFetchError } = await supabase
+        .from('batch_jobs')
+        .select('completed_items, failed_items, successful_items, total_items, started_at')
+        .eq('id', jobId)
+        .single();
+
+      if (jobFetchError) throw jobFetchError;
+
+      const job = {
+        completedItems: jobData.completed_items,
+        failedItems: jobData.failed_items,
+        successfulItems: jobData.successful_items,
+        totalItems: jobData.total_items,
+        startedAt: jobData.started_at,
+      };
+
+      // Calculate updated counts
+      const completedItems = job.completedItems + 1;
+      const failedItems = status === 'failed' ? job.failedItems + 1 : job.failedItems;
+      const successfulItems = status === 'completed' ? job.successfulItems + 1 : job.successfulItems;
+
+      // Calculate estimated time remaining
+      let estimatedTimeRemaining: number | undefined;
+      if (job.startedAt && completedItems > 0) {
+        const elapsedMs = Date.now() - new Date(job.startedAt).getTime();
+        const avgTimePerItem = elapsedMs / completedItems;
+        const remainingItems = job.totalItems - completedItems;
+        estimatedTimeRemaining = Math.round((avgTimePerItem * remainingItems) / 1000); // in seconds
+      }
+
+      // Update job progress
+      const jobUpdate: any = {
+        completed_items: completedItems,
+        failed_items: failedItems,
+        successful_items: successfulItems,
+        updated_at: new Date().toISOString(),
+      };
+
+      if (estimatedTimeRemaining !== undefined) {
+        jobUpdate.estimated_time_remaining = estimatedTimeRemaining;
+      }
+
+      // Auto-complete job if all items processed
+      if (completedItems >= job.totalItems) {
+        jobUpdate.status = failedItems === job.totalItems ? 'failed' : 'completed';
+        jobUpdate.completed_at = new Date().toISOString();
+      }
+
+      const { error: jobError } = await supabase
+        .from('batch_jobs')
+        .update(jobUpdate)
+        .eq('id', jobId);
+
+      if (jobError) throw jobError;
+    } catch (error) {
+      console.error('Error incrementing batch progress:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Get active jobs for a user
+   * 
+   * @param userId - User UUID
+   * @returns Array of active batch jobs
+   * 
+   * @example
+   * ```typescript
+   * const activeJobs = await batchJobService.getActiveJobs(userId);
+   * ```
+   */
+  async getActiveJobs(userId: string): Promise<BatchJob[]> {
+    const supabase = getSupabase();
+    try {
+      const { data, error } = await supabase
+        .from('batch_jobs')
+        .select('*')
+        .eq('created_by', userId)
+        .in('status', ['queued', 'processing'])
+        .order('priority', { ascending: false })
+        .order('created_at', { ascending: true });
+
+      if (error) throw error;
+
+      // Fetch items for each job
+      const jobs = await Promise.all(
+        (data || []).map(async (jobData) => {
+          const { data: itemsData } = await supabase
+            .from('batch_items')
+            .select('*')
+            .eq('batch_job_id', jobData.id)
+            .order('position', { ascending: true });
+
+          const items: BatchItem[] = (itemsData || []).map(item => ({
+            id: item.id,
+            position: item.position,
+            topic: item.topic,
+            tier: item.tier,
+            parameters: item.parameters || {},
+            status: item.status,
+            progress: item.progress,
+            estimatedTime: item.estimated_time,
+            conversationId: item.conversation_id,
+            error: item.error_message,
+          }));
+
+          return {
+            id: jobData.id,
+            name: jobData.name,
+            status: jobData.status,
+            totalItems: jobData.total_items,
+            completedItems: jobData.completed_items,
+            failedItems: jobData.failed_items,
+            successfulItems: jobData.successful_items,
+            startedAt: jobData.started_at,
+            completedAt: jobData.completed_at,
+            estimatedTimeRemaining: jobData.estimated_time_remaining,
+            priority: jobData.priority,
+            items,
+            configuration: {
+              tier: jobData.tier,
+              sharedParameters: jobData.shared_parameters || {},
+              concurrentProcessing: jobData.concurrent_processing,
+              errorHandling: jobData.error_handling,
+            },
+          };
+        })
+      );
+
+      return jobs;
+    } catch (error) {
+      console.error('Error fetching active jobs:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Cancel a batch job
+   * 
+   * @param id - Batch job UUID
+   * 
+   * @example
+   * ```typescript
+   * await batchJobService.cancelJob(jobId);
+   * ```
+   */
+  async cancelJob(id: string, userId?: string): Promise<void> {
+    const job = await batchJobService.getJobById(id, userId);
+    if (!job) throw new Error('Job not found or not owned by user');
+
+    const supabase = getSupabase();
+    try {
+      // First, mark all pending/queued items as failed
+      // Use error_message column (not error) per schema
+      const { error: itemsError } = await supabase
+        .from('batch_items')
+        .update({ 
+          status: 'failed',
+          error_message: 'Job cancelled by user',
+          updated_at: new Date().toISOString(),
+        })
+        .eq('batch_job_id', id)
+        .in('status', ['queued', 'processing']);
+
+      if (itemsError) throw itemsError;
+
+      // Get updated failed count
+      const { count: failedCount } = await supabase
+        .from('batch_items')
+        .select('*', { count: 'exact', head: true })
+        .eq('batch_job_id', id)
+        .eq('status', 'failed');
+
+      // Update job status and failed items count
+      const { error: jobError } = await supabase
+        .from('batch_jobs')
+        .update({ 
+          status: 'cancelled',
+          failed_items: failedCount || 0,
+          completed_items: failedCount || 0,
+          completed_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        })
+        .eq('id', id);
+
+      if (jobError) throw jobError;
+
+      console.log(`[BatchJobService] Job ${id} cancelled. Failed items: ${failedCount}`);
+    } catch (error) {
+      console.error('Error cancelling batch job:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Update a batch item status
+   * 
+   * @param itemId - Batch item UUID
+   * @param status - New status
+   * 
+   * @example
+   * ```typescript
+   * await batchJobService.updateItemStatus(itemId, 'processing');
+   * ```
+   */
+  async updateItemStatus(itemId: string, status: string): Promise<void> {
+    const supabase = getSupabase();
+    try {
+      const { error } = await supabase
+        .from('batch_items')
+        .update({ 
+          status,
+          updated_at: new Date().toISOString(),
+        })
+        .eq('id', itemId);
+
+      if (error) throw error;
+    } catch (error) {
+      console.error('Error updating batch item status:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Delete a batch job and its items
+   * 
+   * @param id - Batch job UUID
+   * 
+   * @example
+   * ```typescript
+   * await batchJobService.deleteJob(jobId);
+   * ```
+   */
+  async deleteJob(id: string, userId?: string): Promise<void> {
+    const job = await batchJobService.getJobById(id, userId);
+    if (!job) throw new Error('Job not found or not owned by user');
+
+    const supabase = getSupabase();
+    try {
+      // Delete items first (if cascade is not set up)
+      const { error: itemsError } = await supabase
+        .from('batch_items')
+        .delete()
+        .eq('batch_job_id', id);
+
+      if (itemsError) throw itemsError;
+
+      // Delete job
+      const { error: jobError } = await supabase
+        .from('batch_jobs')
+        .delete()
+        .eq('id', id);
+
+      if (jobError) throw jobError;
+    } catch (error) {
+      console.error('Error deleting batch job:', error);
+      throw error;
+    }
+  },
+};
+

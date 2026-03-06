@@ -1,0 +1,1 @@
+lib/file-processing/text-extractor.ts(11,44): error TS2339: Property 'default' does not exist on type 'typeof import("C:/Users/james/Master/BrightHub/BRun/v4-show/node_modules/pdf-parse/dist/pdf-parse/esm/index")'.

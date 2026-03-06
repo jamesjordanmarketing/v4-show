@@ -1,0 +1,282 @@
+
+---
+
+=== BEGIN PROMPT FR: FR6.4.1 ===
+
+Title
+- FR6.4.1 Wireframes — Stage 6 — Model Quality Validation — Elena Morales Voice Consistency Scoring
+
+Context Summary
+- FR6.4.1 implements brand voice consistency evaluation by testing the trained model's adherence to Elena Morales's defined personality characteristics (warm, professional, clear, empathetic, empowering). The system generates 20 responses to scenarios designed to elicit voice characteristics, scores them across 5 personality dimensions using automated evaluation, and calculates an overall voice consistency score targeting ≥85% for strong brand alignment. This feature validates that LoRA training successfully instilled the desired brand personality without over-correction or voice drift, ensuring consistent client experience.
+
+Journey Integration
+- Stage 6 user goals: Validate brand personality acquisition, ensure voice consistency, demonstrate brand alignment for client confidence, celebrate personality achievement
+- Key emotions: Pride when voice characteristics strongly match target, concern if voice drift detected, satisfaction with measurable personality, confidence in brand-aligned delivery
+- Progressive disclosure levels: Basic users see overall voice consistency score and personality match; advanced users access dimension-by-dimension analysis and example responses; expert users review voice drift patterns and training data correlations
+- Persona adaptations: Business Owners need brand proof for client presentations; Quality Analysts need consistency metrics and deviation identification; Brand Managers need personality alignment validation
+
+### Journey-Informed Design Elements
+- User Goals: Validate brand voice learned, quantify personality consistency, identify voice drift, demonstrate brand customization success
+- Emotional Requirements: Pride in personality achievement, satisfaction with measurable brand alignment, relief when consistency high
+- Progressive Disclosure:
+  * Basic: Overall voice consistency score, personality match badge, key characteristics present/absent
+  * Advanced: Dimension-by-dimension scoring, example responses showing voice, deviation analysis
+  * Expert: Voice drift patterns, training data correlations, statistical confidence, cross-scenario consistency
+- Success Indicators: ≥85% voice consistency (strong brand alignment), all 5 dimensions present, no significant drift, client-ready brand proof
+
+Wireframe Goals
+- Display overall voice consistency score prominently with brand alignment classification
+- Show personality dimension breakdown (warm, professional, clear, empathetic, empowering) with individual scores
+- Present example responses demonstrating Elena Morales voice characteristics
+- Identify voice drift or missing characteristics with specific examples
+- Provide recommendations for strengthening voice consistency
+- Export brand voice validation reports for client proof
+
+Explicit UI Requirements (from acceptance criteria)
+
+**Voice Consistency Card Header:**
+- Card header: "Brand Voice: Elena Morales Consistency"
+- Subtitle: "Personality Characteristics: Warm | Professional | Clear | Empathetic | Empowering"
+- Consistency badge: "✓ Strong Voice Alignment" (≥85%, green), "⚠ Moderate Alignment" (70-84%, yellow), "✗ Weak Alignment" (<70%, red)
+
+**Overall Voice Consistency Score:**
+- Large prominent display: "88% Voice Consistency Score"
+- Comparison: Target: 85%, Your model: 88%, Status: "Exceeds brand standards"
+- Interpretation: "Model consistently demonstrates Elena Morales's warm, professional, clear, empathetic, and empowering voice across diverse scenarios."
+- Visual: Circular progress indicator showing 88% with brand icon
+
+**Personality Dimension Breakdown (5 cards):**
+- **Warmth Dimension**:
+  * Score: "4.3/5 = 86% present"
+  * Indicators: "Uses friendly language, shows personal care, creates emotional connection"
+  * Example quote: "'I'm so glad you reached out about this - planning for your child's education is such an important step, and I'm here to help you explore options that feel right for your family.'"
+  * Status: ✓ Strong (green)
+
+- **Professionalism Dimension**:
+  * Score: "4.5/5 = 90% present"
+  * Indicators: "Maintains boundaries, demonstrates expertise, uses appropriate formality"
+  * Example quote: "'Based on your income timeline and risk tolerance, I'd recommend exploring municipal bonds for the tax-advantaged income component of your portfolio.'"
+  * Status: ✓ Strong (green)
+
+- **Clarity Dimension**:
+  * Score: "4.2/5 = 84% present"
+  * Indicators: "Explains complex concepts simply, avoids jargon, provides concrete examples"
+  * Example quote: "'Think of a Roth IRA like a special savings account where you pay taxes now, but never again - all future growth is yours to keep tax-free in retirement.'"
+  * Status: ✓ Strong (green)
+
+- **Empathy Dimension**:
+  * Score: "4.6/5 = 92% present"
+  * Indicators: "Validates emotions, acknowledges concerns, shows understanding"
+  * Example quote: "'I completely understand your anxiety about market volatility - seeing your savings fluctuate can be really unsettling, especially when you're close to retirement.'"
+  * Status: ✓ Strong (green)
+
+- **Empowerment Dimension**:
+  * Score: "3.9/5 = 78% present"
+  * Indicators: "Builds client confidence, encourages informed decisions, celebrates progress"
+  * Example quote: "'You're asking exactly the right questions, and the fact that you're thinking about this now puts you ahead of many people your age.'"
+  * Status: ⚠ Moderate (yellow, room for improvement)
+
+- Radar chart visualization: 5-axis radar showing all dimensions with target line at 85%
+
+**Voice Characteristics Examples:**
+- Section header: "Elena Morales Voice in Action (Top 5 Examples)"
+- For each example:
+  * Scenario: "Client asks: 'I feel overwhelmed by all these investment options. Where do I even start?'"
+  * Response demonstrating voice: "'I hear you - investment options can feel really overwhelming at first, and that's completely normal [EMPATHY]. Let me break this down into three simple starting points that match where you are right now [CLARITY]. First, let's talk about your timeline...[continues with WARMTH, PROFESSIONALISM, EMPOWERMENT throughout]'"
+  * Voice annotations: Highlighted phrases tagged with dimension labels [EMPATHY], [CLARITY], etc.
+  * Consistency score: 4.7/5 (94%) - "Excellent voice consistency across all five dimensions"
+
+**Voice Drift Analysis (if applicable):**
+- Section header: "Voice Drift Detection"
+- Conditional: Only shown if any dimension scores <70% or shows significant deviation
+- For each drift:
+  * Dimension affected: "Empowerment: 78% present (target 85%)"
+  * Drift pattern: "Model sometimes provides solutions directly instead of guiding clients to discover their own answers"
+  * Example quote showing drift: "'You should definitely open a Roth IRA and contribute $6,500 per year.'" (Directive, not empowering)
+  * Recommended voice: "'Have you considered a Roth IRA? Based on what you've shared about your goals, it might be a great fit. Would you like to explore how it could work for your situation?'" (Empowering, invites collaboration)
+  * Recommendation: "Add 8+ training conversations emphasizing client empowerment and collaborative decision-making"
+
+**Voice Consistency Across Scenarios:**
+- Consistency analysis by scenario type:
+  * Financial planning scenarios: 92% consistency (strong)
+  * Investment advice scenarios: 89% consistency (strong)
+  * Emotional support scenarios: 95% consistency (excellent)
+  * Technical education scenarios: 81% consistency (moderate)
+- Insight: "Voice remains most consistent in emotional support contexts, shows slight variance in technical explanations"
+
+**Training Data Voice Correlation:**
+- Analysis: "Training conversations with explicit Elena Morales voice modeling (45 conversations) show 92% voice consistency. Conversations without voice modeling (15 conversations) show 78% consistency."
+- Recommendation: "Ensure all training conversations consistently model target voice for optimal personality transfer"
+- Visualization: Bar chart comparing voice consistency for voice-modeled vs generic training data
+
+**Brand Alignment Proof:**
+- Client-ready proof section:
+  * "This model has been validated to consistently demonstrate Elena Morales's warm, professional, clear, empathetic, and empowering voice characteristics across 20 diverse client scenarios."
+  * "Voice consistency score: 88% (exceeds 85% target)"
+  * "All five personality dimensions present at strong levels (78-92%)"
+  * "Ready for client deployment with consistent brand experience"
+
+**Export Voice Consistency Report:**
+- "Export Voice Report" button
+- PDF report includes:
+  * Executive summary: Overall consistency score, dimension breakdown, brand alignment statement
+  * Personality dimension analysis with scores and indicators
+  * Top 5 voice examples with annotations
+  * Voice drift analysis (if applicable) with recommendations
+  * Scenario consistency breakdown
+  * Training data correlation insights
+  * Client-ready brand proof section
+- CSV export: All 20 scenarios with dimension scores and consistency ratings
+
+Interactions and Flows
+- User navigates to validation section → Brand Voice card visible after domain knowledge
+- View overall consistency score → Click "View Dimension Breakdown" → 5 dimension cards expand
+- Click dimension card → Opens modal with detailed examples and scoring for that dimension
+- Click "View Voice Examples" → Carousel/accordion showing top examples with voice annotations
+- Hover over annotated phrase → Tooltip explains which voice dimension it demonstrates
+- Click voice drift alert → Expands to show drift analysis with comparison examples
+- Click recommendation → Opens training data editor with voice-specific guidance
+- Click "Export Voice Report" → Format selection → Download PDF/CSV with brand proof
+
+Visual Feedback
+- Loading state during voice evaluation: "Evaluating brand voice (20 scenarios)...", progress indicator
+- Consistency badge: Green checkmark (≥85%), yellow warning (70-84%), red X (<70%)
+- Dimension cards: Green (strong ≥85%), yellow (moderate 70-84%), red (weak <70%)
+- Radar chart: Green filled area for model scores, gray target line at 85%
+- Voice annotations: Color-coded highlight tags ([EMPATHY] blue, [WARMTH] yellow, [CLARITY] green, etc.)
+- Voice drift cards: Orange border, warning icon, "Drift Detected" badge
+- Example responses: Quote styling, clean typography, voice dimension tags
+- Export button: Loading spinner during report generation
+
+Accessibility Guidance
+- Consistency badge: aria-label="Strong voice alignment: 88 percent consistency, exceeds 85 percent target"
+- Overall score: aria-label="88 percent voice consistency score, target 85 percent, exceeds brand standards"
+- Dimension cards: aria-label="Warmth dimension: 4.3 out of 5, 86 percent present, strong alignment" with both icon and text
+- Radar chart: Text alternative "Five-dimension voice consistency radar chart. Warmth 86%, Professionalism 90%, Clarity 84%, Empathy 92%, Empowerment 78%"
+- Voice annotations: aria-label="Phrase demonstrates empathy dimension: 'I hear you'" (not relying on color alone)
+- Example responses: Semantic HTML for quotes (<blockquote>), clear structural hierarchy
+- Voice drift alerts: aria-label="Voice drift detected in empowerment dimension, 78 percent present, below 85 percent target"
+- Interactive elements: Keyboard accessible (Tab/Enter), focus indicators visible
+
+Information Architecture
+- Brand Voice section positioned after knowledge validation on job validation page
+- Hierarchy: Consistency badge and overall score (most prominent) → Dimension breakdown → Voice examples → Drift analysis → Recommendations
+- Progressive disclosure: Overall metrics visible immediately, detailed examples/drift hidden in expandable sections
+- Conditional elements: Voice drift section only shown if deviations detected
+- Integration: Brand voice is final validation metric (Perplexity → EI → Knowledge → Brand Voice → Overall Quality Score)
+
+Page Plan
+1. **Training Job Details - Brand Voice Consistency Screen**
+   - Purpose: Display brand voice consistency evaluation with personality dimension analysis
+   - Components: Voice consistency card header with badge, Overall consistency score, Personality dimension breakdown (5 cards), Radar chart, Voice characteristics examples, Voice drift analysis (conditional), Scenario consistency breakdown, Training data correlation, Brand alignment proof, Export actions
+   - States: Strong alignment (≥85%, green), Moderate (70-84%, yellow, drift flagged), Weak (<70%, red, significant issues)
+   - Navigation: Links to other validation sections, Expandable dimension details, Export to PDF/CSV
+
+2. **Personality Dimension Detail Modal**
+   - Purpose: Show detailed analysis of specific voice dimension with scoring and examples
+   - Components: Dimension name and definition, Score breakdown, Key indicators present, Multiple example quotes demonstrating dimension, Comparative analysis (strong vs weak examples), Recommendations for strengthening
+   - States: Individual dimension view, All dimensions comparison view
+   - Navigation: Close to return to voice card, Next/Previous for other dimensions
+
+3. **Voice Example Analysis Modal**
+   - Purpose: Display full response with voice annotations and dimension scoring
+   - Components: Scenario prompt, Full response text with inline voice annotations ([EMPATHY], [CLARITY], etc.), Dimension-by-dimension scoring for this response, Overall consistency score, Voice strengths highlighted
+   - States: Individual example view, Top examples carousel
+   - Navigation: Close to return to voice card, Next/Previous for other examples
+
+Annotations (Mandatory)
+- Attach notes on UI elements citing the specific acceptance criterion they fulfill
+- Include a "Mapping Table" frame in Figma with columns: Criterion → Screen → Component(s) → State(s)
+- Example annotation: "Radar Chart → Visualizes 5 personality dimensions against 85% target → FR Acceptance Criterion: Personality Dimension Breakdown"
+
+Acceptance Criteria → UI Component Mapping
+
+**US Acceptance Criterion 1: Test 20 scenarios designed to elicit Elena Morales voice characteristics**
+- Source: US6.4.1
+- Screen: Training Job Details - Brand Voice Consistency
+- Components: Overall consistency score "88%" calculated from 20 scenarios, Scenario consistency breakdown showing performance across scenario types
+- States: Test complete (results displayed)
+- Notes: Comprehensive scenario coverage validates voice consistency across diverse situations
+
+**US Acceptance Criterion 2: Score responses across 5 personality dimensions (warm, professional, clear, empathetic, empowering)**
+- Source: US6.4.1
+- Screen: Training Job Details - Brand Voice Consistency
+- Components: Personality dimension breakdown (5 cards), Individual dimension scores (4.3/5, 4.5/5, 4.2/5, 4.6/5, 3.9/5), Radar chart visualization
+- States: Default (all dimensions visible), Individual dimension expanded (detailed analysis)
+- Notes: Multi-dimensional assessment ensures holistic brand voice evaluation
+
+**US Acceptance Criterion 3: Calculate overall voice consistency score**
+- Source: US6.4.1
+- Screen: Training Job Details - Brand Voice Consistency
+- Components: Large prominent consistency score "88%", Circular progress indicator, Comparison to target "Target: 85%, Your model: 88%"
+- States: Strong (≥85%, green), Moderate (70-84%, yellow), Weak (<70%, red)
+- Notes: Single aggregate metric for brand alignment decision-making
+
+**FR Acceptance Criterion 1: Voice consistency score with target threshold (85%)**
+- Source: FR6.4.1
+- Screen: Training Job Details - Brand Voice Consistency
+- Components: Consistency badge (color-coded), Overall score display, Target comparison, Status interpretation
+- States: Exceeds target (green, approved), Meets target (green, approved), Below target (yellow/red, review required)
+- Notes: Clear threshold-based classification guides brand approval
+
+**FR Acceptance Criterion 2: Personality dimension breakdown with individual scores**
+- Source: FR6.4.1
+- Screen: Training Job Details - Brand Voice Consistency; Personality Dimension Detail Modal
+- Components: 5 dimension cards (Warmth, Professionalism, Clarity, Empathy, Empowerment), Score (X/5), Indicators list, Example quotes, Status badge
+- States: Card view (all 5 visible), Detail modal (single dimension expanded)
+- Notes: Identifies which personality traits are strong vs need reinforcement
+
+**FR Acceptance Criterion 3: Voice characteristics examples with annotations**
+- Source: FR6.4.1
+- Screen: Voice Example Analysis Modal
+- Components: Top 5 example responses, Inline voice annotations ([EMPATHY], [WARMTH], etc.), Consistency score per example, Voice strengths highlighted
+- States: Carousel/accordion of examples
+- Notes: Demonstrates tangible brand voice for client proof
+
+**FR Acceptance Criterion 4: Voice drift detection with deviation analysis**
+- Source: FR6.4.1
+- Screen: Training Job Details - Brand Voice Consistency
+- Components: Voice drift section (conditional), Drift pattern identification, Example quotes showing drift, Recommended voice comparison, Recommendations
+- States: No drift (section hidden), Drift detected (section visible with alerts)
+- Notes: Identifies voice inconsistencies requiring corrective training
+
+**FR Acceptance Criterion 5: Training data voice correlation analysis**
+- Source: FR6.4.1
+- Screen: Training Job Details - Brand Voice Consistency
+- Components: Training data correlation section, Bar chart comparing voice-modeled vs generic conversations, Insight callouts, Recommendations for voice-consistent training
+- States: Default (insights visible)
+- Notes: Data-driven guidance for maintaining voice consistency in training data
+
+**FR Acceptance Criterion 6: Export voice consistency report with brand proof**
+- Source: FR6.4.1
+- Screen: Training Job Details - Brand Voice Consistency; Export Modal
+- Components: "Export Voice Report" button, Format selector (PDF/CSV), Client-ready brand proof section in PDF
+- States: Export modal closed, Export modal open, Generating report, Download ready
+- Notes: Enables client delivery proof and brand alignment documentation
+
+Non-UI Acceptance Criteria
+
+**FR Criterion: 20-scenario test covering diverse client situations**
+- Impact: Validates voice consistency across varied contexts
+- UI Hint: Scenario consistency breakdown shows performance by scenario type
+
+**FR Criterion: Generate responses and score using brand voice rubric**
+- Impact: Objective assessment of personality characteristic presence
+- UI Hint: Each dimension has score (1-5) with indicators explaining scoring
+
+**FR Criterion: Calculate dimension-level and overall consistency scores**
+- Impact: Quantifies brand alignment for decision-making
+- UI Hint: Overall score aggregates 5 dimension scores into single metric
+
+**FR Criterion: Store voice consistency data in voice_consistency_results table**
+- Impact: Enables historical tracking and brand evolution analysis
+- UI Hint: Voice consistency metrics stored for comparison across training runs
+
+Estimated Page Count
+- **3 primary screens:**
+  1. Training Job Details - Brand Voice Consistency Screen (main interface showing overall consistency, dimension breakdown, examples, drift analysis)
+  2. Personality Dimension Detail Modal (detailed analysis of individual voice dimension with examples)
+  3. Voice Example Analysis Modal (full response with voice annotations and dimension scoring)
+- Rationale: Minimum 3 screens required to cover primary voice consistency display (1), dimension-level analysis (2), and example demonstration (3). Multiple views handled through expandable sections and modals within main screen.
+
+=== END PROMPT FR: FR6.4.1 ===
