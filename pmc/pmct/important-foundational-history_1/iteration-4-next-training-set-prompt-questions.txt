@@ -1,0 +1,16 @@
+make me sound qualified lol
+
+
+find markets where my identity as solo business owner (hopefully not solo much longer) who is not a LLM or tech degree holder will realistically be able to give customers the faith and trust they need to "try" me
+
+Where my sk match my expertise and skillset
+
+do we need a "before" data set. I.e. to automatically generate lots of answers from a "vanilla" llm to then be able to match against our fine tuned answers
+
+
+
+**This is your pitch:** "We generate structured, domain-grounded training data 10x faster than custom annotation, at 1/10th the cost, with automated quality scoring."
+
+
+If our  market is other LLM/ML/Fine Tuning/ professionals what are they looking for. Important because they are the "canary in the goal mine". If we produce something good they 
+already believe in AI as a force for good, and if we can impress them they will do our selling for us to other domains.

@@ -1,0 +1,638 @@
+21:21:05.003 Running build in Washington, D.C., USA (East) – iad1
+21:21:05.003 Build machine configuration: 4 cores, 8 GB
+21:21:05.137 Cloning github.com/jamesjordanmarketing/v4-show (Branch: main, Commit: 64bbb93)
+21:21:08.243 Cloning completed: 3.105s
+21:21:08.519 Found .vercelignore (repository root)
+21:21:08.733 Removed 2706 ignored files defined in .vercelignore
+21:21:08.733   /.cursor/commands/src.md
+21:21:08.733   /.git/config
+21:21:08.733   /.git/description
+21:21:08.733   /.git/FETCH_HEAD
+21:21:08.733   /.git/HEAD
+21:21:08.733   /.git/hooks/applypatch-msg.sample
+21:21:08.733   /.git/hooks/commit-msg.sample
+21:21:08.733   /.git/hooks/fsmonitor-watchman.sample
+21:21:08.733   /.git/hooks/post-update.sample
+21:21:08.733   /.git/hooks/pre-applypatch.sample
+21:21:08.775 Restored build cache from previous deployment (A25NCuN6RQNo8pYu5YPNvUV94eLQ)
+21:21:09.072 Warning: Due to "engines": { "node": "20.x" } in your `package.json` file, the Node.js Version defined in your Project Settings ("24.x") will not apply, Node.js Version "20.x" will be used instead. Learn More: https://vercel.link/node-version
+21:21:09.077 Running "vercel build"
+21:21:09.635 Vercel CLI 50.28.0
+21:21:10.366 Warning: Due to "engines": { "node": "20.x" } in your `package.json` file, the Node.js Version defined in your Project Settings ("24.x") will not apply, Node.js Version "20.x" will be used instead. Learn More: https://vercel.link/node-version
+21:21:10.381 Installing dependencies...
+21:21:13.081 
+21:21:13.081 > multi-chat@0.1.0 prepare
+21:21:13.081 > husky install
+21:21:13.081 
+21:21:13.137 husky - install command is DEPRECATED
+21:21:13.147 .git can't be found
+21:21:13.147 up to date in 3s
+21:21:13.148 
+21:21:13.148 215 packages are looking for funding
+21:21:13.148   run `npm fund` for details
+21:21:13.164 Running "npm run build"
+21:21:13.989 
+21:21:13.990 > multi-chat@0.1.0 build
+21:21:13.990 > next build
+21:21:13.990 
+21:21:14.640 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+21:21:14.640 This information is used to shape Next.js' roadmap and prioritize features.
+21:21:14.640 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+21:21:14.640 https://nextjs.org/telemetry
+21:21:14.641 
+21:21:14.697   ▲ Next.js 14.2.33
+21:21:14.698 
+21:21:14.787    Creating an optimized production build ...
+21:21:40.727 <w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (108kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+21:21:42.649 [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+21:21:42.766 Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+21:21:42.766   npx update-browserslist-db@latest
+21:21:42.766   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+21:21:53.350  ⚠ Compiled with warnings
+21:21:53.350 
+21:21:53.351 ./node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js
+21:21:53.351 A Node.js API is used (process.versions at line: 35) which is not supported in the Edge Runtime.
+21:21:53.351 Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+21:21:53.351 
+21:21:53.351 Import trace for requested module:
+21:21:53.351 ./node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js
+21:21:53.351 ./node_modules/@supabase/realtime-js/dist/module/index.js
+21:21:53.352 ./node_modules/@supabase/supabase-js/dist/module/index.js
+21:21:53.352 ./node_modules/@supabase/ssr/dist/module/createBrowserClient.js
+21:21:53.352 ./node_modules/@supabase/ssr/dist/module/index.js
+21:21:53.352 
+21:21:53.352 ./node_modules/@supabase/supabase-js/dist/module/index.js
+21:21:53.352 A Node.js API is used (process.version at line: 24) which is not supported in the Edge Runtime.
+21:21:53.352 Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+21:21:53.352 
+21:21:53.352 Import trace for requested module:
+21:21:53.352 ./node_modules/@supabase/supabase-js/dist/module/index.js
+21:21:53.353 ./node_modules/@supabase/ssr/dist/module/createBrowserClient.js
+21:21:53.353 ./node_modules/@supabase/ssr/dist/module/index.js
+21:21:53.353 
+21:21:53.353    Skipping linting
+21:21:53.354    Checking validity of types ...
+21:22:15.461    Collecting page data ...
+21:22:16.311 ✅ Rate limiter initialized with config: { requestLimit: 50, windowSeconds: 60, threshold: '90%' }
+21:22:16.317 [INFERENCE-SERVICE] Mode selected: serverless
+21:22:16.324 ✅ Rate limiter initialized with config: { requestLimit: 50, windowSeconds: 60, threshold: '90%' }
+21:22:16.325 ✅ Rate limiter initialized with config: { requestLimit: 50, windowSeconds: 60, threshold: '90%' }
+21:22:16.326 [INFERENCE-SERVICE] Mode selected: serverless
+21:22:16.327 [INFERENCE-SERVICE] Mode selected: serverless
+21:22:16.485 Error: `cookies` was called outside a request scope. Read more: https://nextjs.org/docs/messages/next-dynamic-api-wrong-context
+21:22:16.485     at getExpectedRequestStore (/vercel/path0/src/node_modules/next/dist/client/components/request-async-storage.external.js:28:11)
+21:22:16.485     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9216)
+21:22:16.486     at u (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:3847)
+21:22:16.486     at 82287 (/vercel/path0/src/.next/server/chunks/2287.js:1:5775)
+21:22:16.486     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+21:22:16.486     at 23751 (/vercel/path0/src/.next/server/app/api/templates/[id]/resolve/route.js:1:1014)
+21:22:16.486     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+21:22:16.486     at r (/vercel/path0/src/.next/server/app/api/templates/[id]/resolve/route.js:1:2268)
+21:22:16.486     at /vercel/path0/src/.next/server/app/api/templates/[id]/resolve/route.js:1:2326
+21:22:16.486     at t.X (/vercel/path0/src/.next/server/webpack-runtime.js:1:2214)
+21:22:16.490 Error: `cookies` was called outside a request scope. Read more: https://nextjs.org/docs/messages/next-dynamic-api-wrong-context
+21:22:16.490     at getExpectedRequestStore (/vercel/path0/src/node_modules/next/dist/client/components/request-async-storage.external.js:28:11)
+21:22:16.490     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9216)
+21:22:16.490     at c (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6378)
+21:22:16.490     at 82287 (/vercel/path0/src/.next/server/chunks/2287.js:1:5775)
+21:22:16.490     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+21:22:16.490     at 81599 (/vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:1024)
+21:22:16.491     at t (/vercel/path0/src/.next/server/webpack-runtime.js:1:143)
+21:22:16.491     at a (/vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:4531)
+21:22:16.491     at /vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:4584
+21:22:16.491     at t.X (/vercel/path0/src/.next/server/webpack-runtime.js:1:2214)
+21:22:18.717    Generating static pages (0/114) ...
+21:22:19.235 Error fetching change history: n [Error]: Dynamic server usage: Route /api/config/change-history couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:19.235     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:19.236     at Object.f [as cookies] (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:19.236     at S.getCookie (/vercel/path0/src/.next/server/chunks/80.js:1:5525)
+21:22:19.236     at S.getItem (/vercel/path0/src/.next/server/chunks/80.js:1:14669)
+21:22:19.236     at aa (/vercel/path0/src/.next/server/chunks/9498.js:21:27314)
+21:22:19.236     at aW.__loadSession (/vercel/path0/src/.next/server/chunks/9498.js:21:59236)
+21:22:19.236     at aW._useSession (/vercel/path0/src/.next/server/chunks/9498.js:21:58973)
+21:22:19.236     at aW._getUser (/vercel/path0/src/.next/server/chunks/9498.js:21:60836)
+21:22:19.236     at /vercel/path0/src/.next/server/chunks/9498.js:21:60687
+21:22:19.237     at /vercel/path0/src/.next/server/chunks/9498.js:21:58282 {
+21:22:19.237   description: "Route /api/config/change-history couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:19.237   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:19.237 }
+21:22:19.695 Error fetching change statistics: n [Error]: Dynamic server usage: Route /api/config/statistics couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:19.696     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:19.696     at Object.f [as cookies] (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:19.696     at S.getCookie (/vercel/path0/src/.next/server/chunks/80.js:1:5525)
+21:22:19.696     at S.getItem (/vercel/path0/src/.next/server/chunks/80.js:1:14669)
+21:22:19.697     at aa (/vercel/path0/src/.next/server/chunks/9498.js:21:27314)
+21:22:19.697     at aW.__loadSession (/vercel/path0/src/.next/server/chunks/9498.js:21:59236)
+21:22:19.697     at aW._useSession (/vercel/path0/src/.next/server/chunks/9498.js:21:58973)
+21:22:19.697     at aW._getUser (/vercel/path0/src/.next/server/chunks/9498.js:21:60836)
+21:22:19.697     at /vercel/path0/src/.next/server/chunks/9498.js:21:60687
+21:22:19.698     at /vercel/path0/src/.next/server/chunks/9498.js:21:58282 {
+21:22:19.698   description: "Route /api/config/statistics couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:19.698   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:19.698 }
+21:22:20.888 Costs fetch error: B [Error]: Dynamic server usage: Route /api/costs couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:20.888     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:20.889     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:20.889     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+21:22:20.889     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+21:22:20.890     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+21:22:20.890     at c (/vercel/path0/src/.next/server/app/api/costs/route.js:1:1088)
+21:22:20.890     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:20.890     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:20.890     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:20.890     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:20.890   description: "Route /api/costs couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:20.890   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:20.890 }
+21:22:21.050 Error fetching database health: n [Error]: Dynamic server usage: Route /api/database/health couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.051     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:21.051     at Object.f [as cookies] (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:21.051     at S.getCookie (/vercel/path0/src/.next/server/chunks/80.js:1:5525)
+21:22:21.051     at S.getItem (/vercel/path0/src/.next/server/chunks/80.js:1:14669)
+21:22:21.051     at aa (/vercel/path0/src/.next/server/chunks/9498.js:21:27314)
+21:22:21.052     at aW.__loadSession (/vercel/path0/src/.next/server/chunks/9498.js:21:59236)
+21:22:21.052     at aW._useSession (/vercel/path0/src/.next/server/chunks/9498.js:21:58973)
+21:22:21.052     at aW._getUser (/vercel/path0/src/.next/server/chunks/9498.js:21:60836)
+21:22:21.052     at /vercel/path0/src/.next/server/chunks/9498.js:21:60687
+21:22:21.052     at /vercel/path0/src/.next/server/chunks/9498.js:21:58282 {
+21:22:21.052   description: "Route /api/database/health couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.052   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.052 }
+21:22:21.052    Generating static pages (28/114) 
+21:22:21.233 Export edge cases error: B [Error]: Dynamic server usage: Route /api/export/edge-cases couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.234     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:21.234     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:21.234     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8593)
+21:22:21.234     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9022)
+21:22:21.234     at g (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9126)
+21:22:21.235     at d (/vercel/path0/src/.next/server/app/api/export/edge-cases/route.js:1:1098)
+21:22:21.235     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.235     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.235     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.235     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:21.236   description: "Route /api/export/edge-cases couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.236   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.236 }
+21:22:21.419 Export templates error: B [Error]: Dynamic server usage: Route /api/export/templates couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.420     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:21.420     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:21.420     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8593)
+21:22:21.420     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9022)
+21:22:21.420     at g (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9126)
+21:22:21.420     at c (/vercel/path0/src/.next/server/app/api/export/templates/route.js:1:1098)
+21:22:21.420     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.420     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.420     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.420     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:21.420   description: "Route /api/export/templates couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.420   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.420 }
+21:22:21.420 Export scenarios error: B [Error]: Dynamic server usage: Route /api/export/scenarios couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.420     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:21.421     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:21.421     at l (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:4095)
+21:22:21.421     at p (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:4524)
+21:22:21.421     at d (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:4628)
+21:22:21.421     at l (/vercel/path0/src/.next/server/app/api/export/scenarios/route.js:1:1098)
+21:22:21.421     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.421     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.421     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.421     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:21.421   description: "Route /api/export/scenarios couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.421   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.421 }
+21:22:21.449 [API] Error fetching failed generations: B [Error]: Dynamic server usage: Route /api/failed-generations couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.449     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:21.449     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:21.449     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+21:22:21.450     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+21:22:21.450     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+21:22:21.450     at c (/vercel/path0/src/.next/server/app/api/failed-generations/route.js:1:1132)
+21:22:21.450     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.450     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.450     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.451     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:21.451   description: "Route /api/failed-generations couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.451   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.451 }
+21:22:21.528 Error in GET /api/generation-logs/stats: B [Error]: Dynamic server usage: Route /api/generation-logs/stats couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.529     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:21.529     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:21.529     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8593)
+21:22:21.529     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9022)
+21:22:21.530     at g (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9126)
+21:22:21.530     at l (/vercel/path0/src/.next/server/app/api/generation-logs/stats/route.js:1:1105)
+21:22:21.530     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.530     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.530     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.531     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:21.531   description: "Route /api/generation-logs/stats couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.531   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.531 }
+21:22:21.673 Unexpected error: B [Error]: Dynamic server usage: Route /api/models couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.673     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:21.674     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:21.674     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8593)
+21:22:21.676     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9022)
+21:22:21.676     at g (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:9126)
+21:22:21.677     at l (/vercel/path0/src/.next/server/app/api/models/route.js:1:1083)
+21:22:21.677     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.677     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.677     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.677     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:21.678   description: "Route /api/models couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.678   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.678 }
+21:22:21.728 Notifications fetch error: B [Error]: Dynamic server usage: Route /api/notifications couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.728     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:21.728     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:21.728     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+21:22:21.728     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+21:22:21.729     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+21:22:21.729     at c (/vercel/path0/src/.next/server/app/api/notifications/route.js:1:1082)
+21:22:21.729     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.729     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.729     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.729     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:21.729   description: "Route /api/notifications couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.729   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.729 }
+21:22:21.803 Performance API error: B [Error]: Dynamic server usage: Route /api/performance couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.804     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:21.804     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:21.807     at l (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:4095)
+21:22:21.807     at p (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:4524)
+21:22:21.807     at d (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:4628)
+21:22:21.807     at d (/vercel/path0/src/.next/server/app/api/performance/route.js:1:1108)
+21:22:21.808     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.808     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.808     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.808     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:21.808   description: "Route /api/performance couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.808   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.808 }
+21:22:21.884 GET /api/pipeline/adapters/status error: n [Error]: Dynamic server usage: Route /api/pipeline/adapters/status couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:21.884     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:21.884     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:21.884     at u (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:3847)
+21:22:21.885     at c (/vercel/path0/src/.next/server/app/api/pipeline/adapters/status/route.js:1:1116)
+21:22:21.885     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:21.885     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:21.885     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:21.885     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+21:22:21.885     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+21:22:21.885     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+21:22:21.885   description: "Route /api/pipeline/adapters/status couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:21.885   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:21.885 }
+21:22:21.920    Generating static pages (56/114) 
+21:22:22.037 GET /api/pipeline/evaluators error: n [Error]: Dynamic server usage: Route /api/pipeline/evaluators couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:22.037     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:22.037     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:22.037     at c (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6378)
+21:22:22.037     at c (/vercel/path0/src/.next/server/app/api/pipeline/evaluators/route.js:1:1115)
+21:22:22.037     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:22.038     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:22.038     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:22.038     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+21:22:22.038     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+21:22:22.038     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+21:22:22.038   description: "Route /api/pipeline/evaluators couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:22.038   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:22.038 }
+21:22:22.074 GET /api/pipeline/evaluate/compare error: n [Error]: Dynamic server usage: Route /api/pipeline/evaluate/compare couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:22.074     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:22.075     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:22.075     at u (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:3847)
+21:22:22.075     at p (/vercel/path0/src/.next/server/app/api/pipeline/evaluate/compare/route.js:1:1342)
+21:22:22.075     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:22.075     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:22.077     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:22.077     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+21:22:22.077     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+21:22:22.077     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+21:22:22.077   description: "Route /api/pipeline/evaluate/compare couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:22.077   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:22.077 }
+21:22:22.116 [RAG Dashboard] Error: B [Error]: Dynamic server usage: Route /api/rag/dashboard couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:22.116     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:22.116     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:22.116     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+21:22:22.116     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+21:22:22.116     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+21:22:22.116     at u (/vercel/path0/src/.next/server/app/api/rag/dashboard/route.js:1:1083)
+21:22:22.116     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:22.116     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:22.116     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:22.116     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:22.117   description: "Route /api/rag/dashboard couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:22.117   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:22.117 }
+21:22:22.199 GET /api/rag/models error: B [Error]: Dynamic server usage: Route /api/rag/models couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:22.200     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:22.200     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:22.200     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+21:22:22.200     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+21:22:22.200     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+21:22:22.200     at p (/vercel/path0/src/.next/server/app/api/rag/models/route.js:1:1082)
+21:22:22.200     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:22.200     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:22.200     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:22.200     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:22.200   description: "Route /api/rag/models couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:22.200   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:22.201 }
+21:22:22.913 Failed to fetch personas: n [Error]: Dynamic server usage: Route /api/scaffolding/personas couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:22.913     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:22.914     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:22.914     at u (/vercel/path0/src/.next/server/app/api/batch-jobs/[id]/cancel/route.js:1:3847)
+21:22:22.914     at u (/vercel/path0/src/.next/server/app/api/scaffolding/personas/route.js:1:1077)
+21:22:22.914     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:22.914     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:22.914     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:22.914     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+21:22:22.914     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+21:22:22.914     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+21:22:22.914   description: "Route /api/scaffolding/personas couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:22.914   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:22.915 }
+21:22:22.915 Failed to fetch emotional arcs: n [Error]: Dynamic server usage: Route /api/scaffolding/emotional-arcs couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:22.915     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:22.915     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:22.915     at c (/vercel/path0/src/.next/server/app/api/ai-configuration/route.js:1:8345)
+21:22:22.915     at u (/vercel/path0/src/.next/server/app/api/scaffolding/emotional-arcs/route.js:1:1077)
+21:22:22.915     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:22.915     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:22.915     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:22.915     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+21:22:22.915     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+21:22:22.915     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+21:22:22.915   description: "Route /api/scaffolding/emotional-arcs couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:22.915   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:22.915 }
+21:22:22.969 Failed to fetch training topics: n [Error]: Dynamic server usage: Route /api/scaffolding/training-topics couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:22.969     at l (/vercel/path0/src/.next/server/chunks/9276.js:1:57696)
+21:22:22.969     at f (/vercel/path0/src/.next/server/chunks/9702.js:5:9175)
+21:22:22.969     at c (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6378)
+21:22:22.970     at u (/vercel/path0/src/.next/server/app/api/scaffolding/training-topics/route.js:1:1077)
+21:22:22.970     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:22.970     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:22.970     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:22.970     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+21:22:22.970     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+21:22:22.970     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24) {
+21:22:22.970   description: "Route /api/scaffolding/training-topics couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:22.970   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:22.970 }
+21:22:23.082 Error fetching template analytics: B [Error]: Dynamic server usage: Route /api/templates/analytics couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:23.082     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:23.083     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:23.083     at u (/vercel/path0/src/.next/server/app/api/templates/analytics/route.js:1:1093)
+21:22:23.083     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:23.083     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:23.083     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:23.083     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46)
+21:22:23.083     at NoopTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:65:31)
+21:22:23.083     at ProxyTracer.startActiveSpan (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:36:24)
+21:22:23.083     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+21:22:23.083   description: "Route /api/templates/analytics couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:23.083   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:23.084 }
+21:22:23.084    Generating static pages (85/114) 
+21:22:23.225 Fetch error: B [Error]: Dynamic server usage: Route /api/training-files/available-for-import couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+21:22:23.226     at V (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+21:22:23.226     at Object.get (/vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+21:22:23.226     at l (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:6626)
+21:22:23.226     at d (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7055)
+21:22:23.226     at p (/vercel/path0/src/.next/server/app/api/ai-configuration/rotate-key/route.js:1:7159)
+21:22:23.226     at u (/vercel/path0/src/.next/server/app/api/training-files/available-for-import/route.js:1:1083)
+21:22:23.226     at /vercel/path0/src/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+21:22:23.227     at /vercel/path0/src/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+21:22:23.227     at NoopContextManager.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:25:19)
+21:22:23.227     at ContextAPI.with (/vercel/path0/src/node_modules/@opentelemetry/api/build/src/api/context.js:60:46) {
+21:22:23.227   description: "Route /api/training-files/available-for-import couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+21:22:23.227   digest: 'DYNAMIC_SERVER_USAGE'
+21:22:23.227 }
+21:22:23.868  ✓ Generating static pages (114/114)
+21:22:24.344    Finalizing page optimization ...
+21:22:24.344    Collecting build traces ...
+21:22:34.653 
+21:22:34.669 Route (app)                                                 Size     First Load JS
+21:22:34.669 ┌ ○ /                                                       1.96 kB         133 kB
+21:22:34.669 ├ ○ /_not-found                                             155 B          87.7 kB
+21:22:34.669 ├ ƒ /api/ai-configuration                                   0 B                0 B
+21:22:34.669 ├ ƒ /api/ai-configuration/rotate-key                        0 B                0 B
+21:22:34.669 ├ ƒ /api/ai/queue-status                                    0 B                0 B
+21:22:34.669 ├ ƒ /api/assessment                                         0 B                0 B
+21:22:34.669 ├ ƒ /api/backup/create                                      0 B                0 B
+21:22:34.669 ├ ƒ /api/backup/download/[id]                               0 B                0 B
+21:22:34.669 ├ ƒ /api/batch-jobs                                         0 B                0 B
+21:22:34.669 ├ ƒ /api/batch-jobs/[id]/cancel                             0 B                0 B
+21:22:34.669 ├ ƒ /api/batch-jobs/[id]/process-next                       0 B                0 B
+21:22:34.669 ├ ƒ /api/config/change-history                              0 B                0 B
+21:22:34.669 ├ ƒ /api/config/export-csv                                  0 B                0 B
+21:22:34.669 ├ ƒ /api/config/rollback                                    0 B                0 B
+21:22:34.669 ├ ƒ /api/config/statistics                                  0 B                0 B
+21:22:34.669 ├ ƒ /api/conversations                                      0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]                                 0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/comments                        0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/comments/[commentId]            0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/download                        0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/download/enriched               0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/download/raw                    0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/enrich                          0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/status                          0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/turns                           0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/[id]/validation-report               0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/batch/[id]                           0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/batch/[id]/items                     0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/batch/[id]/status                    0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/bulk-action                          0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/bulk-enrich                          0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/generate                             0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/generate-batch                       0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/generate-with-scaffolding            0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/orphaned                             0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/stats                                0 B                0 B
+21:22:34.670 ├ ƒ /api/conversations/trigger-enrich                       0 B                0 B
+21:22:34.670 ├ ƒ /api/costs                                              0 B                0 B
+21:22:34.670 ├ ƒ /api/cron/daily-maintenance                             0 B                0 B
+21:22:34.671 ├ ƒ /api/cron/export-file-cleanup                           0 B                0 B
+21:22:34.671 ├ ƒ /api/cron/export-log-cleanup                            0 B                0 B
+21:22:34.671 ├ ƒ /api/cron/export-metrics-aggregate                      0 B                0 B
+21:22:34.671 ├ ƒ /api/cron/hourly-monitoring                             0 B                0 B
+21:22:34.671 ├ ƒ /api/database/alerts                                    0 B                0 B
+21:22:34.671 ├ ƒ /api/database/health                                    0 B                0 B
+21:22:34.671 ├ ƒ /api/database/maintenance                               0 B                0 B
+21:22:34.671 ├ ƒ /api/datasets                                           0 B                0 B
+21:22:34.671 ├ ƒ /api/datasets/[id]                                      0 B                0 B
+21:22:34.671 ├ ƒ /api/datasets/[id]/confirm                              0 B                0 B
+21:22:34.671 ├ ƒ /api/datasets/import-from-training-file                 0 B                0 B
+21:22:34.671 ├ ƒ /api/documents                                          0 B                0 B
+21:22:34.671 ├ ƒ /api/documents/[id]                                     0 B                0 B
+21:22:34.671 ├ ƒ /api/edge-cases                                         0 B                0 B
+21:22:34.671 ├ ƒ /api/edge-cases/[id]                                    0 B                0 B
+21:22:34.671 ├ ƒ /api/export                                             0 B                0 B
+21:22:34.671 ├ ƒ /api/export/conversations                               0 B                0 B
+21:22:34.671 ├ ƒ /api/export/download/[id]                               0 B                0 B
+21:22:34.671 ├ ƒ /api/export/edge-cases                                  0 B                0 B
+21:22:34.671 ├ ƒ /api/export/history                                     0 B                0 B
+21:22:34.671 ├ ƒ /api/export/scenarios                                   0 B                0 B
+21:22:34.671 ├ ƒ /api/export/status/[id]                                 0 B                0 B
+21:22:34.671 ├ ƒ /api/export/templates                                   0 B                0 B
+21:22:34.671 ├ ƒ /api/failed-generations                                 0 B                0 B
+21:22:34.671 ├ ƒ /api/failed-generations/[id]                            0 B                0 B
+21:22:34.672 ├ ƒ /api/failed-generations/[id]/download                   0 B                0 B
+21:22:34.672 ├ ƒ /api/generation-logs                                    0 B                0 B
+21:22:34.672 ├ ƒ /api/generation-logs/stats                              0 B                0 B
+21:22:34.672 ├ ƒ /api/import/edge-cases                                  0 B                0 B
+21:22:34.672 ├ ƒ /api/import/scenarios                                   0 B                0 B
+21:22:34.672 ├ ƒ /api/import/templates                                   0 B                0 B
+21:22:34.672 ├ ƒ /api/inngest                                            0 B                0 B
+21:22:34.672 ├ ƒ /api/jobs                                               0 B                0 B
+21:22:34.672 ├ ƒ /api/jobs/[jobId]                                       0 B                0 B
+21:22:34.672 ├ ƒ /api/jobs/[jobId]/cancel                                0 B                0 B
+21:22:34.672 ├ ƒ /api/jobs/estimate                                      0 B                0 B
+21:22:34.673 ├ ƒ /api/models                                             0 B                0 B
+21:22:34.673 ├ ƒ /api/models/[modelId]                                   0 B                0 B
+21:22:34.673 ├ ƒ /api/models/[modelId]/download                          0 B                0 B
+21:22:34.673 ├ ƒ /api/notifications                                      0 B                0 B
+21:22:34.673 ├ ƒ /api/notifications/[id]/read                            0 B                0 B
+21:22:34.673 ├ ƒ /api/performance                                        0 B                0 B
+21:22:34.673 ├ ƒ /api/pipeline/adapters/[jobId]/ping                     0 B                0 B
+21:22:34.673 ├ ƒ /api/pipeline/adapters/[jobId]/remove                   0 B                0 B
+21:22:34.673 ├ ƒ /api/pipeline/adapters/[jobId]/restart                  0 B                0 B
+21:22:34.673 ├ ƒ /api/pipeline/adapters/[jobId]/restart-status           0 B                0 B
+21:22:34.673 ├ ƒ /api/pipeline/adapters/deploy                           0 B                0 B
+21:22:34.673 ├ ƒ /api/pipeline/adapters/rate                             0 B                0 B
+21:22:34.673 ├ ƒ /api/pipeline/adapters/status                           0 B                0 B
+21:22:34.673 ├ ƒ /api/pipeline/adapters/test                             0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/conversations                             0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/conversations/[id]                        0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/conversations/[id]/complete               0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/conversations/[id]/turn                   0 B                0 B
+21:22:34.674 ├ ○ /api/pipeline/engines                                   0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/evaluate                                  0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/evaluate/compare                          0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/evaluators                                0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/jobs                                      0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/jobs/[jobId]                              0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/jobs/[jobId]/cancel                       0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/jobs/[jobId]/deployment-log               0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/jobs/[jobId]/download                     0 B                0 B
+21:22:34.674 ├ ƒ /api/pipeline/jobs/[jobId]/metrics                      0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/dashboard                                      0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/documents                                      0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/documents/[id]                                 0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/documents/[id]/diagnostic-test                 0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/documents/[id]/process                         0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/documents/[id]/questions                       0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/documents/[id]/upload                          0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/documents/[id]/verify                          0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/feedback                                       0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/models                                         0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/quality                                        0 B                0 B
+21:22:34.674 ├ ƒ /api/rag/query                                          0 B                0 B
+21:22:34.675 ├ ƒ /api/rag/test-section-insert                            0 B                0 B
+21:22:34.675 ├ ƒ /api/rag/test/golden-set                                0 B                0 B
+21:22:34.675 ├ ƒ /api/rag/test/golden-set/report                         0 B                0 B
+21:22:34.675 ├ ƒ /api/rag/test/golden-set/reports                        0 B                0 B
+21:22:34.675 ├ ƒ /api/rag/test/golden-set/runs                           0 B                0 B
+21:22:34.675 ├ ƒ /api/review/actions                                     0 B                0 B
+21:22:34.675 ├ ƒ /api/review/feedback                                    0 B                0 B
+21:22:34.675 ├ ƒ /api/review/queue                                       0 B                0 B
+21:22:34.675 ├ ƒ /api/scaffolding/check-compatibility                    0 B                0 B
+21:22:34.675 ├ ƒ /api/scaffolding/emotional-arcs                         0 B                0 B
+21:22:34.675 ├ ƒ /api/scaffolding/personas                               0 B                0 B
+21:22:34.675 ├ ƒ /api/scaffolding/training-topics                        0 B                0 B
+21:22:34.675 ├ ƒ /api/scenarios                                          0 B                0 B
+21:22:34.675 ├ ƒ /api/scenarios/[id]                                     0 B                0 B
+21:22:34.675 ├ ƒ /api/scenarios/[id]/edge-cases                          0 B                0 B
+21:22:34.675 ├ ƒ /api/scenarios/bulk                                     0 B                0 B
+21:22:34.675 ├ ƒ /api/templates                                          0 B                0 B
+21:22:34.675 ├ ƒ /api/templates/[id]                                     0 B                0 B
+21:22:34.675 ├ ƒ /api/templates/[id]/duplicate                           0 B                0 B
+21:22:34.675 ├ ƒ /api/templates/[id]/resolve                             0 B                0 B
+21:22:34.675 ├ ƒ /api/templates/[id]/scenarios                           0 B                0 B
+21:22:34.675 ├ ƒ /api/templates/[id]/stats                               0 B                0 B
+21:22:34.675 ├ ƒ /api/templates/analytics                                0 B                0 B
+21:22:34.675 ├ ƒ /api/templates/preview                                  0 B                0 B
+21:22:34.676 ├ ƒ /api/templates/select                                   0 B                0 B
+21:22:34.676 ├ ƒ /api/templates/test                                     0 B                0 B
+21:22:34.676 ├ ƒ /api/test-auth                                          0 B                0 B
+21:22:34.676 ├ ƒ /api/training-files                                     0 B                0 B
+21:22:34.676 ├ ƒ /api/training-files/[id]/add-conversations              0 B                0 B
+21:22:34.676 ├ ƒ /api/training-files/[id]/download                       0 B                0 B
+21:22:34.676 ├ ƒ /api/training-files/available-for-import                0 B                0 B
+21:22:34.676 ├ ƒ /api/webhooks/training-complete                         0 B                0 B
+21:22:34.676 ├ ƒ /api/workbases                                          0 B                0 B
+21:22:34.676 ├ ƒ /api/workbases/[id]                                     0 B                0 B
+21:22:34.676 ├ ƒ /api/workbases/[id]/training-sets                       0 B                0 B
+21:22:34.676 ├ ƒ /api/workbases/[id]/training-sets/[tsId]                0 B                0 B
+21:22:34.676 ├ ƒ /api/workbases/[id]/training-sets/[tsId]/bypass         0 B                0 B
+21:22:34.676 ├ ƒ /api/workbases/[id]/training-sets/[tsId]/reset          0 B                0 B
+21:22:34.676 ├ ○ /batch-jobs                                             8.35 kB         115 kB
+21:22:34.676 ├ ƒ /batch-jobs/[id]                                        6.12 kB         104 kB
+21:22:34.676 ├ ○ /bulk-generator                                         5.89 kB         109 kB
+21:22:34.676 ├ ○ /conversations                                          1.99 kB         180 kB
+21:22:34.676 ├ ○ /conversations/failed                                   6.58 kB         135 kB
+21:22:34.676 ├ ○ /costs                                                  5.49 kB         135 kB
+21:22:34.676 ├ ○ /dashboard                                              374 B          87.9 kB
+21:22:34.676 ├ ○ /datasets                                               7.13 kB         156 kB
+21:22:34.676 ├ ƒ /datasets/[id]                                          5.91 kB         119 kB
+21:22:34.677 ├ ○ /datasets/import                                        6.23 kB         119 kB
+21:22:34.677 ├ ○ /home                                                   10.2 kB         178 kB
+21:22:34.677 ├ ○ /models                                                 2.95 kB         156 kB
+21:22:34.677 ├ ƒ /models/[modelId]                                       3.17 kB         120 kB
+21:22:34.677 ├ ○ /pipeline/configure                                     4.98 kB         188 kB
+21:22:34.677 ├ ○ /pipeline/jobs                                          6.91 kB         118 kB
+21:22:34.677 ├ ƒ /pipeline/jobs/[jobId]                                  4.07 kB         193 kB
+21:22:34.677 ├ ƒ /pipeline/jobs/[jobId]/chat                             903 B           152 kB
+21:22:34.677 ├ ƒ /pipeline/jobs/[jobId]/results                          4.21 kB         193 kB
+21:22:34.677 ├ ƒ /pipeline/jobs/[jobId]/test                             6.84 kB         196 kB
+21:22:34.677 ├ ○ /rag                                                    373 B          87.9 kB
+21:22:34.677 ├ ƒ /rag/[id]                                               1.46 kB         152 kB
+21:22:34.677 ├ ƒ /rag/[id]/quality                                       6.42 kB         109 kB
+21:22:34.677 ├ ○ /rag/test                                               7.33 kB         105 kB
+21:22:34.677 ├ ○ /signin                                                 2.51 kB         133 kB
+21:22:34.677 ├ ○ /signup                                                 2.59 kB         133 kB
+21:22:34.677 ├ ○ /test/generation                                        36.3 kB         135 kB
+21:22:34.677 ├ ○ /training-files                                         3.87 kB         120 kB
+21:22:34.677 ├ ○ /training/configure                                     8.48 kB         152 kB
+21:22:34.677 ├ ○ /training/jobs                                          7.05 kB         147 kB
+21:22:34.677 ├ ƒ /training/jobs/[jobId]                                  113 kB          227 kB
+21:22:34.677 ├ ƒ /workbase/[id]                                          7.1 kB          110 kB
+21:22:34.677 ├ ƒ /workbase/[id]/fact-training/chat                       1.34 kB         144 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fact-training/documents                  11 kB           124 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fact-training/documents/[docId]          1.42 kB         151 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fact-training/quality                    6.51 kB         109 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/chat                         1.93 kB         153 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/conversations                2.41 kB         180 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/conversations/[convId]       6.54 kB         119 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/conversations/batch          5.14 kB        99.5 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/conversations/batch/[jobId]  8.67 kB         103 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/conversations/generate       4.93 kB         119 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/launch                       11.6 kB         152 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/launch/adapter/[jobId]       12.6 kB         137 kB
+21:22:34.678 ├ ƒ /workbase/[id]/fine-tuning/training-sets                9.5 kB          134 kB
+21:22:34.678 └ ƒ /workbase/[id]/settings                                 6.53 kB         131 kB
+21:22:34.678 + First Load JS shared by all                               87.5 kB
+21:22:34.678   ├ chunks/2117-9082367aa22c8897.js                         31.9 kB
+21:22:34.678   ├ chunks/fd9d1056-e6491770acc2c685.js                     53.6 kB
+21:22:34.678   └ other shared chunks (total)                             2.02 kB
+21:22:34.678 
+21:22:34.678 
+21:22:34.678 ƒ Middleware                                                61.6 kB
+21:22:34.680 
+21:22:34.680 ○  (Static)   prerendered as static content
+21:22:34.680 ƒ  (Dynamic)  server-rendered on demand
+21:22:34.681 
+21:22:34.763 Warning: Due to "engines": { "node": "20.x" } in your `package.json` file, the Node.js Version defined in your Project Settings ("24.x") will not apply, Node.js Version "20.x" will be used instead. Learn More: https://vercel.link/node-version
+21:22:35.147 Using TypeScript 5.9.2 (local user-provided)
+21:22:40.608 Build Completed in /vercel/output [2m]
+21:22:40.889 Deploying outputs...
+21:22:49.621 Deployment completed
+21:22:50.743 Creating build cache...
+21:23:33.848 Created build cache: 43s
+21:23:33.848 Uploading build cache [181.56 MB]
+21:23:37.120 Build cache uploaded: 3.272s

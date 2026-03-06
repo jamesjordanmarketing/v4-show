@@ -1,22 +1,65 @@
+import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
+import { projectId, publicAnonKey } from './utils/supabase/info';
 
-// NOTE: @supabase/ssr cannot be imported here because Vercel middleware runs
-// in the Edge Runtime (a V8 isolate with no Node.js globals like __dirname).
-// The @supabase/supabase-js dependency chain includes @supabase/realtime-js
-// which references __dirname, crashing the edge function on every request.
-//
-// Session refresh is handled at the page/layout level via server components,
-// where @supabase/ssr works correctly (Node.js runtime, not Edge Runtime).
-//
-// To add auth redirects here in the future, use direct Supabase REST API
-// calls with fetch() — those are fully edge-compatible.
+const supabaseUrl = `https://${projectId}.supabase.co`;
 
-export function middleware(request: NextRequest) {
-  return NextResponse.next({
+export async function middleware(request: NextRequest) {
+  let response = NextResponse.next({
     request: {
       headers: request.headers,
     },
   });
+
+  const supabase = createServerClient(
+    supabaseUrl,
+    publicAnonKey,
+    {
+      cookies: {
+        get(name: string) {
+          return request.cookies.get(name)?.value;
+        },
+        set(name: string, value: string, options: CookieOptions) {
+          request.cookies.set({
+            name,
+            value,
+            ...options,
+          });
+          response = NextResponse.next({
+            request: {
+              headers: request.headers,
+            },
+          });
+          response.cookies.set({
+            name,
+            value,
+            ...options,
+          });
+        },
+        remove(name: string, options: CookieOptions) {
+          request.cookies.set({
+            name,
+            value: '',
+            ...options,
+          });
+          response = NextResponse.next({
+            request: {
+              headers: request.headers,
+            },
+          });
+          response.cookies.set({
+            name,
+            value: '',
+            ...options,
+          });
+        },
+      },
+    }
+  );
+
+  await supabase.auth.getUser();
+
+  return response;
 }
 
 export const config = {
