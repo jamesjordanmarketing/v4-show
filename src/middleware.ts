@@ -1,93 +1,22 @@
-import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
-import { projectId, publicAnonKey } from './utils/supabase/info';
 
-const supabaseUrl = `https://${projectId}.supabase.co`;
+// NOTE: @supabase/ssr cannot be imported here because Vercel middleware runs
+// in the Edge Runtime (a V8 isolate with no Node.js globals like __dirname).
+// The @supabase/supabase-js dependency chain includes @supabase/realtime-js
+// which references __dirname, crashing the edge function on every request.
+//
+// Session refresh is handled at the page/layout level via server components,
+// where @supabase/ssr works correctly (Node.js runtime, not Edge Runtime).
+//
+// To add auth redirects here in the future, use direct Supabase REST API
+// calls with fetch() — those are fully edge-compatible.
 
-/**
- * Middleware to handle Supabase authentication
- * Refreshes the user's session on every request
- */
-export async function middleware(request: NextRequest) {
-  let response = NextResponse.next({
+export function middleware(request: NextRequest) {
+  return NextResponse.next({
     request: {
       headers: request.headers,
     },
   });
-
-  const supabase = createServerClient(
-    supabaseUrl,
-    publicAnonKey,
-    {
-      cookies: {
-        get(name: string) {
-          return request.cookies.get(name)?.value;
-        },
-        set(name: string, value: string, options: CookieOptions) {
-          request.cookies.set({
-            name,
-            value,
-            ...options,
-          });
-          response = NextResponse.next({
-            request: {
-              headers: request.headers,
-            },
-          });
-          response.cookies.set({
-            name,
-            value,
-            ...options,
-          });
-        },
-        remove(name: string, options: CookieOptions) {
-          request.cookies.set({
-            name,
-            value: '',
-            ...options,
-          });
-          response = NextResponse.next({
-            request: {
-              headers: request.headers,
-            },
-          });
-          response.cookies.set({
-            name,
-            value: '',
-            ...options,
-          });
-        },
-      },
-    }
-  );
-
-  // Refresh session if needed
-  // This will automatically update cookies if the session is refreshed
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  // Optional: Redirect to login if accessing protected routes without auth
-  // Uncomment and customize based on your needs
-  // const isAuthRoute = request.nextUrl.pathname.startsWith('/signin') || 
-  //                     request.nextUrl.pathname.startsWith('/signup');
-  // const isProtectedRoute = request.nextUrl.pathname.startsWith('/dashboard') ||
-  //                          request.nextUrl.pathname.startsWith('/conversations');
-  
-  // if (!user && isProtectedRoute) {
-  //   const redirectUrl = request.nextUrl.clone();
-  //   redirectUrl.pathname = '/signin';
-  //   redirectUrl.searchParams.set('redirect', request.nextUrl.pathname);
-  //   return NextResponse.redirect(redirectUrl);
-  // }
-
-  // if (user && isAuthRoute) {
-  //   const redirectUrl = request.nextUrl.clone();
-  //   redirectUrl.pathname = '/dashboard';
-  //   return NextResponse.redirect(redirectUrl);
-  // }
-
-  return response;
 }
 
 export const config = {

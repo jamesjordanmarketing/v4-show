@@ -1,5 +1,3 @@
-const path = require('path');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Disable ESLint during build (lint separately)
@@ -15,22 +13,12 @@ const nextConfig = {
       },
     ]
   },
-  webpack: (config, { isServer, nextRuntime }) => {
+  webpack: (config, { isServer }) => {
     // Handle SVG imports
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
-
-    // Fix: Prevent @supabase/realtime-js (which uses Node.js globals like __dirname)
-    // from being bundled into the Edge Runtime middleware.
-    // Middleware only uses supabase.auth.getUser() — it never needs Realtime.
-    if (nextRuntime === 'edge') {
-      config.resolve.alias = {
-        ...config.resolve.alias,
-        '@supabase/realtime-js': path.join(__dirname, 'edge-stubs/realtime-stub.js'),
-      };
-    }
 
     // Fix pdf-parse build issue on Vercel
     // pdf-parse references test files that don't exist in the npm package
