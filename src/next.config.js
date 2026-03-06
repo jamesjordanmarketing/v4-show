@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+const path = require('path');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -22,16 +22,14 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     });
 
-    // Fix: Polyfill __dirname and __filename for Edge Runtime (Vercel middleware)
-    // @supabase/supabase-js transitive dependencies reference Node.js globals
-    // that don't exist in the Edge Runtime, causing ReferenceError at runtime.
+    // Fix: Prevent @supabase/realtime-js (which uses Node.js globals like __dirname)
+    // from being bundled into the Edge Runtime middleware.
+    // Middleware only uses supabase.auth.getUser() — it never needs Realtime.
     if (nextRuntime === 'edge') {
-      config.plugins.push(
-        new webpack.DefinePlugin({
-          __dirname: JSON.stringify('/'),
-          __filename: JSON.stringify('/index.js'),
-        })
-      );
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        '@supabase/realtime-js': path.join(__dirname, 'edge-stubs/realtime-stub.js'),
+      };
     }
 
     // Fix pdf-parse build issue on Vercel
