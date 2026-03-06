@@ -76,6 +76,16 @@ export default function WorkbaseLayout({ children }: { children: React.ReactNode
     <div className="flex h-screen bg-background">
       {/* Sidebar */}
       <aside className="w-64 border-r border-border bg-card flex flex-col">
+        {/* Logo */}
+        <div className="px-4 pt-4 pb-2">
+          <Link href="/home">
+            <img
+              src="/bright-run-logo.png"
+              alt="Bright Run"
+              className="h-7 w-auto"
+            />
+          </Link>
+        </div>
         {/* Header */}
         <div className="p-4 border-b border-border">
           <Link href="/home" className="flex items-center gap-2 text-muted-foreground hover:text-foreground text-sm mb-2">

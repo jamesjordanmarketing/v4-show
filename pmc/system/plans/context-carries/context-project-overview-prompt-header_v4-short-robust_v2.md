@@ -88,4 +88,4 @@
 - **RunPod GraphQL uses query param auth** (`?api_key=`), NOT Bearer header
 - **RunPod `saveEndpoint` is a full PUT** — always fetch ALL original fields first, modify only what's needed
 - **SAOL: ALL database operations MUST use SAOL.** Do not use raw `supabase-js` or PostgreSQL scripts directly.
-SAOL Reference: `C:\Users\james\Master\BrightHub\BRun\v2-modules\pmc\product\_mapping\multi\workfiles\supabase-agent-ops-library-use-instructions.md`
+SAOL Reference: `C:\Users\james\Master\BrightHub\BRun\v4-show\pmc\pmct\supabase-agent-ops-library-use-instructions_v2.md`

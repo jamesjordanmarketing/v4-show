@@ -71,7 +71,7 @@ function ArchivedWorkbaseCard({ workbase }: { workbase: Workbase }) {
 // ── Main Page ─────────────────────────────────────────────────────────────────
 
 export default function HomePage() {
-  const { user, profile, signOut } = useAuth();
+  const { user, signOut } = useAuth();
   const router = useRouter();
   const { data: workbases, isLoading } = useWorkbases();
   const { data: archivedWorkbases } = useWorkbasesArchived();
@@ -214,10 +214,11 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div>
-              <h1 className="text-3xl font-bold text-foreground">BrightHub</h1>
-              <p className="text-muted-foreground">
-                Welcome back, {profile?.full_name || user?.email}
-              </p>
+              <img
+                src="/bright-run-logo.png"
+                alt="Bright Run"
+                className="h-10 w-auto"
+              />
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-sm text-muted-foreground">{user?.email}</span>

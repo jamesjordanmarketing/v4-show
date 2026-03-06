@@ -1,15 +1,8 @@
-# Spec 26 E04: Frontend Hook + Components
-
-## Plan
-
-Create the React Query hook and three pipeline components for the Adapter Detail Page.
+# Spec 34 — Add Bright Run Logo to Application
 
 ## TODO
 
-- [x] Read prerequisite files: usePipelineJobs.ts, useAdapterTesting.ts, DeployAdapterButton.tsx, EndpointStatusBanner.tsx
-- [x] Create `src/hooks/useAdapterDetail.ts` — NO `'use client'` — exports 5 hooks
-- [x] Create `src/components/pipeline/DeploymentTimeline.tsx`
-- [x] Create `src/components/pipeline/AdapterStatusPing.tsx` — 10-second cooldown enforced
-- [x] Create `src/components/pipeline/EndpointRestartTool.tsx` — single useEffect polling, confirmation dialog
-- [x] TypeScript validation — zero errors
-- [x] Design token audit — zero zinc-*/slate-*/gray-* in new files
+- [x] **1. Asset Setup** — Create `public/` directory and copy logo to `public/bright-run-logo.png`
+- [x] **2. Home Page** — Replace `<h1>BrightHub</h1>` + `<p>Welcome back...</p>` with `<img>` logo tag
+- [x] **3. Sidebar Layout** — Insert logo block above sidebar header with `<Link href="/home">` wrapper
+- [x] **4. Verify** — Next.js build passes with zero errors
