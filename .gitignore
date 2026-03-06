@@ -15,6 +15,7 @@ dist/
 .env.development.local
 .env.test.local
 .env.production.local
+.env.backup-1.local
 
 # Deployment secrets (NEVER commit)
 .secrets/
@@ -50,3 +51,4 @@ coverage/
 ehthumbs.db
 Thumbs.db
 .vercel
+.env*.local

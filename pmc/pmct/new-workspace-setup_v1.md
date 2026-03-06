@@ -122,7 +122,7 @@ vercel env pull .env.local
 #### Step 2: Copy .env.local to NEW project
 ```powershell
 # Copy the file to your new project
-Copy-Item -Path ".env.local" -Destination "C:\Users\james\Master\BrightHub\brun\new-project-name\.env.local"
+Copy-Item -Path ".env.local" -Destination "C:\Users\james\Master\BrightHub\brun\v4-show\.env.local"
 ```
 
 #### Step 3: Link NEW project to Vercel

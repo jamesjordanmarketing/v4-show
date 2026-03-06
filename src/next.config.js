@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Disable ESLint during build (lint separately)
@@ -13,12 +15,24 @@ const nextConfig = {
       },
     ]
   },
-  webpack: (config, { isServer }) => {
+  webpack: (config, { isServer, nextRuntime }) => {
     // Handle SVG imports
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
+
+    // Fix: Polyfill __dirname and __filename for Edge Runtime (Vercel middleware)
+    // @supabase/supabase-js transitive dependencies reference Node.js globals
+    // that don't exist in the Edge Runtime, causing ReferenceError at runtime.
+    if (nextRuntime === 'edge') {
+      config.plugins.push(
+        new webpack.DefinePlugin({
+          __dirname: JSON.stringify('/'),
+          __filename: JSON.stringify('/index.js'),
+        })
+      );
+    }
 
     // Fix pdf-parse build issue on Vercel
     // pdf-parse references test files that don't exist in the npm package
