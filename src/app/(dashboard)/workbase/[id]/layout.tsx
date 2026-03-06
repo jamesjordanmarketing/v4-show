@@ -82,7 +82,7 @@ export default function WorkbaseLayout({ children }: { children: React.ReactNode
             <img
               src="/bright-run-logo.png"
               alt="Bright Run"
-              className="h-7 w-auto"
+              className="h-[34px] w-auto"
             />
           </Link>
         </div>
